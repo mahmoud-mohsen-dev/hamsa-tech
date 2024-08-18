@@ -10,7 +10,7 @@ function HeroSectionBtnAndText({
   btnText: string;
 }) {
   return (
-    <div className='absolute left-1/4 top-1/2 z-10 flex -translate-x-1/2 -translate-y-1/3 flex-col items-start gap-4 font-openSans'>
+    <div className='absolute left-1/4 top-3/4 z-10 flex -translate-x-1/2 -translate-y-3/4 flex-col items-start gap-4 font-openSans'>
       <h1 className='text-shadow-sm text-5xl font-semibold leading-[3.5rem] shadow-black'>
         {heading}
       </h1>

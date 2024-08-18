@@ -2,10 +2,9 @@
 .search-input-navbar .ant-input-group > .ant-input:first-child {
   background: transparent;
   border-color: white;
-  height: 40px;
   color: white;
-  height: 36px;
-  font-size: 0.75rem;
+  height: 32px;
+  font-size: 0.875rem;
   border-color: white;
   transition: border-color 150ms;
 }
@@ -26,14 +25,31 @@
   color: whitesmoke;
 }
 
-:where(.css-dev-only-do-not-override-1p7hao2).ant-input-search
-  > .ant-input-group
-  > .ant-input-group-addon:last-child
-  .ant-input-search-button {
+.search-input-navbar.ant-input-group-wrapper
+  .ant-input-group-addon
+  .ant-input-search-button.ant-btn.ant-btn-primary {
   transition:
     border-color 150ms,
     color 150ms;
   background-color: transparent;
-  height: 36px;
+  height: 32px;
   border: 1px solid white;
+}
+
+/* ======= Select Input In Navbar ========= */
+.header
+  .ant-select-outlined:not(.ant-select-customize-input)
+  .ant-select-selector {
+  background-color: transparent;
+  color: white;
+}
+.header
+  .ant-select-single.ant-select-show-arrow
+  .ant-select-selection-item {
+  color: white;
+}
+.header
+  .ant-select-outlined:not(.ant-select-customize-input)
+  .ant-select-selector {
+  border-color: white;
 }

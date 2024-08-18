@@ -54,7 +54,7 @@ const SearchInputField: React.FC = () => {
     <AutoComplete
       popupMatchSelectWidth={250}
       style={{
-        width: 210,
+        width: 180,
         height: 36,
         display: 'flex',
         alignItems: 'center',
@@ -64,10 +64,10 @@ const SearchInputField: React.FC = () => {
       options={options}
       onSelect={onSelect}
       onSearch={handleSearch}
-      size='large'
+      // size='large'
     >
       <Input.Search
-        size='large'
+        // size='large'
         placeholder='Search'
         enterButton
         className='search-input-navbar'

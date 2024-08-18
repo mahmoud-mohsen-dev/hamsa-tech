@@ -3,12 +3,14 @@ import Image from 'next/image';
 import Link from 'next/link';
 import ActiveLink from '../UI/ActiveLink';
 import SearchInputField from '../UI/SearchInputField';
+import { Select } from 'antd';
+import { IoIosArrowDown } from 'react-icons/io';
 
 function Header() {
   const linksStyles = 'px-5 font-medium uppercase text-sm text-white';
 
   return (
-    <header className='container fixed left-0 top-0 z-50 mx-auto flex items-center justify-between bg-transparent lg:h-[64px]'>
+    <header className='header container fixed left-0 top-0 z-50 mx-auto flex items-center justify-between bg-transparent lg:h-[64px]'>
       <div className='flex items-center gap-20'>
         <Link className='flex items-center gap-4' href='/'>
           <Image
@@ -78,8 +80,20 @@ function Header() {
         </nav>
       </div>
 
-      <div>
+      <div className='flex items-center gap-3'>
         <SearchInputField />
+        <div className='h-[22px] w-[1px] rounded-sm bg-[#eaeaea]'></div>
+        <Select
+          defaultValue='english'
+          style={{ width: 100 }}
+          options={[
+            { value: 'english', label: 'English' },
+            { value: 'arabic', label: 'العربية' }
+          ]}
+          suffixIcon={
+            <IoIosArrowDown size={14} className='text-white' />
+          }
+        />
       </div>
     </header>
   );
