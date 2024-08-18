@@ -1,0 +1,212 @@
+@font-face {
+  font-family: icomoon;
+  /* src: url(../fonts/icomoon.eot); */
+  src:
+    /* url(../fonts/icomoon.eot) format('embedded-opentype'), */ url(../fonts/icomoon.ttf)
+    format('truetype');
+  /* url(../fonts/icomoon.woff) format('woff'),
+    url(../fonts/icomoon.svg) format('svg'); */
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
+}
+
+[class*=' icon-'],
+[class^='icon-'] {
+  font-family: icomoon !important;
+  speak: none;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icomoon.icon-alert:before {
+  content: '\e92d';
+}
+
+.icomoon.icon-quote:before {
+  content: '\e90c';
+}
+
+.icomoon.icon-air-pollution:before {
+  content: '\e90d';
+}
+
+.icomoon.icon-air-purifier:before {
+  content: '\e90e';
+}
+
+.icomoon.icon-alarm-system:before {
+  content: '\e90f';
+}
+
+.icomoon.icon-automatic-doors:before {
+  content: '\e910';
+}
+
+.icomoon.icon-burglar:before {
+  content: '\e911';
+}
+
+.icomoon.icon-cctv-camera:before {
+  content: '\e912';
+}
+
+.icomoon.icon-cctv-camera2:before {
+  content: '\e913';
+}
+
+.icomoon.icon-control-panel:before {
+  content: '\e914';
+}
+
+.icomoon.icon-data-encryption:before {
+  content: '\e915';
+}
+
+.icomoon.icon-detector:before {
+  content: '\e916';
+}
+
+.icomoon.icon-door-lock:before {
+  content: '\e917';
+}
+
+.icomoon.icon-emergency-sign:before {
+  content: '\e918';
+}
+
+.icomoon.icon-fire-alarm:before {
+  content: '\e919';
+}
+
+.icomoon.icon-home-automation:before {
+  content: '\e91a';
+}
+
+.icomoon.icon-intercom:before {
+  content: '\e91b';
+}
+
+.icomoon.icon-intrusion:before {
+  content: '\e91c';
+}
+
+.icomoon.icon-keypad:before {
+  content: '\e91d';
+}
+
+.icomoon.icon-monitoring:before {
+  content: '\e91e';
+}
+
+.icomoon.icon-motion-sensor:before {
+  content: '\e91f';
+}
+
+.icomoon.icon-notification:before {
+  content: '\e920';
+}
+
+.icomoon.icon-padlock:before {
+  content: '\e921';
+}
+
+.icomoon.icon-security-scan:before {
+  content: '\e922';
+}
+
+.icomoon.icon-smart-control:before {
+  content: '\e923';
+}
+
+.icomoon.icon-smart-light:before {
+  content: '\e924';
+}
+
+.icomoon.icon-sos:before {
+  content: '\e925';
+}
+
+.icomoon.icon-surveillance:before {
+  content: '\e926';
+}
+
+.icomoon.icon-surveillance2:before {
+  content: '\e927';
+}
+
+.icomoon.icon-surveillance3:before {
+  content: '\e928';
+}
+
+.icomoon.icon-temperature:before {
+  content: '\e929';
+}
+
+.icomoon.icon-window:before {
+  content: '\e92a';
+}
+
+.icomoon.icon-check:before {
+  content: '\e90a';
+  font-size: 70%;
+}
+
+.icomoon.icon-close:before {
+  content: '\e90b';
+  font-size: 70%;
+}
+
+.icomoon.icon-download:before {
+  content: '\e909';
+}
+
+.icomoon.icon-horizontal-dots:before {
+  content: '\e908';
+  font-size: 30%;
+}
+
+.icomoon.icon-arrow-left:before {
+  content: '\e900';
+}
+
+.icomoon.icon-arrow-right:before {
+  content: '\e901';
+}
+
+.icomoon.icon-arrow-left2:before {
+  content: '\e906';
+}
+
+.icomoon.icon-arrow-right2:before {
+  content: '\e907';
+}
+
+.icomoon.icon-icon-arrow-left3:before {
+  content: '\e92b';
+}
+
+.icomoon.icon-icon-arrow-right3:before {
+  content: '\e92c';
+}
+
+.icomoon.icon-cart:before {
+  content: '\e902';
+}
+
+.icomoon.icon-email:before {
+  content: '\e903';
+}
+
+.icomoon.icon-phone:before {
+  content: '\e904';
+}
+
+.icomoon.icon-search:before {
+  content: '\e905';
+}

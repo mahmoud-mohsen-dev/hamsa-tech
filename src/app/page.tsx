@@ -1,10 +1,12 @@
 import ConfigAntThemes from '@/components/Theme/ConfigAntThemes';
-import HeroSection from '@/components/UI/HeroSection';
+import Categories from '@/components/home/Categories';
+import HeroSection from '@/components/home/HeroSection';
 
 function Home() {
   return (
     <div className='h-full'>
       <HeroSection />
+      <Categories />
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import Btn from './Btn';
+import Btn from '../UI/Btn';
 
 function HeroSectionBtnAndText({
   heading,
@@ -17,8 +17,9 @@ function HeroSectionBtnAndText({
       <h3 className='text-shadow-sm text-2xl font-normal leading-9 shadow-black'>
         {subHeading}
       </h3>
-      <Btn className='bg-white leading-4 text-gray-normal'>
+      <Btn className='relative bg-white leading-4 text-gray-normal'>
         {btnText}
+        {/* <i className='icon-arrow-right before:absolute before:right-0 before:top-0 before:text-6xl before:text-[#65b530] before:content-["\e923"]'></i> */}
       </Btn>
     </div>
   );

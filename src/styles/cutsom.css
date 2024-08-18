@@ -1,0 +1,18 @@
+.category-card:hover .heading-icon::before {
+  color: white;
+}
+
+.category-card:hover h2,
+.category-card:hover p,
+.category-card:hover span {
+  color: white;
+}
+
+.category-card:hover .btn i {
+  border-color: white;
+}
+
+.category-card .btn:hover i {
+  background-color: white;
+  color: #d9363e;
+}

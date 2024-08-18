@@ -38,14 +38,18 @@ const config: Config = {
         //======= Shades Of Blue ========
         'blue-primary': '#151CB9',
         //======= Shades Of Red ========
+        'red-primary': '#d9363e',
         'red-secondary': '#E20A0A',
         //======= Shades Of White ========
         'white-light': '#ECF4FF',
         'white': '#FFFFFF',
         //======= Shades Of Black ========
+        'black-medium': '#222',
         'black-dark': '#120F2D',
         //======= Shades Of Gray ========
+        'gray-light': '#9b9b9b',
         'gray-medium': '#6B6A75',
+        'gray-base': '#eaeaea',
         'gray-normal': '#333',
         'gray-accent': '#2a334e'
         //======= Other Colors ========
@@ -58,6 +62,9 @@ const config: Config = {
         sm: '0 1px 2px var(--tw-shadow-color)',
         DEFAULT: '0 2px 4px var(--tw-shadow-color)',
         lg: '0 8px 16px var(--tw-shadow-color)'
+      },
+      boxShadow: {
+        medium: '0 5px 83px 0 rgba(27,26,26,0.12)'
       }
     }
   },

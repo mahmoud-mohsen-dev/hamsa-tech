@@ -1,5 +1,7 @@
 @import './normalize.css';
 @import './antCustom.css';
+@import './icomoon.css';
+@import './cutsom.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
