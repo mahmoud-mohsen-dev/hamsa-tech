@@ -1,3 +1,4 @@
+'user client';
 import React, { useState } from 'react';
 import { AutoComplete, Input } from 'antd';
 import type { AutoCompleteProps } from 'antd';
@@ -51,9 +52,9 @@ const SearchInputField: React.FC = () => {
 
   return (
     <AutoComplete
-      popupMatchSelectWidth={161}
+      popupMatchSelectWidth={250}
       style={{
-        // width: 250,
+        width: 210,
         height: 36,
         display: 'flex',
         alignItems: 'center',
