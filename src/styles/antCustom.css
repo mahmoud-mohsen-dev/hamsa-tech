@@ -1,0 +1,39 @@
+/* ======= Search Input In Navbar ========= */
+.search-input-navbar .ant-input-group > .ant-input:first-child {
+  background: transparent;
+  border-color: white;
+  height: 40px;
+  color: white;
+  height: 36px;
+  font-size: 0.75rem;
+  border-color: white;
+  transition: border-color 150ms;
+}
+.search-input-navbar .ant-input-group > .ant-input:first-child:focus {
+  border-color: #3642c7;
+  box-shadow: none;
+}
+/* .search-input-navbar
+  .ant-input-group
+  > .ant-input:first-child:focus
+  + .ant-input-group-addon:last-child
+  .ant-input-search-button {
+  border-color: #3642c7;
+  color: #3642c7;
+  box-shadow: 0 0 0 2px rgba(0, 46, 210, 0.11);
+} */
+.search-input-navbar .ant-input-group > .ant-input::placeholder {
+  color: whitesmoke;
+}
+
+:where(.css-dev-only-do-not-override-1p7hao2).ant-input-search
+  > .ant-input-group
+  > .ant-input-group-addon:last-child
+  .ant-input-search-button {
+  transition:
+    border-color 150ms,
+    color 150ms;
+  background-color: transparent;
+  height: 36px;
+  border: 1px solid white;
+}

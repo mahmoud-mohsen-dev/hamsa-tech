@@ -15,7 +15,7 @@ function HeroSection() {
         <div className={imageContainerStyles}>
           <img src='/carousel/carousel-1.jpg' alt='ezviz camera' />
           <HeroSectionBtnAndText
-            heading='Big New Sales 50%'
+            heading='New Sale 50% Off'
             subHeading='on hikvision products'
             btnText='Read More'
           />
@@ -23,7 +23,7 @@ function HeroSection() {
         <div className={imageContainerStyles}>
           <img src='/carousel/carousel-2.jpg' alt='ezviz camera' />
           <HeroSectionBtnAndText
-            heading='Big New Sales 50%'
+            heading='New Sale 50% Off'
             subHeading='on hikvision products'
             btnText='Read More'
           />
@@ -31,7 +31,7 @@ function HeroSection() {
         <div className={imageContainerStyles}>
           <img src='/carousel/carousel-3.jpg' alt='ezviz camera' />
           <HeroSectionBtnAndText
-            heading='Big New Sales 50%'
+            heading='New Sale 50% Off'
             subHeading='on hikvision products'
             btnText='Read More'
           />

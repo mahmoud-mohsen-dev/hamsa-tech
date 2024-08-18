@@ -1,13 +1,14 @@
-// import { Button } from 'antd';
+'use client';
 import Image from 'next/image';
 import Link from 'next/link';
 import ActiveLink from '../UI/ActiveLink';
+import SearchInputField from '../UI/SearchInputField';
 
 function Header() {
   const linksStyles = 'px-5 font-medium uppercase text-sm text-white';
 
   return (
-    <header className='container fixed left-0 top-0 z-50 mx-auto flex items-center bg-transparent lg:h-[64px]'>
+    <header className='container fixed left-0 top-0 z-50 mx-auto flex items-center justify-between bg-transparent lg:h-[64px]'>
       <div className='flex items-center gap-20'>
         <Link className='flex items-center gap-4' href='/'>
           <Image
@@ -75,6 +76,10 @@ function Header() {
             </li>
           </ul>
         </nav>
+      </div>
+
+      <div>
+        <SearchInputField />
       </div>
     </header>
   );
