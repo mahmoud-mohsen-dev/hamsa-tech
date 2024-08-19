@@ -53,3 +53,17 @@
   .ant-select-selector {
   border-color: white;
 }
+
+.ant-input-compact-item:not(
+    .ant-input-compact-last-item
+  ).ant-input-compact-first-item {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.footer
+  .ant-btn-compact-item:not(
+    .ant-btn-compact-first-item
+  ).ant-btn-compact-last-item {
+  background: rgba(220, 16, 149, 0.903);
+}

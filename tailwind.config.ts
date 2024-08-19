@@ -40,6 +40,8 @@ const config: Config = {
         //======= Shades Of Red ========
         'red-primary': '#d9363e',
         'red-secondary': '#E20A0A',
+        //======= Shades Of Yellow ========
+        'yellow-normal': '#fcaf17',
         //======= Shades Of White ========
         'white-light': '#ECF4FF',
         'white': '#FFFFFF',
@@ -66,6 +68,12 @@ const config: Config = {
       boxShadow: {
         medium: '0 5px 83px 0 rgba(27,26,26,0.12)'
       }
+    },
+    filter: {
+      invert: 'invert(1)'
+    },
+    mixBlendMode: {
+      difference: 'difference'
     }
   },
   plugins: [

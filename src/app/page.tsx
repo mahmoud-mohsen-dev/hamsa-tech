@@ -4,7 +4,7 @@ import HeroSection from '@/components/home/HeroSection';
 
 function Home() {
   return (
-    <div className='h-full'>
+    <div className='h-ful bg-[rgb(249, 249, 249)]l'>
       <HeroSection />
       <Categories />
     </div>
