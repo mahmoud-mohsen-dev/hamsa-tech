@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import ActiveLink from '../UI/ActiveLink';
-import SearchInputField from '../home/SearchInputField';
+import SearchInputField from '../UI/SearchInputField';
 import { Select } from 'antd';
 import { IoIosArrowDown } from 'react-icons/io';
 

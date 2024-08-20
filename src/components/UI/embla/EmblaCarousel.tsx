@@ -18,7 +18,7 @@ import Link from 'next/link';
 const TWEEN_FACTOR_BASE = 0.2;
 
 type PropType = {
-  slides: string[];
+  slides: { title: string; details: string; imgSrc: string }[];
   options?: EmblaOptionsType;
   href?: string;
 };
@@ -133,26 +133,23 @@ const EmblaCarousel: React.FC<PropType> = ({
                     <img
                       className='embla__slide__img embla__parallax__img'
                       // src={`https://picsum.photos/600/350?v=${index}`}
-                      src={`${item}`}
+                      src={`${item.imgSrc}`}
                       alt='Your alt text'
                     />
                     {/* </Link> */}
                   </div>
                 </div>
                 <div className='relative text-white'>
-                  <div className='service-details absolute bottom-[-110px] left-1/3 -translate-x-1/4 transition-all duration-300 ease-in'>
+                  <div className='service-details absolute bottom-[-180px] left-1/3 -translate-x-1/4 transition-all duration-300 ease-in'>
                     <h3 className='mb-3 text-lg font-bold text-blue-50 text-shadow-sm'>
-                      CCTV Installation
+                      {item.title}
                     </h3>
 
                     <p className='mb-3 text-shadow-sm'>
-                      We specialize in planning, installation, and
-                      repair of full range security.
+                      {item.details}
                     </p>
 
-                    <Link href={href} className='text-shadow-sm'>
-                      Read More ⟶
-                    </Link>
+                    <p className='text-shadow-sm'>Read More ⟶</p>
                   </div>
                 </div>
               </Link>

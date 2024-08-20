@@ -4,25 +4,75 @@ import EmblaCarousel from '@/components/UI/embla/EmblaCarousel';
 import { EmblaOptionsType } from 'embla-carousel';
 import HeadingSection from '../UI/HeadingSection';
 
-function Categories() {
+function CategoriesSection() {
   const OPTIONS: EmblaOptionsType = {
     dragFree: true,
     loop: false
   };
   const SLIDES = [
-    '/categories/ezviz-wifi-outdoor.jpg',
-    '/categories/hikvision-outdoor-camera.jpg',
-    '/categories/hikvision-dvr.jpg',
-    '/categories/zk-fingerprint.webp',
-    '/categories/commax-intercom.webp',
-    '/categories/access-control.jpg',
-    '/categories/xprinter-printer.jpg',
-    '/categories/bracket-camera.jpg',
-    '/categories/ups-schneider.webp',
-    '/categories/tp-link-access-point.jpg'
+    {
+      title: 'WiFi Cameras',
+      details:
+        'Experience seamless security with our WiFi cameras, providing easy installation and remote access from anywhere.',
+      imgSrc: '/categories/ezviz-wifi-outdoor.jpg'
+    },
+    {
+      title: 'CCTV & IP Cameras',
+      details:
+        'Our advanced CCTV and IP camera solutions deliver top-tier surveillance and monitoring for comprehensive security.',
+      imgSrc: '/categories/hikvision-outdoor-camera.jpg'
+    },
+    {
+      title: 'NVR & DVR',
+      details:
+        'Reliable NVR and DVR systems for recording and playback of surveillance footage, ensuring thorough security coverage.',
+      imgSrc: '/categories/hikvision-dvr.jpg'
+    },
+    {
+      title: 'Fingerprints',
+      details:
+        'Streamline employee tracking with our fingerprint and time attendance devices, offering efficient and secure workforce management.',
+      imgSrc: '/categories/zk-fingerprint.webp'
+    },
+    {
+      title: 'Intercom',
+      details:
+        'Upgrade your communication systems with our premium intercom solutions, sourced to meet both residential and commercial needs.',
+      imgSrc: '/categories/commax-intercom.webp'
+    },
+    {
+      title: 'Access Control',
+      details:
+        'Secure your premises with advanced access control systems designed for efficient entry management and enhanced safety.',
+      imgSrc: '/categories/access-control.webp'
+    },
+    {
+      title: 'POS Equipment',
+      details:
+        'Upgrade your point-of-sale system with our printers, barcode scanners, and cashier drawers for efficient transactions.',
+      imgSrc: '/categories/xprinter-printer.jpg'
+    },
+    {
+      title: 'Accessories',
+      details:
+        'Find essential accessories like power supplies, cables, and brackets to support and optimize your security system.',
+      imgSrc: '/categories/bracket-camera.jpg'
+    },
+    {
+      title: 'UPS',
+      details:
+        'Ensure continuous power with our uninterruptible power supplies (UPS), providing reliable backup and protection against outages.',
+      imgSrc: '/categories/ups-schneider.webp'
+    },
+    {
+      title: 'Network',
+      details:
+        'Optimize connectivity with our network equipment, including switches, access points, and routers for reliable and efficient performance.',
+      imgSrc: '/categories/tp-link-access-point.jpg'
+    }
   ];
   return (
-    <div className='categories py-20'>
+    <section className='categories py-20'>
       <HeadingSection
         heading='whole home protection'
         subHeading="Whether it's protecting your home while you are on vacation or
@@ -144,8 +194,8 @@ function Categories() {
           alt='security camera'
         /> */}
       <EmblaCarousel slides={SLIDES} options={OPTIONS} href='/' />
-    </div>
+    </section>
   );
 }
 
-export default Categories;
+export default CategoriesSection;

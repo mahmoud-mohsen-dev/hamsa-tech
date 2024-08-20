@@ -1,12 +1,16 @@
 import ConfigAntThemes from '@/components/Theme/ConfigAntThemes';
-import Categories from '@/components/home/Categories';
+import CategoriesSection from '@/components/home/CategoriesSection';
+import FeaturedSection from '@/components/home/FeaturedSection';
 import HeroSection from '@/components/home/HeroSection';
+import Partners from '@/components/home/Partners';
 
 function Home() {
   return (
-    <div className='h-ful bg-[rgb(249, 249, 249)]l'>
+    <div className='h-full bg-white-light'>
       <HeroSection />
-      <Categories />
+      <FeaturedSection />
+      <Partners />
+      <CategoriesSection />
     </div>
   );
 }

@@ -3,6 +3,7 @@
 @import './icomoon.css';
 @import './cutsom.css';
 @import './embla.css';
+@import './infinitSlider.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

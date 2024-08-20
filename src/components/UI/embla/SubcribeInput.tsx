@@ -4,16 +4,13 @@ import { IoIosSend } from 'react-icons/io';
 
 function SubcribeInput() {
   return (
-    <div
-      style={{ width: '100%' }}
-      className='flex items-center justify-between rounded-md bg-[rgba(255,255,255,0.1)] p-3 pr-0 [&_input]:focus:outline-blue-primary'
-    >
+    <div className='relative w-full max-w-80'>
       <input
         defaultValue=''
         placeholder='Subscribe with us'
-        className='bg-transparent outline-none'
+        className='ring-offset-blue-gray-medium w-full rounded-md bg-[rgba(255,255,255,.1)] p-3 pr-12 ring ring-transparent focus:outline-none focus:ring-yellow-normal focus:ring-offset-2'
       ></input>
-      <button className='w-10'>
+      <button className='absolute right-0 top-1/2 w-10 -translate-y-1/2'>
         <IoIosSend size={28} />
       </button>
     </div>

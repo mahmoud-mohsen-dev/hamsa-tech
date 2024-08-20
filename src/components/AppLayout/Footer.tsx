@@ -14,7 +14,7 @@ import SubcribeInput from '../UI/embla/SubcribeInput';
 function Footer() {
   return (
     <footer className=''>
-      <div className='container grid grid-cols-4 bg-gray-accent py-16 text-white'>
+      <div className='grid-cols-footer bg-blue-gray-medium container grid gap-5 py-16 text-white'>
         <div>
           <div className='mb-8 flex items-center gap-5'>
             <img
@@ -55,7 +55,7 @@ function Footer() {
             </Link>
           </div>
         </div>
-        <div className='justify-self-center'>
+        <div className=''>
           <h2 className='mb-8 text-2xl font-bold'>Quick Links</h2>
           <ul className='flex flex-col gap-2'>
             <li>
@@ -112,7 +112,7 @@ function Footer() {
           </h4>
           <SubcribeInput />
         </div>
-        <div className='justify-self-center'>
+        <div className=''>
           <h2 className='mb-8 text-2xl font-bold'>Contact</h2>
           <div>
             <div className='flex items-center gap-5'>

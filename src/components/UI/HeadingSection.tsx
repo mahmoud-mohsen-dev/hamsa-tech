@@ -1,3 +1,5 @@
+import SectionHeading from './SectionHeading';
+
 function HeadingSection({
   heading,
   subHeading
@@ -7,10 +9,8 @@ function HeadingSection({
 }) {
   return (
     <div className='service-details mb-10'>
-      <h2 className='text-center font-openSans text-3xl font-bold capitalize'>
-        {heading}
-      </h2>
-      <p className='m-auto mt-3 max-w-[600px] text-pretty text-center font-openSans text-lg capitalize text-gray-light opacity-80'>
+      <SectionHeading className='mb-2.5'>{heading}</SectionHeading>
+      <p className='m-auto max-w-[600px] text-pretty text-center font-openSans text-lg capitalize text-gray-medium opacity-80'>
         {subHeading}
       </p>
     </div>

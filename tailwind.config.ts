@@ -36,25 +36,34 @@ const config: Config = {
       },
       colors: {
         //======= Shades Of Blue ========
-        'blue-primary': '#151CB9',
+        'blue-normal': '#151CB9',
+        'blue-sky-ultralight': '#ECF4FF',
+        'blue-sky-normal': '#00A0E9',
+        'blue-accent': '#364d79',
         //======= Shades Of Red ========
-        'red-primary': '#d9363e',
-        'red-secondary': '#E20A0A',
+        'red-normal': '#d9363e',
+        'red-medium': '#d71820',
+        'red-accent': '#E20A0A',
+        'red-dark': '#d7150e',
         //======= Shades Of Yellow ========
-        'yellow-normal': '#fcaf17',
+        'yellow-normal': '#EFB918',
+        'yellow-medium': '#fcaf17',
+        //======= Shades Of Green ========
+        'green-normal': '#96BE24',
+        'green-medium': '#65b531',
         //======= Shades Of White ========
-        'white-light': '#ECF4FF',
-        'white': '#FFFFFF',
+        'white-light': '#f9f9f9',
         //======= Shades Of Black ========
+        'black-light': '#333333',
         'black-medium': '#222',
         'black-dark': '#120F2D',
         //======= Shades Of Gray ========
+        'gray-ultralight': '#eaeaea',
         'gray-light': '#9b9b9b',
         'gray-medium': '#6B6A75',
-        'gray-base': '#eaeaea',
-        'gray-normal': '#333',
-        'gray-accent': '#2a334e'
         //======= Other Colors ========
+        'blue-gray-light': '#575a7b',
+        'blue-gray-medium': '#2a334e'
       },
       fontFamily: {
         inter: ['var(--font-inter)'],
@@ -66,14 +75,20 @@ const config: Config = {
         lg: '0 8px 16px var(--tw-shadow-color)'
       },
       boxShadow: {
-        medium: '0 5px 83px 0 rgba(27,26,26,0.12)'
+        medium: '0 5px 83px 0 rgba(27,26,26,0.12)',
+        featured: '0 2px 10px rgba(0, 0, 0, 0.12)',
+        featuredHovered: ' 0 2px 10px rgba(0, 0, 0, 0.2)'
+      },
+      filter: {
+        invert: 'invert(1)'
+      },
+      mixBlendMode: {
+        difference: 'difference'
+      },
+      gridTemplateColumns: {
+        // footer: '2fr repeat(auto-fit,minmax(350px,1fr))'
+        footer: '1.2fr .7fr 1.3fr 1fr'
       }
-    },
-    filter: {
-      invert: 'invert(1)'
-    },
-    mixBlendMode: {
-      difference: 'difference'
     }
   },
   plugins: [
