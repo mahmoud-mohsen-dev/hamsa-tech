@@ -47,7 +47,7 @@ function CategoriesSection() {
       imgSrc: '/categories/access-control.webp'
     },
     {
-      title: 'POS Equipment',
+      title: 'POS Equipments',
       details:
         'Upgrade your point-of-sale system with our printers, barcode scanners, and cashier drawers for efficient transactions.',
       imgSrc: '/categories/xprinter-printer.jpg'

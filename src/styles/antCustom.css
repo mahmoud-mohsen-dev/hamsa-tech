@@ -6,11 +6,14 @@
   height: 32px;
   font-size: 0.875rem;
   border-color: white;
-  transition: border-color 150ms;
+  transition: none;
 }
 .search-input-navbar .ant-input-group > .ant-input:first-child:focus {
   border-color: #3642c7;
   box-shadow: none;
+}
+.header .ant-input-group .ant-input-group-addon {
+  transition: none;
 }
 /* .search-input-navbar
   .ant-input-group
@@ -28,9 +31,7 @@
 .search-input-navbar.ant-input-group-wrapper
   .ant-input-group-addon
   .ant-input-search-button.ant-btn.ant-btn-primary {
-  transition:
-    border-color 150ms,
-    color 150ms;
+  transition: none;
   background-color: transparent;
   height: 32px;
   border: 1px solid white;

@@ -70,7 +70,7 @@ const SearchInputField: React.FC = () => {
         // size='large'
         placeholder='Search'
         enterButton
-        className='search-input-navbar'
+        className='search-input-navbar transition-all duration-300'
       />
     </AutoComplete>
   );

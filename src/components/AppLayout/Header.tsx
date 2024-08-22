@@ -5,25 +5,30 @@ import ActiveLink from '../UI/ActiveLink';
 import SearchInputField from '../UI/SearchInputField';
 import { Select } from 'antd';
 import { IoIosArrowDown } from 'react-icons/io';
+import useScrollHandler from '@/hooks/useScrollHander';
 
 function Header() {
-  const linksStyles = 'px-5 font-medium uppercase text-sm text-white';
+  const linksStyles =
+    'nav_link px-5 font-medium uppercase text-sm text-white';
+
+  useScrollHandler();
 
   return (
     <header className='header container fixed left-0 top-0 z-50 mx-auto flex items-center justify-between bg-transparent lg:h-[64px]'>
       <div className='flex items-center gap-20'>
         <Link className='flex items-center gap-4' href='/'>
-          <Image
+          {/* <Image
             src='/hamsa-logo-white.svg'
             alt='hamsa-logo'
             width={28}
             height={28}
-          />
+          /> */}
+          <div className='logo_img h-7 w-7'></div>
           <h1 className='flex items-center gap-1'>
-            <span className='text-sm font-medium uppercase text-white'>
+            <span className='logo_hamsa text-sm font-medium uppercase text-white'>
               Hamsa
             </span>
-            <span className='text-sm font-medium uppercase text-white'>
+            <span className='logo_tech text-sm font-medium uppercase text-white'>
               Tech
             </span>
           </h1>

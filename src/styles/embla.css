@@ -129,14 +129,19 @@
   display: flex;
   justify-content: center;
 }
-.embla__parallax__img {
+
+.embla_parralax_img_wrapper {
   max-width: none;
   flex: 0 0 calc(115% + (var(--slide-spacing) * 2));
+  border-radius: 1.8rem;
+  overflow: hidden;
+}
+.embla__parallax__img {
   object-fit: cover;
 }
 
 /* .categories .embla */
 
 .embla__slide:hover .service-details {
-  bottom: 20px;
+  bottom: 0px;
 }

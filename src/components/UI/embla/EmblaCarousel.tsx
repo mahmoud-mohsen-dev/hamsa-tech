@@ -33,6 +33,7 @@ const EmblaCarousel: React.FC<PropType> = ({
   ]);
   const tweenFactor = useRef(0);
   const tweenNodes = useRef<HTMLElement[]>([]);
+  const container = useRef<HTMLDivElement | null>(null);
 
   const { selectedIndex, scrollSnaps, onDotButtonClick } =
     useDotButton(emblaApi);
@@ -105,6 +106,10 @@ const EmblaCarousel: React.FC<PropType> = ({
     []
   );
 
+  // useEffect(() => {
+  //   console.log(container.current?.clientWidth);
+  // }, []);
+
   useEffect(() => {
     if (!emblaApi) return;
 
@@ -123,35 +128,40 @@ const EmblaCarousel: React.FC<PropType> = ({
   return (
     <div className='embla container'>
       <div className='embla__viewport' ref={emblaRef}>
-        <div className='embla__container'>
+        <div className='embla__container' ref={container}>
           {slides.map((item, index) => (
             <div className='embla__slide overflow-hidden' key={index}>
               <Link href={href}>
                 <div className='embla__parallax'>
                   <div className='embla__parallax__layer'>
                     {/* <Link href='/'> */}
-                    <img
-                      className='embla__slide__img embla__parallax__img'
-                      // src={`https://picsum.photos/600/350?v=${index}`}
-                      src={`${item.imgSrc}`}
-                      alt='Your alt text'
-                    />
+                    <div className='embla_parralax_img_wrapper relative'>
+                      {/* <div className='service-details absolute bottom-[-155px] h-[210px] w-full bg-gradient-to-t from-[#00000078] from-30% via-[#00000054] via-70% to-transparent to-100% text-white transition-all duration-300 ease-in'>
+                        <div className='absolute right-[70px] top-0 max-w-[250px] py-5'> */}
+                      <div className='service-details absolute bottom-[-195px] h-[260px] w-full bg-gradient-to-t from-[#00000078] from-30% via-[#00000054] via-70% to-transparent to-100% transition-all duration-300 ease-in'></div>
+                      <img
+                        className='embla__slide__img embla__parallax__img'
+                        // src={`https://picsum.photos/600/350?v=${index}`}
+                        src={`${item.imgSrc}`}
+                        alt='Your alt text'
+                      />
+                    </div>
                     {/* </Link> */}
                   </div>
                 </div>
-                <div className='relative text-white'>
-                  <div className='service-details absolute bottom-[-180px] left-1/3 -translate-x-1/4 transition-all duration-300 ease-in'>
-                    <h3 className='mb-3 text-lg font-bold text-blue-50 text-shadow-sm'>
-                      {item.title}
-                    </h3>
 
-                    <p className='mb-3 text-shadow-sm'>
-                      {item.details}
-                    </p>
+                <div className='service-details absolute bottom-[-195px] right-[60px] max-w-[260px] py-5 text-white transition-all duration-300 ease-in'>
+                  <h3 className='mb-3 text-[18px] font-bold leading-[28px] text-shadow-sm'>
+                    {item.title}
+                  </h3>
 
-                    <p className='text-shadow-sm'>Read More ⟶</p>
-                  </div>
+                  <p className='mb-3 break-words text-shadow-sm'>
+                    {item.details}
+                  </p>
+
+                  <p className='text-shadow-sm'>Read More ⟶</p>
                 </div>
+                {/* <div className='relative text-white'></div> */}
               </Link>
             </div>
           ))}

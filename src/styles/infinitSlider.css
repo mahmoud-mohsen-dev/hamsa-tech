@@ -5,7 +5,7 @@
 .scroller__inner {
   padding-block: 1rem;
   display: flex;
-  align-items: center;
+  align-items: start;
   flex-wrap: wrap;
   gap: 3rem;
 }
