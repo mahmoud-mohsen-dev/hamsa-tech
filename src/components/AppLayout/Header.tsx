@@ -25,10 +25,10 @@ function Header() {
           /> */}
           <div className='logo_img h-7 w-7'></div>
           <h1 className='flex items-center gap-1'>
-            <span className='logo_hamsa text-sm font-medium uppercase text-white'>
+            <span className='logo_hamsa text-md font-semibold uppercase text-white'>
               Hamsa
             </span>
-            <span className='logo_tech text-sm font-medium uppercase text-white'>
+            <span className='logo_tech text-md font-semibold uppercase text-white'>
               Tech
             </span>
           </h1>

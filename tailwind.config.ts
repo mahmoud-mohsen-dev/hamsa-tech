@@ -37,6 +37,7 @@ const config: Config = {
       colors: {
         //======= Shades Of Blue ========
         'blue-normal': '#151CB9',
+        'blue-dark': '#17457c',
         'blue-sky-ultralight': '#ECF4FF',
         'blue-sky-normal': '#00A0E9',
         'blue-accent': '#364d79',

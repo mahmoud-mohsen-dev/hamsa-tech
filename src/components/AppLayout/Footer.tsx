@@ -14,7 +14,7 @@ import SubcribeInput from '../UI/embla/SubcribeInput';
 function Footer() {
   return (
     <footer className=''>
-      <div className='grid-cols-footer bg-blue-gray-medium container grid gap-5 py-16 text-white'>
+      <div className='container grid grid-cols-footer gap-5 bg-blue-gray-medium py-16 text-white'>
         <div>
           <div className='mb-8 flex items-center gap-5'>
             <img
@@ -31,25 +31,25 @@ function Footer() {
           <div className='flex items-center gap-4'>
             <Link
               href='/'
-              className='flex h-[35px] w-[35px] items-center justify-center rounded-lg bg-white bg-opacity-10 text-sm transition-colors duration-300 hover:bg-blue-primary'
+              className='hover:bg-blue-primary flex h-[35px] w-[35px] items-center justify-center rounded-lg bg-white bg-opacity-10 text-sm transition-colors duration-300'
             >
               <FaFacebookF />
             </Link>
             <Link
               href='/'
-              className='flex h-[35px] w-[35px] items-center justify-center rounded-lg bg-white bg-opacity-10 text-sm transition-colors duration-300 hover:bg-blue-primary'
+              className='hover:bg-blue-primary flex h-[35px] w-[35px] items-center justify-center rounded-lg bg-white bg-opacity-10 text-sm transition-colors duration-300'
             >
               <FaTiktok />
             </Link>
             <Link
               href='/'
-              className='flex h-[35px] w-[35px] items-center justify-center rounded-lg bg-white bg-opacity-10 text-sm transition-colors duration-300 hover:bg-blue-primary'
+              className='hover:bg-blue-primary flex h-[35px] w-[35px] items-center justify-center rounded-lg bg-white bg-opacity-10 text-sm transition-colors duration-300'
             >
               <FaYoutube />
             </Link>
             <Link
               href='/'
-              className='flex h-[35px] w-[35px] items-center justify-center rounded-lg bg-white bg-opacity-10 text-sm transition-colors duration-300 hover:bg-blue-primary'
+              className='hover:bg-blue-primary flex h-[35px] w-[35px] items-center justify-center rounded-lg bg-white bg-opacity-10 text-sm transition-colors duration-300'
             >
               <FaInstagram />
             </Link>
@@ -63,7 +63,7 @@ function Footer() {
                 href='/'
                 className='font-base flex items-center gap-2 font-light capitalize'
               >
-                <MdDoubleArrow />
+                <MdDoubleArrow className='text-yellow-medium' />
                 <span>Home</span>
               </Link>
             </li>
@@ -72,7 +72,7 @@ function Footer() {
                 href='/products'
                 className='font-base flex items-center gap-2 font-light capitalize'
               >
-                <MdDoubleArrow />
+                <MdDoubleArrow className='text-yellow-medium' />
                 <span>Products</span>
               </Link>
             </li>
@@ -81,7 +81,7 @@ function Footer() {
                 href='/blog'
                 className='font-base flex items-center gap-2 font-light capitalize'
               >
-                <MdDoubleArrow />
+                <MdDoubleArrow className='text-yellow-medium' />
                 <span>Blog</span>
               </Link>
             </li>
@@ -90,7 +90,7 @@ function Footer() {
                 href='/about'
                 className='font-base flex items-center gap-2 font-light capitalize'
               >
-                <MdDoubleArrow />
+                <MdDoubleArrow className='text-yellow-medium' />
                 <span>About US</span>
               </Link>
             </li>
@@ -99,7 +99,7 @@ function Footer() {
                 href='/support'
                 className='font-base flex items-center gap-2 font-light capitalize'
               >
-                <MdDoubleArrow />
+                <MdDoubleArrow className='text-yellow-medium' />
                 <span>Support</span>
               </Link>
             </li>

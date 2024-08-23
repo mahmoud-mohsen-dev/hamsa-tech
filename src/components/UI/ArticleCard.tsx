@@ -1,0 +1,102 @@
+import Link from 'next/link';
+import Btn from './Btn';
+import { v4 as uuidv4 } from 'uuid';
+import dayjs from 'dayjs';
+import { FaLongArrowAltRight } from 'react-icons/fa';
+
+function CategoryLink({
+  linkUrl,
+  linkText,
+  className
+}: {
+  linkUrl: string;
+  linkText: string;
+  className?: string;
+}) {
+  return (
+    <Btn
+      href={linkUrl}
+      className={`className w-fit break-words bg-transparent font-openSans text-xs font-normal uppercase leading-none hover:text-white ${className} !px-0 !py-0`}
+    >
+      {linkText}
+    </Btn>
+  );
+}
+
+function ArticleCard({
+  imgSrc,
+  alt,
+  articleUrl,
+  content
+}: {
+  imgSrc: string;
+  alt: string;
+  articleUrl: string;
+  content: {
+    categories: { linkUrl: string; linkText: string }[];
+    title: string;
+    description: string;
+    publishDate: string;
+    publisher: string;
+  };
+}) {
+  return (
+    <div className='article-card overflow-hidden shadow-featured'>
+      <div>
+        <img
+          src={imgSrc}
+          alt={alt}
+          className='mx-auto w-full object-cover transition-transform duration-300 ease-out'
+        />
+      </div>
+      <div className='px-10 py-8'>
+        <div className='flex w-fit flex-wrap items-center rounded bg-red-dark px-4 py-[6px]'>
+          {content.categories.map((category, i, arr) => {
+            if (arr.length > 1 && i < arr.length && i > 0) {
+              return (
+                <>
+                  <span key={uuidv4()}>, </span>
+                  <CategoryLink
+                    className='ml-2'
+                    key={category.linkUrl}
+                    linkUrl={category.linkUrl}
+                    linkText={category.linkText}
+                  />
+                </>
+              );
+            }
+            return (
+              <CategoryLink
+                key={category.linkUrl}
+                linkUrl={category.linkUrl}
+                linkText={category.linkText}
+              />
+            );
+          })}
+        </div>
+        <h2 className='my-4 text-lg font-medium text-black-medium'>
+          {content.title}
+        </h2>
+        <p className='my-4 max-h-[120px] text-base font-normal leading-6 text-gray-light'>
+          {content.description}
+        </p>
+      </div>
+      <div className='relative grid grid-cols-[1fr_1fr] border-t border-solid border-t-gray-ultralight pb-[5px] text-gray-medium'>
+        <p className='text-center text-xs leading-[61px]'>
+          {dayjs(content.publishDate).format('MMMM D, YYYY')}
+        </p>
+        <p className='text-center text-xs capitalize leading-[61px]'>
+          {content.publisher}
+        </p>
+        <div className='footer absolute -bottom-[56px] left-0 z-10 h-full w-full transition-all duration-300'>
+          <Btn className='hover:white h-full w-full rounded-none bg-red-dark text-white hover:bg-blue-gray-medium hover:text-white'>
+            <span>Read More</span>
+            <FaLongArrowAltRight />
+          </Btn>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default ArticleCard;

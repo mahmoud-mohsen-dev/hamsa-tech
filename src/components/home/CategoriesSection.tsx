@@ -72,7 +72,7 @@ function CategoriesSection() {
     }
   ];
   return (
-    <section className='categories py-20'>
+    <section className='categories bg-white py-20'>
       <HeadingSection
         heading='whole home protection'
         subHeading="Whether it's protecting your home while you are on vacation or

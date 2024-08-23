@@ -4,7 +4,7 @@ function Btn({
   children,
   href,
   onClick,
-  className = 'bg-white text-gray-normal',
+  className = 'bg-white text-gray-normal text-lg',
   outlined = false
 }: {
   children: React.ReactNode;
@@ -14,13 +14,13 @@ function Btn({
   outlined?: boolean;
 }): JSX.Element {
   const btnStyles =
-    'focus:outline-none active:outline-none hover:bg-opacity-90 active:bg-opacity-100 transition-colors duration-150 py-4 px-6 flex justify-center items-center gap-2 text-lg rounded-3xl shadow-sm';
+    'focus:outline-none active:outline-none transition-colors duration-300 py-4 px-6 flex justify-center items-center gap-2 rounded shadow-sm';
 
   if (href) {
     return (
       <Link
         href={href}
-        className={`${className} ${btnStyles} ${outlined ? 'border-2 border-white text-white' : ''}`}
+        className={` ${btnStyles} ${outlined ? 'border-2 border-white text-white' : ''} ${className}`}
         onClick={onClick}
       >
         {children}
@@ -29,7 +29,7 @@ function Btn({
   }
   return (
     <button
-      className={`${className} ${btnStyles} ${outlined ? 'border-2 border-white text-white' : ''}`}
+      className={`${btnStyles} ${outlined ? 'border-2 border-white text-white' : ''} ${className}`}
       onClick={onClick}
     >
       {children}

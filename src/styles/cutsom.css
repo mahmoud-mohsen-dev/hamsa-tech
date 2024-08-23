@@ -68,7 +68,7 @@ html:not([data-scroll='0']) .header .logo_tech {
 }
 
 html:not([data-scroll='0']) .header .nav_link {
-  color: black;
+  color: #333333;
 }
 
 html:not([data-scroll='0'])
@@ -76,8 +76,8 @@ html:not([data-scroll='0'])
   .search-input-navbar
   .ant-input-group
   > .ant-input:first-child {
-  color: black;
-  border-color: black;
+  color: #333333;
+  border-color: #333333;
 }
 
 html:not([data-scroll='0'])
@@ -93,7 +93,7 @@ html:not([data-scroll='0'])
   .search-input-navbar
   .ant-input-group
   > .ant-input:first-child::placeholder {
-  color: black;
+  color: #333333;
   transition: 0.3s linear;
 }
 
@@ -102,15 +102,15 @@ html:not([data-scroll='0'])
   .search-input-navbar.ant-input-group-wrapper
   .ant-input-group-addon
   .ant-input-search-button.ant-btn.ant-btn-primary {
-  background-color: black;
-  border-color: black;
+  background-color: #333333;
+  border-color: #333333;
 }
 
 html:not([data-scroll='0'])
   .header
   .ant-select-outlined:not(.ant-select-customize-input)
   .ant-select-selector {
-  border-color: black;
+  border-color: #333333;
 }
 
 html:not([data-scroll='0'])
@@ -122,6 +122,14 @@ html:not([data-scroll='0'])
   .ant-select
   .ant-select-arrow
   svg {
-  color: black;
+  color: #333333;
   /* transition: 0.3s linear; */
+}
+
+/* Article Card */
+.article-card:hover img {
+  transform: scale(1.05);
+}
+.article-card:hover .footer {
+  bottom: 0;
 }
