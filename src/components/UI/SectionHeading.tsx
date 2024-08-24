@@ -2,12 +2,12 @@ function SectionHeading({
   children,
   className
 }: {
-  children: string;
+  children: React.ReactNode;
   className?: string;
 }) {
   return (
     <h2
-      className={`text-black-light mb-10 text-center text-4xl font-bold capitalize ${className}`}
+      className={`mb-10 text-center text-4xl font-bold capitalize text-black-light ${className}`}
     >
       {children}
     </h2>

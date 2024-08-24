@@ -21,7 +21,7 @@ function AboutUs() {
 
         <Link
           href={'/'}
-          className='btn relative flex max-w-fit items-center justify-between gap-4 rounded bg-yellow-medium px-9 py-6 text-[15px] leading-none text-white transition-all duration-300 ease-linear hover:bg-blue-gray-medium hover:text-white'
+          className='btn bg-red-shade-350 relative flex max-w-fit items-center justify-between gap-4 rounded px-9 py-6 text-[15px] leading-none text-white transition-all duration-300 ease-linear hover:bg-blue-gray-medium hover:text-white'
         >
           <span className='text-base font-bold'>Discover More</span>
           <i className='icomoon icon-arrow-right text-sm'></i>
@@ -29,7 +29,7 @@ function AboutUs() {
       </div>
       <div>
         <img
-          src='/hikvision-dom-camera.png'
+          src='/hikvision-dom-camera-original-3.png'
           alt='camera dom hikvision'
           className='h-full'
         />

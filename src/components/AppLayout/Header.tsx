@@ -91,6 +91,7 @@ function Header() {
         <Select
           defaultValue='english'
           style={{ width: 100 }}
+          className='language-select'
           options={[
             { value: 'english', label: 'English' },
             { value: 'arabic', label: 'العربية' }

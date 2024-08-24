@@ -37,16 +37,31 @@ const config: Config = {
       colors: {
         //======= Shades Of Blue ========
         'blue-normal': '#151CB9',
+        'blue-accent': '#364d79',
         'blue-dark': '#17457c',
         'blue-sky-ultralight': '#ECF4FF',
+        'blue-sky-light': '#07a0c3',
         'blue-sky-normal': '#00A0E9',
-        'blue-accent': '#364d79',
         //======= Shades Of Red ========
+        'red-shade-50': '#D7C0BF',
+        'red-shade-100': '#CDA6A4',
+        'red-shade-150': '#C78A88',
+        'red-shade-200': '#C76E6A',
+        'red-shade-250': '#CC4E49',
+        'red-shade-300': '#D62C26',
+        'red-shade-350': '#D7150E',
+        'red-shade-400': '#AF241F',
+        'red-shade-500': '#912C29',
+        'red-shade-600': '#79312E',
+        'red-shade-700': '#663230',
+        'red-shade-800': '#573230',
+        'red-shade-900': '#4B302F',
         'red-normal': '#d9363e',
         'red-medium': '#d71820',
         'red-accent': '#E20A0A',
-        'red-dark': '#d7150e',
+        'red-dark': '#DD1C1a',
         //======= Shades Of Yellow ========
+        'yellow-light': '#F0C808',
         'yellow-normal': '#EFB918',
         'yellow-medium': '#fcaf17',
         //======= Shades Of Green ========
@@ -58,6 +73,7 @@ const config: Config = {
         'black-light': '#333333',
         'black-medium': '#222',
         'black-dark': '#120F2D',
+        'black-accent': '#191e2f',
         //======= Shades Of Gray ========
         'gray-ultralight': '#eaeaea',
         'gray-light': '#9b9b9b',

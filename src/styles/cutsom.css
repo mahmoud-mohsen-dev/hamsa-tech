@@ -54,13 +54,13 @@ html[data-scroll='0'] .header .logo_img {
 html:not([data-scroll='0']) .header .logo_img {
   width: 28px;
   height: 28px;
-  background-image: url('/hamsa-logo-colored.svg');
+  background-image: url('/hamsa-logo.svg');
   background-size: cover;
   background-position: center;
 }
 
 html:not([data-scroll='0']) .header .logo_hamsa {
-  color: #151cb9;
+  color: #17457c;
 }
 
 html:not([data-scroll='0']) .header .logo_tech {

@@ -1,64 +1,97 @@
+import ConfigAos from '../Theme/ConfigAos';
 import ArticleCard from '../UI/ArticleCard';
 import SectionHeading from '../UI/SectionHeading';
 
 function Articles() {
   return (
-    <section className='container py-[50px]'>
-      <SectionHeading>Recent Articles</SectionHeading>
-      <div className='grid grid-cols-3 gap-10'>
-        <ArticleCard
-          imgSrc='/articles/image-single-post.jpg'
-          alt='article one image'
-          articleUrl='/'
-          content={{
-            categories: [
-              { linkUrl: '/', linkText: 'it' },
-              { linkUrl: '/', linkText: 'solutions' }
-            ],
-            title:
-              'Three Important Things You Must Look For While Choosing Security',
-            description:
-              'You can quickly set up or delete access for employees, get access-triggered alerts when certain doors are opened, and quickly find video clips of access events. You can also lock a...',
-            publishDate: '2024-01-01T00:00:00.000Z',
-            publisher: 'mahmoud mohsen'
-          }}
-        />
-        <ArticleCard
-          imgSrc='/articles/post2.jpg'
-          alt='article one image'
-          articleUrl='/'
-          content={{
-            categories: [
-              { linkUrl: '/', linkText: 'it' },
-              { linkUrl: '/', linkText: 'solutions' }
-            ],
-            title:
-              'Three Important Things You Must Look For While Choosing Security',
-            description:
-              'You can quickly set up or delete access for employees, get access-triggered alerts when certain doors are opened, and quickly find video clips of access events. You can also lock a...',
-            publishDate: '2024-01-01T00:00:00.000Z',
-            publisher: 'mahmoud mohsen'
-          }}
-        />
-        <ArticleCard
-          imgSrc='/articles/post3.jpg'
-          alt='article one image'
-          articleUrl='/'
-          content={{
-            categories: [
-              { linkUrl: '/', linkText: 'it' },
-              { linkUrl: '/', linkText: 'solutions' }
-            ],
-            title:
-              'Three Important Things You Must Look For While Choosing Security',
-            description:
-              'You can quickly set up or delete access for employees, get access-triggered alerts when certain doors are opened, and quickly find video clips of access events. You can also lock a...',
-            publishDate: '2024-01-01T00:00:00.000Z',
-            publisher: 'mahmoud mohsen'
-          }}
-        />
-      </div>
-    </section>
+    <ConfigAos>
+      <section className='container py-[50px]'>
+        <SectionHeading>
+          <span>Recent</span>
+          <span className='ml-2 text-red-shade-350'>Articles</span>
+        </SectionHeading>
+
+        <div className='grid grid-cols-3 gap-10'>
+          <div
+            data-aos='fade-left'
+            data-aos-delay='100'
+            data-aos-duration='400'
+            data-aos-easing='ease-out'
+            data-aos-once='true'
+          >
+            <ArticleCard
+              imgSrc='/articles/image-single-post.jpg'
+              alt='article one image'
+              articleUrl='/'
+              content={{
+                categories: [
+                  { linkUrl: '/', linkText: 'it' },
+                  { linkUrl: '/', linkText: 'solutions' }
+                ],
+                title:
+                  'Three Important Things You Must Look For While Choosing Security',
+                description:
+                  'You can quickly set up or delete access for employees, get access-triggered alerts when certain doors are opened, and quickly find video clips of access events. You can also lock a...',
+                publishDate: '2024-01-01T00:00:00.000Z',
+                publisher: 'mahmoud mohsen'
+              }}
+            />
+          </div>
+          <div
+            // data-aos='fade-up'
+            // data-aos-delay='600'
+            data-aos='fade-left'
+            data-aos-delay='250'
+            data-aos-duration='400'
+            data-aos-easing='ease-out'
+            data-aos-once='true'
+          >
+            <ArticleCard
+              imgSrc='/articles/post2.jpg'
+              alt='article one image'
+              articleUrl='/'
+              content={{
+                categories: [
+                  { linkUrl: '/', linkText: 'it' },
+                  { linkUrl: '/', linkText: 'solutions' }
+                ],
+                title:
+                  'Three Important Things You Must Look For While Choosing Security',
+                description:
+                  'You can quickly set up or delete access for employees, get access-triggered alerts when certain doors are opened, and quickly find video clips of access events. You can also lock a...',
+                publishDate: '2024-01-01T00:00:00.000Z',
+                publisher: 'mahmoud mohsen'
+              }}
+            />
+          </div>
+          <div
+            data-aos='fade-left'
+            data-aos-delay='400'
+            data-aos-duration='400'
+            data-aos-easing='ease-out'
+            data-aos-once='true'
+          >
+            <ArticleCard
+              imgSrc='/articles/post3.jpg'
+              alt='article one image'
+              articleUrl='/'
+              content={{
+                categories: [
+                  { linkUrl: '/', linkText: 'it' },
+                  { linkUrl: '/', linkText: 'solutions' }
+                ],
+                title:
+                  'Three Important Things You Must Look For While Choosing Security',
+                description:
+                  'You can quickly set up or delete access for employees, get access-triggered alerts when certain doors are opened, and quickly find video clips of access events. You can also lock a...',
+                publishDate: '2024-01-01T00:00:00.000Z',
+                publisher: 'mahmoud mohsen'
+              }}
+            />
+          </div>
+        </div>
+      </section>
+    </ConfigAos>
   );
 }
 

@@ -74,11 +74,14 @@ function CategoriesSection() {
   return (
     <section className='categories bg-white py-20'>
       <HeadingSection
-        heading='whole home protection'
+        // heading={}
         subHeading="Whether it's protecting your home while you are on vacation or
         your family while they sleep, we will give you the peace of
         mind that should the worst happen."
-      />
+      >
+        <span>whole home</span>
+        <span className='ml-2 text-red-shade-350'>protection</span>
+      </HeadingSection>
       {/* <CategoryCard
           heading='Smarter Business Security'
           description='Clever security system connects your security, CCTV, lights,

@@ -16,7 +16,7 @@ function CategoryLink({
   return (
     <Btn
       href={linkUrl}
-      className={`className w-fit break-words bg-transparent font-openSans text-xs font-normal uppercase leading-none hover:text-white ${className} !px-0 !py-0`}
+      className={`className w-fit break-words bg-transparent font-openSans text-xs font-normal uppercase leading-none hover:text-red-500 hover:text-shadow-sm ${className} !px-0 !py-0`}
     >
       {linkText}
     </Btn>
@@ -50,14 +50,14 @@ function ArticleCard({
         />
       </div>
       <div className='px-10 py-8'>
-        <div className='flex w-fit flex-wrap items-center rounded bg-red-dark px-4 py-[6px]'>
+        <div className='flex w-fit flex-wrap items-center rounded bg-blue-dark px-4 py-[6px]'>
           {content.categories.map((category, i, arr) => {
             if (arr.length > 1 && i < arr.length && i > 0) {
               return (
                 <>
                   <span key={uuidv4()}>, </span>
                   <CategoryLink
-                    className='ml-2'
+                    className='ml-1'
                     key={category.linkUrl}
                     linkUrl={category.linkUrl}
                     linkText={category.linkText}
@@ -89,7 +89,7 @@ function ArticleCard({
           {content.publisher}
         </p>
         <div className='footer absolute -bottom-[56px] left-0 z-10 h-full w-full transition-all duration-300'>
-          <Btn className='hover:white h-full w-full rounded-none bg-red-dark text-white hover:bg-blue-gray-medium hover:text-white'>
+          <Btn className='hover:white h-full w-full rounded-none bg-blue-dark text-white hover:bg-blue-gray-medium hover:text-white'>
             <span>Read More</span>
             <FaLongArrowAltRight />
           </Btn>

@@ -63,7 +63,7 @@ function Footer() {
                 href='/'
                 className='font-base flex items-center gap-2 font-light capitalize'
               >
-                <MdDoubleArrow className='text-yellow-medium' />
+                <MdDoubleArrow className='text-blue-300' />
                 <span>Home</span>
               </Link>
             </li>
@@ -72,7 +72,7 @@ function Footer() {
                 href='/products'
                 className='font-base flex items-center gap-2 font-light capitalize'
               >
-                <MdDoubleArrow className='text-yellow-medium' />
+                <MdDoubleArrow className='text-blue-300' />
                 <span>Products</span>
               </Link>
             </li>
@@ -81,7 +81,7 @@ function Footer() {
                 href='/blog'
                 className='font-base flex items-center gap-2 font-light capitalize'
               >
-                <MdDoubleArrow className='text-yellow-medium' />
+                <MdDoubleArrow className='text-blue-300' />
                 <span>Blog</span>
               </Link>
             </li>
@@ -90,7 +90,7 @@ function Footer() {
                 href='/about'
                 className='font-base flex items-center gap-2 font-light capitalize'
               >
-                <MdDoubleArrow className='text-yellow-medium' />
+                <MdDoubleArrow className='text-blue-300' />
                 <span>About US</span>
               </Link>
             </li>
@@ -99,7 +99,7 @@ function Footer() {
                 href='/support'
                 className='font-base flex items-center gap-2 font-light capitalize'
               >
-                <MdDoubleArrow className='text-yellow-medium' />
+                <MdDoubleArrow className='text-blue-300' />
                 <span>Support</span>
               </Link>
             </li>
@@ -116,17 +116,14 @@ function Footer() {
           <h2 className='mb-8 text-2xl font-bold'>Contact</h2>
           <div>
             <div className='flex items-center gap-5'>
-              <FaPhoneVolume
-                className='text-yellow-normal'
-                size={40}
-              />
+              <FaPhoneVolume className='text-blue-300' size={40} />
               <div>
                 <h4 className='text-xl font-semibold'>Contact Us</h4>
                 <h4>(+20) 01023456789</h4>
               </div>
             </div>
             <div className='mt-5 flex items-center gap-5'>
-              <IoMdMail className='text-yellow-normal' size={40} />
+              <IoMdMail className='text-blue-300' size={40} />
               <div>
                 <h4 className='text-xl font-semibold'>Mail Us</h4>
                 <h4>info@yourdomain.com</h4>

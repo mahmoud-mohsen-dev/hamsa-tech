@@ -3,8 +3,12 @@ import SectionHeading from '../UI/SectionHeading';
 
 function Featured() {
   return (
-    <section className='container py-[50px]'>
-      <SectionHeading>Product Spotlight</SectionHeading>
+    <section className='container bg-white-light py-[50px]'>
+      <SectionHeading>
+        <span>Product</span>
+        <span className='ml-2 text-red-shade-350'>Spotlight</span>
+      </SectionHeading>
+
       <div className='flex items-center gap-5'>
         <ProductCard
           imgSrc='/featured/ezviz-bc1c.png'
