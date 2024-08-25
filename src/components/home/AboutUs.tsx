@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 function AboutUs() {
   return (
-    <section className='grid grid-cols-2 bg-blue-sky-ultralight'>
+    <section className='grid max-w-[1536px] grid-cols-1 bg-blue-sky-ultralight xl:grid-cols-2'>
       <div
         data-aos='fade-down'
         data-aos-easing='linear'

@@ -37,7 +37,7 @@ const RootLayout = ({ children }: React.PropsWithChildren) => {
       lang='en'
       className={`${openSans.variable} ${inter.variable}`}
     >
-      <body className='font-inter'>
+      <body className='bg-white font-inter text-black-light'>
         <AntdRegistry>
           <ConfigAntThemes>
             <div

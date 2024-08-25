@@ -27,7 +27,7 @@ function HeroSection() {
           pauseOnHover={false}
           beforeChange={handlebeforeChange}
           afterChange={handleAfterChange}
-          className='min-h-fit w-full max-w-full bg-blue-accent text-center text-white lg:max-w-[1650px] xl:max-h-screen'
+          className='min-h-fit w-full max-w-full bg-white text-center text-white lg:mx-auto lg:max-w-[1536px] xl:max-h-screen'
         >
           <div className={imageContainerStyles} key='1'>
             <img

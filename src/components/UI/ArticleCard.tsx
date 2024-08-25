@@ -16,7 +16,7 @@ function CategoryLink({
   return (
     <Btn
       href={linkUrl}
-      className={`className w-fit break-words bg-transparent font-openSans text-xs font-normal uppercase leading-none hover:text-yellow-medium hover:text-shadow-sm ${className} !px-0 !py-0`}
+      className={`className w-fit break-words bg-transparent font-openSans text-xs font-normal uppercase leading-none text-white hover:text-yellow-medium hover:text-shadow-sm ${className} !px-0 !py-0`}
     >
       {linkText}
     </Btn>

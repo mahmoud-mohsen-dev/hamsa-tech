@@ -9,7 +9,7 @@ import Partners from '@/components/home/Partners';
 
 function Home() {
   return (
-    <div className='h-full bg-white-light'>
+    <div className='h-full'>
       <HeroSection />
       <FeaturedSection />
       <CategoriesSection />
