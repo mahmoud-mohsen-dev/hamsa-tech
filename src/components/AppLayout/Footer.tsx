@@ -37,25 +37,25 @@ function Footer() {
           <div className='flex items-center gap-4'>
             <Link
               href='/'
-              className='hover:bg-blue-primary flex h-[35px] w-[35px] items-center justify-center rounded-lg bg-white bg-opacity-10 text-sm transition-colors duration-300'
+              className='flex h-[35px] w-[35px] items-center justify-center rounded-lg bg-white bg-opacity-10 text-sm transition-colors duration-300 hover:bg-blue-300 hover:text-black-light'
             >
               <FaFacebookF />
             </Link>
             <Link
               href='/'
-              className='hover:bg-blue-primary flex h-[35px] w-[35px] items-center justify-center rounded-lg bg-white bg-opacity-10 text-sm transition-colors duration-300'
+              className='hover:bg-blue-primary flex h-[35px] w-[35px] items-center justify-center rounded-lg bg-white bg-opacity-10 text-sm transition-colors duration-300 hover:bg-blue-300 hover:text-black-light'
             >
               <FaTiktok />
             </Link>
             <Link
               href='/'
-              className='hover:bg-blue-primary flex h-[35px] w-[35px] items-center justify-center rounded-lg bg-white bg-opacity-10 text-sm transition-colors duration-300'
+              className='hover:bg-blue-primary flex h-[35px] w-[35px] items-center justify-center rounded-lg bg-white bg-opacity-10 text-sm transition-colors duration-300 hover:bg-blue-300 hover:text-black-light'
             >
               <FaYoutube />
             </Link>
             <Link
               href='/'
-              className='hover:bg-blue-primary flex h-[35px] w-[35px] items-center justify-center rounded-lg bg-white bg-opacity-10 text-sm transition-colors duration-300'
+              className='hover:bg-blue-primary flex h-[35px] w-[35px] items-center justify-center rounded-lg bg-white bg-opacity-10 text-sm transition-colors duration-300 hover:bg-blue-300 hover:text-black-light'
             >
               <FaInstagram />
             </Link>
@@ -63,49 +63,58 @@ function Footer() {
         </div>
         <div className=''>
           <h2 className='mb-8 text-2xl font-bold'>Quick Links</h2>
-          <ul className='flex flex-col gap-2'>
+          <ul className='flex flex-col gap-1.5'>
             <li>
               <Link
                 href='/'
-                className='font-base flex items-center gap-2 font-light capitalize'
+                className='quick-links flex items-center gap-2 text-base font-light capitalize'
               >
-                <MdDoubleArrow className='text-blue-300' />
+                <MdDoubleArrow className='icon text-blue-300' />
                 <span>Home</span>
               </Link>
             </li>
             <li>
               <Link
                 href='/products'
-                className='font-base flex items-center gap-2 font-light capitalize'
+                className='quick-links flex items-center gap-2 text-base font-light capitalize'
               >
-                <MdDoubleArrow className='text-blue-300' />
+                <MdDoubleArrow className='icon text-blue-300' />
                 <span>Products</span>
               </Link>
             </li>
             <li>
               <Link
-                href='/blog'
-                className='font-base flex items-center gap-2 font-light capitalize'
+                href='/products'
+                className='quick-links flex items-center gap-2 text-base font-light capitalize'
               >
-                <MdDoubleArrow className='text-blue-300' />
+                <MdDoubleArrow className='icon text-blue-300' />
+                <span>Branches</span>
+              </Link>
+            </li>
+            <li>
+              <Link
+                href='/blog'
+                className='quick-links flex items-center gap-2 text-base font-light capitalize'
+              >
+                <MdDoubleArrow className='icon text-blue-300' />
                 <span>Blog</span>
               </Link>
             </li>
             <li>
               <Link
                 href='/about'
-                className='font-base flex items-center gap-2 font-light capitalize'
+                className='quick-links flex items-center gap-2 text-base font-light capitalize'
               >
-                <MdDoubleArrow className='text-blue-300' />
+                <MdDoubleArrow className='icon text-blue-300' />
                 <span>About US</span>
               </Link>
             </li>
             <li>
               <Link
                 href='/support'
-                className='font-base flex items-center gap-2 font-light capitalize'
+                className='quick-links flex items-center gap-2 text-base font-light capitalize'
               >
-                <MdDoubleArrow className='text-blue-300' />
+                <MdDoubleArrow className='icon text-blue-300' />
                 <span>Support</span>
               </Link>
             </li>

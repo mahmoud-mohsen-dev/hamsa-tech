@@ -1,6 +1,8 @@
+import Link from 'next/link';
 import ConfigAos from '../Theme/ConfigAos';
 import ArticleCard from '../UI/ArticleCard';
 import SectionHeading from '../UI/SectionHeading';
+import { FaLongArrowAltRight } from 'react-icons/fa';
 
 function Articles() {
   return (
@@ -97,6 +99,24 @@ function Articles() {
               }}
             />
           </div>
+        </div>
+
+        <div
+          data-aos='fade-up'
+          data-aos-delay='50'
+          data-aos-duration='400'
+          data-aos-easing='ease-out'
+          data-aos-once='true'
+        >
+          <Link
+            href='/'
+            className='mx-auto mt-8 flex w-fit items-center gap-3 text-base font-medium text-blue-gray-light transition-colors duration-300 hover:text-yellow-medium'
+          >
+            <span>Check All Blog Posts</span>
+            <span className='icomoon icon-arrow-right text-xs'>
+              {/* <FaLongArrowAltRight /> */}
+            </span>
+          </Link>
         </div>
       </section>
     </ConfigAos>
