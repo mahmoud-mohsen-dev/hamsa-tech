@@ -14,6 +14,7 @@ import {
 import { DotButton, useDotButton } from './EmblaCarouselDotButton';
 import Autoplay from 'embla-carousel-autoplay';
 import Link from 'next/link';
+import { v4 } from 'uuid';
 
 const TWEEN_FACTOR_BASE = 0.2;
 
@@ -183,7 +184,7 @@ const EmblaCarousel: React.FC<PropType> = ({
         <div className='embla__dots'>
           {scrollSnaps.map((_, index) => (
             <DotButton
-              key={index}
+              key={v4()}
               onClick={() => onDotButtonClick(index)}
               className={`embla__dot ${index === selectedIndex ? 'embla__dot--selected' : ''}`}
             />

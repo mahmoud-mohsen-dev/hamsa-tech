@@ -43,7 +43,7 @@ const ScrollerComponent = ({
   }, []); // Empty dependency array ensures this effect runs only once on mount
 
   return (
-    <div className='scroller'>
+    <div className='scroller container'>
       <div className='scroller__inner'>{children}</div>
     </div>
   );

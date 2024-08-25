@@ -10,8 +10,9 @@ function AboutUs() {
         data-aos-delay='150'
         // data-aos-easing='ease-out'
         data-aos-once='true'
+        className='h-full'
       >
-        <div className='flex flex-col items-start justify-center gap-7 p-20 text-black-medium'>
+        <div className='flex h-full flex-col items-start justify-center gap-7 p-20 text-black-medium'>
           <h2 className='font-openSans text-4xl font-bold leading-[calc(2.25rem*1.35)]'>
             From Small Brackets
             <br />

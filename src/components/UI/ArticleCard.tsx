@@ -16,7 +16,7 @@ function CategoryLink({
   return (
     <Btn
       href={linkUrl}
-      className={`className w-fit break-words bg-transparent font-openSans text-xs font-normal uppercase leading-none hover:text-red-500 hover:text-shadow-sm ${className} !px-0 !py-0`}
+      className={`className w-fit break-words bg-transparent font-openSans text-xs font-normal uppercase leading-none hover:text-yellow-medium hover:text-shadow-sm ${className} !px-0 !py-0`}
     >
       {linkText}
     </Btn>
@@ -54,29 +54,34 @@ function ArticleCard({
           {content.categories.map((category, i, arr) => {
             if (arr.length > 1 && i < arr.length && i > 0) {
               return (
-                <>
-                  <span key={uuidv4()}>, </span>
+                <span key={uuidv4()} className='flex items-center'>
+                  <span>, </span>
                   <CategoryLink
                     className='ml-1'
                     key={category.linkUrl}
                     linkUrl={category.linkUrl}
                     linkText={category.linkText}
                   />
-                </>
+                </span>
               );
             }
             return (
-              <CategoryLink
-                key={category.linkUrl}
-                linkUrl={category.linkUrl}
-                linkText={category.linkText}
-              />
+              <span key={uuidv4()}>
+                <CategoryLink
+                  key={category.linkUrl}
+                  linkUrl={category.linkUrl}
+                  linkText={category.linkText}
+                />
+              </span>
             );
           })}
         </div>
-        <h2 className='my-4 text-lg font-medium text-black-medium'>
-          {content.title}
-        </h2>
+        <Link href={articleUrl}>
+          {' '}
+          <h2 className='my-4 text-lg font-medium text-black-medium'>
+            {content.title}
+          </h2>
+        </Link>
         <p className='my-4 max-h-[120px] text-base font-normal leading-6 text-gray-light'>
           {content.description}
         </p>
@@ -88,12 +93,14 @@ function ArticleCard({
         <p className='text-center text-sm capitalize leading-[61px]'>
           {content.publisher}
         </p>
-        <div className='footer absolute -bottom-[56px] left-0 z-10 h-full w-full transition-all duration-300'>
-          <Btn className='hover:white h-full w-full rounded-none bg-blue-dark text-white hover:bg-blue-gray-medium hover:text-white'>
-            <span>Read More</span>
-            <FaLongArrowAltRight />
-          </Btn>
-        </div>
+        <Link href={articleUrl}>
+          <div className='footer absolute -bottom-[56px] left-0 z-10 h-full w-full transition-all duration-300'>
+            <Btn className='hover:white h-full w-full rounded-none bg-blue-dark text-white hover:bg-blue-gray-medium hover:text-white'>
+              <span>Read More</span>
+              <FaLongArrowAltRight />
+            </Btn>
+          </div>
+        </Link>
       </div>
     </div>
   );

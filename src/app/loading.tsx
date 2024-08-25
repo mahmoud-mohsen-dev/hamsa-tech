@@ -1,6 +1,6 @@
 import { Spin } from 'antd';
 
-function loading() {
+function Loading() {
   return (
     <div className='grid h-screen w-screen place-content-center'>
       <Spin size='large' />
@@ -8,4 +8,4 @@ function loading() {
   );
 }
 
-export default loading;
+export default Loading;

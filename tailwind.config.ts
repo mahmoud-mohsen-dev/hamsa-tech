@@ -14,8 +14,9 @@ const config: Config = {
       'md': '768px',
       'lg': '991px',
       'xl': '1080px',
-      '2xl': '1370px',
-      '3xl': '1536px'
+      '2xl': '1280px',
+      '3xl': '1440px',
+      '4xl': '1536px'
     },
     container: {
       center: true,

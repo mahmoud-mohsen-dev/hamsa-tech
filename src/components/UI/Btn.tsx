@@ -31,6 +31,7 @@ function Btn({
     <button
       className={`${btnStyles} ${outlined ? 'border-2 border-white text-white' : ''} ${className}`}
       onClick={onClick}
+      type='button'
     >
       {children}
     </button>

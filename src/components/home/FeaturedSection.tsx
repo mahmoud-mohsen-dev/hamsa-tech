@@ -17,14 +17,14 @@ function Featured() {
         </SectionHeading>
       </div>
 
-      <div className='flex items-center gap-5'>
+      <div className='flex flex-col items-center gap-5 md:flex-row md:flex-wrap xl:flex-nowrap'>
         <div
           data-aos='fade-down'
           data-aos-delay='100'
           data-aos-duration='400'
           data-aos-easing='ease-out'
           data-aos-once='true'
-          className='basis-1/4'
+          className='w-full md:basis-[calc(50%-20px)] xl:basis-1/4'
         >
           <ProductCard
             imgSrc='/featured/ezviz-bc1c.png'
@@ -40,7 +40,7 @@ function Featured() {
           data-aos-duration='400'
           data-aos-easing='ease-out'
           data-aos-once='true'
-          className='basis-1/4'
+          className='w-full md:basis-[calc(50%-20px)] xl:basis-1/4'
         >
           <ProductCard
             imgSrc='/featured/ezviz-solar-charging-panel.png'
@@ -56,7 +56,7 @@ function Featured() {
           data-aos-duration='400'
           data-aos-easing='ease-out'
           data-aos-once='true'
-          className='basis-1/4'
+          className='w-full md:basis-[calc(50%-20px)] xl:basis-1/4'
         >
           <ProductCard
             imgSrc='/featured/hikvision-16u1t.png'
@@ -72,7 +72,7 @@ function Featured() {
           data-aos-duration='400'
           data-aos-easing='ease-out'
           data-aos-once='true'
-          className='basis-1/4'
+          className='w-full md:basis-[calc(50%-20px)] xl:basis-1/4'
         >
           <ProductCard
             imgSrc='/featured/Hikvision-DS-2CE5AD3T-AVPIT3ZF.png'

@@ -20,13 +20,14 @@ function HeroSection() {
 
   return (
     <ConfigAos>
-      <section className='max-h-screen'>
+      <section>
         <Carousel
           arrows
           autoplay
+          pauseOnHover={false}
           beforeChange={handlebeforeChange}
           afterChange={handleAfterChange}
-          className='h-full max-h-screen bg-blue-accent text-center leading-[100vh] text-white'
+          className='min-h-fit w-full max-w-full bg-blue-accent text-center text-white lg:max-w-[1650px] xl:max-h-screen'
         >
           <div className={imageContainerStyles} key='1'>
             <img

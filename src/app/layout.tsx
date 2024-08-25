@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import '../styles/globals.css';
 import { AntdRegistry } from '@ant-design/nextjs-registry';
 
-import React from 'react';
+import React, { Suspense } from 'react';
 import Header from '@/components/AppLayout/Header';
 import Main from '@/components/AppLayout/Main';
 import Footer from '@/components/AppLayout/Footer';
@@ -10,6 +10,7 @@ import Footer from '@/components/AppLayout/Footer';
 import ConfigAntThemes from '@/components/Theme/ConfigAntThemes';
 
 import { Open_Sans, Inter } from 'next/font/google';
+import Loading from './loading';
 
 const openSans = Open_Sans({
   subsets: ['latin'],
@@ -40,10 +41,12 @@ const RootLayout = ({ children }: React.PropsWithChildren) => {
         <AntdRegistry>
           <ConfigAntThemes>
             <div
-              className={`text-gray-normal grid min-h-screen grid-cols-1 grid-rows-[1fr_auto] bg-white`}
+              className={`content text-gray-normal grid min-h-screen grid-cols-1 grid-rows-[1fr_auto] bg-white`}
             >
               <Header />
-              <Main>{children}</Main>
+              <Suspense fallback={<Loading />}>
+                <Main>{children}</Main>
+              </Suspense>
               <Footer />
             </div>
           </ConfigAntThemes>
