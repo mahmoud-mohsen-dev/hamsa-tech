@@ -13,7 +13,13 @@ import SubcribeInput from '../UI/embla/SubcribeInput';
 
 function Footer() {
   return (
-    <footer className=''>
+    <footer
+      data-aos='fade-up'
+      data-aos-delay='150'
+      data-aos-duration='400'
+      data-aos-easing='linear'
+      data-aos-once='true'
+    >
       <div className='container grid grid-cols-footer gap-5 bg-blue-gray-medium py-16 text-white'>
         <div>
           <div className='mb-8 flex items-center gap-5'>

@@ -6,10 +6,18 @@ function Articles() {
   return (
     <ConfigAos>
       <section className='container py-[50px]'>
-        <SectionHeading>
-          <span>Recent</span>
-          <span className='ml-2 text-red-shade-350'>Articles</span>
-        </SectionHeading>
+        <div
+          data-aos='fade-down'
+          data-aos-delay='50'
+          data-aos-duration='400'
+          data-aos-easing='ease-out'
+          data-aos-once='true'
+        >
+          <SectionHeading>
+            <span>Recent</span>
+            <span className='ml-2 text-red-shade-350'>Articles</span>
+          </SectionHeading>
+        </div>
 
         <div className='grid grid-cols-3 gap-10'>
           <div

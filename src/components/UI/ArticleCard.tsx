@@ -82,10 +82,10 @@ function ArticleCard({
         </p>
       </div>
       <div className='relative grid grid-cols-[1fr_1fr] border-t border-solid border-t-gray-ultralight pb-[5px] text-gray-medium'>
-        <p className='text-center text-xs leading-[61px]'>
+        <p className='h-full w-full border-r border-gray-ultralight text-center text-sm leading-[61px]'>
           {dayjs(content.publishDate).format('MMMM D, YYYY')}
         </p>
-        <p className='text-center text-xs capitalize leading-[61px]'>
+        <p className='text-center text-sm capitalize leading-[61px]'>
           {content.publisher}
         </p>
         <div className='footer absolute -bottom-[56px] left-0 z-10 h-full w-full transition-all duration-300'>

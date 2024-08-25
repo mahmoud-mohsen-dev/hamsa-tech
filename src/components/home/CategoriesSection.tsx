@@ -73,15 +73,23 @@ function CategoriesSection() {
   ];
   return (
     <section className='categories bg-white py-20'>
-      <HeadingSection
-        // heading={}
-        subHeading="Whether it's protecting your home while you are on vacation or
+      <div
+        data-aos='fade-down'
+        data-aos-delay='50'
+        data-aos-duration='400'
+        data-aos-easing='ease-out'
+        data-aos-once='true'
+      >
+        <HeadingSection
+          // heading={}
+          subHeading="Whether it's protecting your home while you are on vacation or
         your family while they sleep, we will give you the peace of
         mind that should the worst happen."
-      >
-        <span>whole home</span>
-        <span className='ml-2 text-red-shade-350'>protection</span>
-      </HeadingSection>
+        >
+          <span>whole home</span>
+          <span className='ml-2 text-red-shade-350'>protection</span>
+        </HeadingSection>
+      </div>
       {/* <CategoryCard
           heading='Smarter Business Security'
           description='Clever security system connects your security, CCTV, lights,
@@ -196,7 +204,15 @@ function CategoriesSection() {
           image='/categories/intercom-commax.jpg'
           alt='security camera'
         /> */}
-      <EmblaCarousel slides={SLIDES} options={OPTIONS} href='/' />
+      <div
+        data-aos='fade-up'
+        data-aos-delay='150'
+        data-aos-duration='400'
+        data-aos-easing='ease-out'
+        data-aos-once='true'
+      >
+        <EmblaCarousel slides={SLIDES} options={OPTIONS} href='/' />
+      </div>
     </section>
   );
 }
