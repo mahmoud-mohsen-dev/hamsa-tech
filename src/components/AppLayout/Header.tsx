@@ -1,13 +1,12 @@
 'use client';
-import Image from 'next/image';
+// import Image from 'next/image';
 import Link from 'next/link';
 import ActiveLink from '../UI/ActiveLink';
 import SearchInputField from '../UI/SearchInputField';
 import { Select } from 'antd';
 import { IoIosArrowDown } from 'react-icons/io';
 import useScrollHandler from '@/hooks/useScrollHander';
-// import { useRouter } from 'next/router';
-import { usePathname, useSearchParams } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 
 function Header() {
   const linksStyles =
