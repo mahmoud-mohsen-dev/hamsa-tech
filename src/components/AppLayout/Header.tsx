@@ -18,7 +18,7 @@ function Header() {
 
   return (
     <header
-      className={`header fixed left-0 top-0 z-[9999] mx-auto flex h-[48px] w-full items-center bg-transparent md:h-[64px] ${pathname === '/' ? 'bg-transparent' : 'colored-navbar'}`}
+      className={`header fixed left-0 top-0 z-[100] mx-auto flex h-[48px] w-full items-center bg-transparent md:h-[64px] ${pathname === '/' ? 'bg-transparent' : 'colored-navbar'}`}
     >
       <div className='container flex items-center justify-between'>
         <div className='flex items-center 2xl:gap-5 3xl:gap-20'>
