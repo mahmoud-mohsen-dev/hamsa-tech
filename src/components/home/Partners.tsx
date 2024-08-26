@@ -3,7 +3,7 @@ import ScrollerComponent from '../UI/ScrollerComponent';
 
 function Partners() {
   return (
-    <div className='bg-blue-sky-ultralight py-[50px]'>
+    <div className='max-w-[1536px] bg-blue-sky-ultralight py-[50px]'>
       <div
         data-aos='fade-up'
         data-aos-delay='50'

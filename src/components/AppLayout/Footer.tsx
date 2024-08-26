@@ -19,9 +19,9 @@ function Footer() {
       data-aos-duration='400'
       data-aos-easing='linear'
       data-aos-once='true'
-      className='w-full'
+      className='w-full bg-blue-gray-medium py-16'
     >
-      <div className='container grid grid-cols-1 gap-8 bg-blue-gray-medium py-16 text-white md:grid-cols-2 xl:grid-cols-footer xl:gap-5'>
+      <div className='container grid grid-cols-1 gap-8 text-white md:grid-cols-2 xl:grid-cols-footer xl:gap-5'>
         <div>
           <div className='mb-5 flex items-center gap-5 xl:mb-8'>
             <img

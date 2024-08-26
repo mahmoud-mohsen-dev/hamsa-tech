@@ -9,8 +9,9 @@ function ContactUs() {
       data-aos-duration='300'
       data-aos-easing='linear'
       data-aos-once='true'
+      className='bg-black-accent py-[30px]'
     >
-      <section className='container bg-black-accent py-[30px]'>
+      <section className='container'>
         <div className='flex flex-wrap items-center justify-between gap-4'>
           <h3 className='text-lg font-medium text-white'>
             Let’s work together to build something great.
