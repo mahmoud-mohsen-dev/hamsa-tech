@@ -27,12 +27,13 @@ function HeroSection() {
           pauseOnHover={false}
           beforeChange={handlebeforeChange}
           afterChange={handleAfterChange}
-          className='min-h-fit w-full max-w-full bg-white text-center text-white lg:mx-auto lg:max-w-[1536px] xl:max-h-screen'
+          className='min-h-[400px] w-full bg-white text-center text-white lg:mx-auto lg:max-w-[1536px]'
         >
           <div className={imageContainerStyles} key='1'>
             <img
               src='/hero-section/ezviz-indoor-camera.jpg'
               alt='ezviz indoor camera'
+              className='min-h-[400px] max-w-[100vw] object-cover md:min-h-fit md:object-contain'
             />
             <HeroSectionBtnAndText
               heading='Highest level of'
@@ -45,6 +46,7 @@ function HeroSection() {
             <img
               src='/hero-section/ezviz-outdoor-camera.jpg'
               alt='ezviz camera'
+              className='min-h-[400px] max-w-[100vw] object-cover md:min-h-fit md:object-contain'
             />
             <HeroSectionBtnAndText
               heading='24/7 control of '
@@ -57,6 +59,7 @@ function HeroSection() {
             <img
               src='/hero-section/ezviz-indoor-camera-2.jpg'
               alt='ezviz camera'
+              className='min-h-[400px] max-w-[100vw] object-cover md:min-h-fit md:object-contain'
             />
             <HeroSectionBtnAndText
               heading='Every security'

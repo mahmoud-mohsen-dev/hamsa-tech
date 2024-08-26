@@ -11,7 +11,7 @@ function ContactUs() {
       data-aos-once='true'
     >
       <section className='container bg-black-accent py-[30px]'>
-        <div className='flex items-center justify-between'>
+        <div className='flex flex-wrap items-center justify-between gap-4'>
           <h3 className='text-lg font-medium text-white'>
             Let’s work together to build something great.
           </h3>

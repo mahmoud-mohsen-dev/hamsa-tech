@@ -21,7 +21,7 @@ function Articles() {
           </SectionHeading>
         </div>
 
-        <div className='grid grid-cols-3 gap-10'>
+        <div className='grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] grid-rows-1 gap-8'>
           <div
             data-aos='fade-left'
             data-aos-delay='100'

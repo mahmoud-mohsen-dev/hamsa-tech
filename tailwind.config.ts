@@ -12,7 +12,7 @@ const config: Config = {
       'xs': '475px',
       'sm': '640px',
       'md': '768px',
-      'lg': '991px',
+      'lg': '868px',
       'xl': '1080px',
       '2xl': '1280px',
       '3xl': '1440px',
@@ -22,10 +22,13 @@ const config: Config = {
       center: true,
       padding: {
         'DEFAULT': '1rem',
-        'sm': '2rem',
-        'lg': '4rem',
+        // 'sm': '1rem',
+        'md': '2rem',
+        'lg': '3rem',
         'xl': '7rem',
         '2xl': '8rem'
+        // '3xl': '8rem',
+        // '4xl': '8rem'
       }
     },
     extend: {

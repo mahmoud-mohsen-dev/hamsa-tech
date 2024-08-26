@@ -12,8 +12,8 @@ function AboutUs() {
         data-aos-once='true'
         className='h-full'
       >
-        <div className='flex h-full flex-col items-start justify-center gap-7 p-20 text-black-medium'>
-          <h2 className='font-openSans text-4xl font-bold leading-[calc(2.25rem*1.35)]'>
+        <div className='flex h-full flex-col items-start justify-center gap-7 p-4 text-black-medium md:p-20'>
+          <h2 className='font-openSans text-2xl font-bold md:text-4xl md:leading-[calc(2.25rem*1.35)]'>
             From Small Brackets
             <br />
             to Advanced Access Control
@@ -47,12 +47,13 @@ function AboutUs() {
         data-aos-delay='300'
         // data-aos-easing='ease-out'
         data-aos-once='true'
+        className='flex items-center justify-end'
       >
         <div>
           <img
             src='/hikvision-dom-camera-original-3.png'
             alt='camera dom hikvision'
-            className='h-full'
+            className='mt-4 h-full max-h-[700px] md:mt-0'
           />
         </div>
       </div>
