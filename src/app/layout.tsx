@@ -41,9 +41,10 @@ const RootLayout = ({ children }: React.PropsWithChildren) => {
         <AntdRegistry>
           <ConfigAntThemes>
             <div
-              className={`content text-gray-normal grid min-h-screen grid-cols-1 grid-rows-[1fr_auto] bg-white`}
+              className={`content grid min-h-screen grid-cols-1 grid-rows-[1fr_auto] bg-white text-gray-normal`}
             >
               <Header />
+
               <Suspense fallback={<Loading />}>
                 <Main>{children}</Main>
               </Suspense>

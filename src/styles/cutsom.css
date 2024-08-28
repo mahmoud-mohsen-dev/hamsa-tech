@@ -43,6 +43,10 @@ html:not([data-scroll='0']) .header .nav_link,
   color: #333333;
 }
 
+.header.colored-navbar .nav_link:hover {
+  color: #d62c26;
+}
+
 html:not([data-scroll='0'])
   .header
   .search-input-navbar
@@ -140,6 +144,19 @@ html:not([data-scroll='0']) .header .ant-select .ant-select-arrow svg,
 
 .header .ant-select .ant-select-arrow {
   transition: none;
+}
+
+/* Shopping Cart */
+
+html[data-scroll='0'] .header .shopping-cart {
+  color: white;
+}
+html:not([data-scroll='0']) .header .shopping-cart {
+  color: #333333;
+}
+
+.content .header.colored-navbar .shopping-cart {
+  color: #333333;
 }
 
 /* Category Card */

@@ -3,7 +3,7 @@ import { Carousel } from 'antd';
 // import Image from 'next/image';
 import HeroSectionBtnAndText from './HeroSectionBtnAndText';
 import ConfigAos from '../Theme/ConfigAos';
-import 'aos/dist/aos.css';
+// import 'aos/dist/aos.css';
 import { useState } from 'react';
 
 function HeroSection() {

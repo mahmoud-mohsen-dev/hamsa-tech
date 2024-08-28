@@ -80,8 +80,11 @@ const config: Config = {
         'black-accent': '#191e2f',
         //======= Shades Of Gray ========
         'gray-ultralight': '#eaeaea',
+        'gray-lighter': '#F5F5F5',
         'gray-light': '#9b9b9b',
+        'gray-normal': '#666666',
         'gray-medium': '#6B6A75',
+
         //======= Other Colors ========
         'blue-gray-light': '#575a7b',
         'blue-gray-medium': '#2a334e'
@@ -109,26 +112,33 @@ const config: Config = {
       gridTemplateColumns: {
         // footer: '2fr repeat(auto-fit,minmax(350px,1fr))'
         footer: '1.2fr .7fr 1.3fr 1fr'
+      },
+      // transitionProperty: {
+      //   spacing: 'all'
+      // }
+      transitionProperty: {
+        visible: 'visibility, opacity'
       }
-    }
-  },
-  plugins: [
-    plugin(function ({
-      matchUtilities,
-      theme
-    }: {
-      matchUtilities: any;
-      theme: any;
-    }) {
-      matchUtilities(
-        {
-          'text-shadow': (value: string) => ({
-            textShadow: value
-          })
-        },
-        { values: theme('textShadow') }
-      );
-    })
-  ]
+    },
+    plugins: [
+      plugin(function ({
+        matchUtilities,
+        theme
+      }: {
+        matchUtilities: any;
+        theme: any;
+      }) {
+        matchUtilities(
+          {
+            'text-shadow': (value: string) => ({
+              textShadow: value
+            })
+          },
+          { values: theme('textShadow') }
+        );
+      })
+    ]
+  }
 };
+
 export default config;

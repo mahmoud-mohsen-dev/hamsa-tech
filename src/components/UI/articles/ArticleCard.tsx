@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import Btn from './Btn';
+import Btn from '../Btn';
 import { v4 as uuidv4 } from 'uuid';
 import dayjs from 'dayjs';
 import { FaLongArrowAltRight } from 'react-icons/fa';

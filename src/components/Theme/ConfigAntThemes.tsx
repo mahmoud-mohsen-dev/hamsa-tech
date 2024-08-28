@@ -14,7 +14,7 @@ const ConfigAntThemes = ({
       },
       components: {
         // Button: {
-        //   colorBgBase: '#151CB9'
+        //   colorBgBase: '#17457c'
         // },
         Carousel: {
           arrowOffset: 24,

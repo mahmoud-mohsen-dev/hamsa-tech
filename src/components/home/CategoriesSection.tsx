@@ -1,5 +1,5 @@
-import CategoryCard from '../UI/CategoryCard';
-import CategoryImageWrapper from '../UI/CategoryImageWrapper';
+import CategoryCard from '../UI/categories/CategoryCard';
+import CategoryImageWrapper from '../UI/categories/CategoryImageWrapper';
 import EmblaCarousel from '@/components/UI/embla/EmblaCarousel';
 import { EmblaOptionsType } from 'embla-carousel';
 import HeadingSection from '../UI/HeadingSection';

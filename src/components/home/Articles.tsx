@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import ConfigAos from '../Theme/ConfigAos';
-import ArticleCard from '../UI/ArticleCard';
+import ArticleCard from '../UI/articles/ArticleCard';
 import SectionHeading from '../UI/SectionHeading';
 import { FaLongArrowAltRight } from 'react-icons/fa';
 

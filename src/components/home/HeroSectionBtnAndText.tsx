@@ -12,7 +12,7 @@ function HeroSectionBtnAndText({
   isAnimationIsOn: boolean;
 }) {
   return (
-    <div className='absolute left-[65px] top-1/2 z-10 flex -translate-y-[50px] flex-col items-start gap-1 font-openSans md:-translate-y-1/2 md:gap-4 lg:left-[130px] lg:-translate-y-1/3'>
+    <div className='absolute left-[65px] top-1/2 z-10 flex -translate-y-[50px] flex-col items-start gap-1 font-openSans md:-translate-y-1/2 md:gap-4 lg:left-[130px] lg:-translate-y-1/2'>
       {isAnimationIsOn && (
         <h1
           // className='text-8xl font-semibold leading-[3.5rem] shadow-black text-shadow-sm'
@@ -32,7 +32,7 @@ function HeroSectionBtnAndText({
       )}
       {isAnimationIsOn && (
         <h3
-          className='text-[clamp(1.5rem,6.25vw,6rem)] font-semibold text-blue-dark shadow-gray-light text-shadow-sm'
+          className='text-[clamp(1.5rem,6.25vw,6rem)] font-semibold leading-none text-blue-dark shadow-gray-light text-shadow-sm'
           data-aos='fade-right'
           // data-aos-offset='0'
           data-aos-delay='500'
