@@ -12,22 +12,20 @@ function MenuSidebar({ data }: { data: NavItemType | null }) {
     data && typeof data === 'object' ? data.products : [];
   // console.log(data);
 
-  const items: MenuProps['items'] = dataValues.map(
-    (item: NavItemKeyType) => {
-      return {
-        key: item.key,
-        label: item.categoryName ?? '',
+  const items = dataValues.map((item: NavItemKeyType) => {
+    return {
+      key: item.key,
+      label: item.categoryName ?? '',
 
-        children:
-          item.children && item.children.length > 0 ?
-            item.children.map((child) => ({
-              key: child.key,
-              label: child.subCategoryName
-            }))
-          : []
-      };
-    }
-  ) ?? {
+      children:
+        item.children && item.children.length > 0 ?
+          item.children.map((child) => ({
+            key: child.key,
+            label: child.subCategoryName
+          }))
+        : []
+    };
+  }) ?? {
     key: v4(),
     label: ''
   };
@@ -41,8 +39,8 @@ function MenuSidebar({ data }: { data: NavItemType | null }) {
       return child.key === e.key;
     });
 
-    console.log(foundItem.label);
-    setActiveSubCategory(foundItem.label ?? '');
+    console.log(foundItem?.label);
+    setActiveSubCategory(foundItem?.label ?? '');
   };
 
   // console.log(currentActiveSubCategory);
