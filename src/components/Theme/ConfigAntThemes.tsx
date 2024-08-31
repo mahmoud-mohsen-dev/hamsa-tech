@@ -9,7 +9,7 @@ const ConfigAntThemes = ({
   <ConfigProvider
     theme={{
       token: {
-        colorPrimary: '#151CB9',
+        colorPrimary: '#D62C26',
         borderRadius: 16
       },
       components: {
@@ -19,6 +19,13 @@ const ConfigAntThemes = ({
         Carousel: {
           arrowOffset: 24,
           arrowSize: 32
+        },
+        Menu: {
+          // borderRadius: 0,
+          itemBorderRadius: 0,
+          itemMarginInline: 0,
+          itemMarginBlock: 0
+          // itemPaddingInline
         }
       }
     }}

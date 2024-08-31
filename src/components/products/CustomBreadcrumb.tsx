@@ -3,6 +3,7 @@ import { Breadcrumb } from 'antd';
 
 const CustomBreadcrumb: React.FC = () => (
   <Breadcrumb
+    style={{ marginLeft: '24px' }}
     items={[
       {
         href: '/',

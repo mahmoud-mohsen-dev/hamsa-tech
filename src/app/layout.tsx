@@ -11,6 +11,7 @@ import ConfigAntThemes from '@/components/Theme/ConfigAntThemes';
 
 import { Open_Sans, Inter } from 'next/font/google';
 import Loading from './loading';
+import { StoreContextProvider } from './context/store';
 
 const openSans = Open_Sans({
   subsets: ['latin'],
@@ -38,20 +39,22 @@ const RootLayout = ({ children }: React.PropsWithChildren) => {
       className={`${openSans.variable} ${inter.variable}`}
     >
       <body className='bg-white font-inter text-black-light'>
-        <AntdRegistry>
-          <ConfigAntThemes>
-            <div
-              className={`content grid min-h-screen grid-cols-1 grid-rows-[1fr_auto] bg-white text-gray-normal`}
-            >
-              <Header />
+        <StoreContextProvider>
+          <AntdRegistry>
+            <ConfigAntThemes>
+              <div
+                className={`content grid min-h-screen grid-cols-1 grid-rows-[1fr_auto] bg-white text-gray-normal`}
+              >
+                <Header />
 
-              <Suspense fallback={<Loading />}>
-                <Main>{children}</Main>
-              </Suspense>
-              <Footer />
-            </div>
-          </ConfigAntThemes>
-        </AntdRegistry>
+                <Suspense fallback={<Loading />}>
+                  <Main>{children}</Main>
+                </Suspense>
+                <Footer />
+              </div>
+            </ConfigAntThemes>
+          </AntdRegistry>
+        </StoreContextProvider>
       </body>
     </html>
   );

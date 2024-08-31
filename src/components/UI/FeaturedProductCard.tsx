@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-function ProductCard({
+function FeaturedProductCard({
   imgSrc,
   alt = '',
   title,
@@ -54,4 +54,4 @@ function ProductCard({
   );
 }
 
-export default ProductCard;
+export default FeaturedProductCard;

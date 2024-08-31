@@ -1,4 +1,4 @@
-import ProductCard from '../UI/ProductCard';
+import FeaturedProductCard from '../UI/FeaturedProductCard';
 import SectionHeading from '../UI/SectionHeading';
 
 function Featured() {
@@ -27,7 +27,7 @@ function Featured() {
             data-aos-once='true'
             className='w-full md:basis-[calc(50%-20px)] xl:basis-1/4'
           >
-            <ProductCard
+            <FeaturedProductCard
               imgSrc='/featured/ezviz-bc1c.png'
               alt='Bc1c 4k'
               linkSrc='/'
@@ -43,7 +43,7 @@ function Featured() {
             data-aos-once='true'
             className='w-full md:basis-[calc(50%-20px)] xl:basis-1/4'
           >
-            <ProductCard
+            <FeaturedProductCard
               imgSrc='/featured/ezviz-solar-charging-panel.png'
               alt='Solar Charging Panel-F'
               linkSrc='/'
@@ -59,7 +59,7 @@ function Featured() {
             data-aos-once='true'
             className='w-full md:basis-[calc(50%-20px)] xl:basis-1/4'
           >
-            <ProductCard
+            <FeaturedProductCard
               imgSrc='/featured/hikvision-16u1t.png'
               alt='DS-2CE16D0T-LTS'
               linkSrc='/'
@@ -75,7 +75,7 @@ function Featured() {
             data-aos-once='true'
             className='w-full md:basis-[calc(50%-20px)] xl:basis-1/4'
           >
-            <ProductCard
+            <FeaturedProductCard
               imgSrc='/featured/Hikvision-DS-2CE5AD3T-AVPIT3ZF.png'
               alt=' DS-2CE5AD3T-AVPIT3ZF'
               linkSrc='/'
