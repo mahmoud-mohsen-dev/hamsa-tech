@@ -1,7 +1,7 @@
 import { productsType } from '@/types';
 import { NextRequest, NextResponse } from 'next/server';
 
-export const productsData: productsType = [
+const productsData: productsType = [
   {
     subCategoryName: 'Indoor HD Cameras',
     imgSrc: '/featured/nav-link-img-wifi-camera.png',
@@ -1527,6 +1527,28 @@ export const productsData: productsType = [
   }
 ];
 
+const getProductsCategory = (category: string) => {
+  // Decode the category name to handle spaces and special characters
+  const decodedCategory = decodeURIComponent(category);
+
+  const filteredData = productsData.find(
+    (item) => item.subCategoryName === decodedCategory
+  );
+
+  if (!filteredData) {
+    return NextResponse.json(
+      { error: 'No products found for the given category' },
+      { status: 404 }
+    );
+  }
+
+  return NextResponse.json({
+    data: filteredData,
+    error: null,
+    status: 200
+  });
+};
+
 export async function GET(request: NextRequest) {
   const category = request.nextUrl.searchParams.get('category');
 
@@ -1549,25 +1571,3 @@ export async function GET(request: NextRequest) {
     { status: 400 }
   );
 }
-
-const getProductsCategory = (category: string) => {
-  // Decode the category name to handle spaces and special characters
-  const decodedCategory = decodeURIComponent(category);
-
-  const filteredData = productsData.find(
-    (item) => item.subCategoryName === decodedCategory
-  );
-
-  if (!filteredData) {
-    return NextResponse.json(
-      { error: 'No products found for the given category' },
-      { status: 404 }
-    );
-  }
-
-  return NextResponse.json({
-    data: filteredData,
-    error: null,
-    status: 200
-  });
-};
