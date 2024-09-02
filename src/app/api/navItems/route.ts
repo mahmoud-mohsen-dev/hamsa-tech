@@ -1,60 +1,59 @@
 import { NavItemType } from '@/types';
-import { v4 } from 'uuid';
 
 const navItems: NavItemType = {
   products: [
     {
       categoryName: 'Security Cameras',
-      key: v4(),
+      id: 'category-01',
       page: '/',
       children: [
         {
           subCategoryName: 'Indoor HD Cameras',
-          key: v4(),
+          id: 'category-01-sub-1',
           imgSrc: '/nav-link-imgs/nav-link-img-wifi-camera.png',
           page: '/'
         },
         {
           subCategoryName: 'Outdoor HD Cameras',
-          key: v4(),
+          id: 'category-01-sub-2',
           imgSrc: '/nav-link-imgs/nav-link-img-wifi-camera.png',
           page: '/'
         },
         {
           subCategoryName: 'DVRS',
-          key: v4(),
+          id: 'category-01-sub-3',
           imgSrc: '/nav-link-imgs/nav-link-img-wifi-camera.png',
           page: '/'
         },
         {
           subCategoryName: 'Indoor Wi-Fi Cameras',
-          key: v4(),
+          id: 'category-01-sub-4',
           imgSrc:
             '/nav-link-imgs/nav-link-img-indoor-wifi-camera.png',
           page: '/'
         },
         {
           subCategoryName: 'Outdoor Wi-Fi Cameras',
-          key: v4(),
+          id: 'category-01-sub-5',
           imgSrc:
             '/nav-link-imgs/nav-link-img-outdoor-wifi-camera.png',
           page: '/'
         },
         {
           subCategoryName: 'Indoor IP Cameras',
-          key: v4(),
+          id: 'category-01-sub-6',
           imgSrc: '/nav-link-imgs/nav-link-img-wifi-camera.png',
           page: '/'
         },
         {
           subCategoryName: 'Outdoor IP Cameras',
-          key: v4(),
+          id: 'category-01-sub-7',
           imgSrc: '/nav-link-imgs/nav-link-img-wifi-camera.png',
           page: '/'
         },
         {
           subCategoryName: 'NVRS',
-          key: v4(),
+          id: 'category-01-sub-8',
           imgSrc: '/nav-link-imgs/nav-link-img-wifi-camera.png',
           page: '/'
         }
@@ -62,37 +61,36 @@ const navItems: NavItemType = {
     },
     {
       categoryName: 'POS Devices',
-      key: v4(),
+      id: 'category-02',
       page: '/',
       children: [
         {
           subCategoryName: 'Receipt Printers',
-          key: v4(),
+          id: 'category-02-sub-1',
           imgSrc: '/nav-link-imgs/nav-link-img-wifi-camera.png',
           page: '/'
         },
         {
           subCategoryName: 'Barcode Printers',
-          key: v4(),
+          id: 'category-02-sub-2',
           imgSrc: '/nav-link-imgs/nav-link-img-wifi-camera.png',
           page: '/'
         },
         {
           subCategoryName: 'Mobile Printers',
-          key: v4(),
+          id: 'category-02-sub-3',
           imgSrc: '/nav-link-imgs/nav-link-img-wifi-camera.png',
           page: '/'
         },
         {
           subCategoryName: 'Wired Barcode Scanners',
-          key: v4(),
+          id: 'category-02-sub-4',
           imgSrc: '/nav-link-imgs/nav-link-img-wifi-camera.png',
           page: '/'
         },
-
         {
           subCategoryName: 'Wireless Barcode Scanners',
-          key: v4(),
+          id: 'category-02-sub-5',
           imgSrc: '/nav-link-imgs/nav-link-img-wifi-camera.png',
           page: '/'
         }
@@ -100,30 +98,30 @@ const navItems: NavItemType = {
     },
     {
       categoryName: 'Time Attendance',
-      key: v4(),
+      id: 'category-03',
       page: '/',
       children: [
         {
           subCategoryName: 'Face',
-          key: v4(),
+          id: 'category-03-sub-1',
           imgSrc: '/nav-link-imgs/nav-link-img-wifi-camera.png',
           page: '/'
         },
         {
           subCategoryName: 'Fingerprint',
-          key: v4(),
+          id: 'category-03-sub-2',
           imgSrc: '/nav-link-imgs/nav-link-img-wifi-camera.png',
           page: '/'
         },
         {
           subCategoryName: 'Hybrid Biometrics',
-          key: v4(),
+          id: 'category-03-sub-3',
           imgSrc: '/nav-link-imgs/nav-link-img-wifi-camera.png',
           page: '/'
         },
         {
           subCategoryName: 'RFID',
-          key: v4(),
+          id: 'category-03-sub-4',
           imgSrc: '/nav-link-imgs/nav-link-img-wifi-camera.png',
           page: '/'
         }
@@ -131,36 +129,36 @@ const navItems: NavItemType = {
     },
     {
       categoryName: 'Access Control',
-      key: v4(),
+      id: 'category-04',
       page: '/',
       children: [
         {
           subCategoryName: 'Standalone Devices',
-          key: v4(),
+          id: 'category-04-sub-1',
           imgSrc: '/nav-link-imgs/nav-link-img-wifi-camera.png',
           page: '/'
         },
         {
           subCategoryName: 'Control Panels',
-          key: v4(),
+          id: 'category-04-sub-2',
           imgSrc: '/nav-link-imgs/nav-link-img-wifi-camera.png',
           page: '/'
         },
         {
           subCategoryName: 'Readers',
-          key: v4(),
+          id: 'category-04-sub-3',
           imgSrc: '/nav-link-imgs/nav-link-img-wifi-camera.png',
           page: '/'
         },
         {
           subCategoryName: 'Accessories',
-          key: v4(),
+          id: 'category-04-sub-4',
           imgSrc: '/nav-link-imgs/nav-link-img-wifi-camera.png',
           page: '/'
         },
         {
           subCategoryName: 'Exit Buttons',
-          key: v4(),
+          id: 'category-04-sub-5',
           imgSrc: '/nav-link-imgs/nav-link-img-wifi-camera.png',
           page: '/'
         }
@@ -168,48 +166,48 @@ const navItems: NavItemType = {
     },
     {
       categoryName: 'Intercoms',
-      key: v4(),
+      id: 'category-05',
       page: '/',
       children: [
         {
           subCategoryName: 'Audio Indoor Station',
-          key: v4(),
+          id: 'category-05-sub-1',
           imgSrc: '/nav-link-imgs/nav-link-img-wifi-camera.png',
           page: '/'
         },
         {
           subCategoryName: 'Audio Panel',
-          key: v4(),
+          id: 'category-05-sub-2',
           imgSrc: '/nav-link-imgs/nav-link-img-wifi-camera.png',
           page: '/'
         },
         {
           subCategoryName: 'Video Indoor Station',
-          key: v4(),
+          id: 'category-05-sub-3',
           imgSrc: '/nav-link-imgs/nav-link-img-wifi-camera.png',
           page: '/'
         },
         {
           subCategoryName: 'Video Panel',
-          key: v4(),
+          id: 'category-05-sub-4',
           imgSrc: '/nav-link-imgs/nav-link-img-wifi-camera.png',
           page: '/'
         },
         {
           subCategoryName: 'Audio Kits',
-          key: v4(),
+          id: 'category-05-sub-5',
           imgSrc: '/nav-link-imgs/nav-link-img-wifi-camera.png',
           page: '/'
         },
         {
           subCategoryName: 'Video Kits',
-          key: v4(),
+          id: 'category-05-sub-6',
           imgSrc: '/nav-link-imgs/nav-link-img-wifi-camera.png',
           page: '/'
         },
         {
           subCategoryName: 'Accessories',
-          key: v4(),
+          id: 'category-05-sub-7',
           imgSrc: '/nav-link-imgs/nav-link-img-wifi-camera.png',
           page: '/'
         }
@@ -217,24 +215,24 @@ const navItems: NavItemType = {
     },
     {
       categoryName: 'UPS Units',
-      key: v4(),
+      id: 'category-06',
       page: '/',
       children: [
         {
           subCategoryName: 'Line interactive Series',
-          key: v4(),
+          id: 'category-06-sub-1',
           imgSrc: '/nav-link-imgs/nav-link-img-wifi-camera.png',
           page: '/'
         },
         {
           subCategoryName: 'Standby Series',
-          key: v4(),
+          id: 'category-06-sub-2',
           imgSrc: '/nav-link-imgs/nav-link-img-wifi-camera.png',
           page: '/'
         },
         {
           subCategoryName: 'Online Series',
-          key: v4(),
+          id: 'category-06-sub-3',
           imgSrc: '/nav-link-imgs/nav-link-img-wifi-camera.png',
           page: '/'
         }
@@ -242,36 +240,36 @@ const navItems: NavItemType = {
     },
     {
       categoryName: 'Accessories',
-      key: v4(),
+      id: 'category-07',
       page: '/',
       children: [
         {
           subCategoryName: 'Brackets',
-          key: v4(),
+          id: 'category-07-sub-1',
           imgSrc: '/nav-link-imgs/nav-link-img-wifi-camera.png',
           page: '/'
         },
         {
           subCategoryName: 'Hard Drives',
-          key: v4(),
+          id: 'category-07-sub-2',
           imgSrc: '/nav-link-imgs/nav-link-img-wifi-camera.png',
           page: '/'
         },
         {
           subCategoryName: 'Card Memories',
-          key: v4(),
+          id: 'category-07-sub-3',
           imgSrc: '/nav-link-imgs/nav-link-img-wifi-camera.png',
           page: '/'
         },
         {
           subCategoryName: 'Power Supplies',
-          key: v4(),
+          id: 'category-07-sub-4',
           imgSrc: '/nav-link-imgs/nav-link-img-wifi-camera.png',
           page: '/'
         },
         {
           subCategoryName: 'Cables',
-          key: v4(),
+          id: 'category-07-sub-5',
           imgSrc: '/nav-link-imgs/nav-link-img-wifi-camera.png',
           page: '/'
         }
@@ -279,30 +277,30 @@ const navItems: NavItemType = {
     },
     {
       categoryName: 'Networks',
-      key: v4(),
+      id: 'category-08',
       page: '/',
       children: [
         {
           subCategoryName: 'Switches',
-          key: v4(),
+          id: 'category-08-sub-1',
           imgSrc: '/nav-link-imgs/nav-link-img-wifi-camera.png',
           page: '/'
         },
         {
           subCategoryName: 'Routers',
-          key: v4(),
+          id: 'category-08-sub-2',
           imgSrc: '/nav-link-imgs/nav-link-img-wifi-camera.png',
           page: '/'
         },
         {
           subCategoryName: 'Access Points',
-          key: v4(),
+          id: 'category-08-sub-3',
           imgSrc: '/nav-link-imgs/nav-link-img-wifi-camera.png',
           page: '/'
         },
         {
           subCategoryName: 'Cables',
-          key: v4(),
+          id: 'category-08-sub-4',
           imgSrc: '/nav-link-imgs/nav-link-img-wifi-camera.png',
           page: '/'
         }

@@ -44,7 +44,7 @@ function Navbar({
           className={listStyles}
         >
           <ActiveLink
-            href='/products'
+            href={`/products?category=${encodeURIComponent('Indoor HD Cameras')}`}
             activeClassName='!text-red-shade-350'
             className={linksStyles}
           >

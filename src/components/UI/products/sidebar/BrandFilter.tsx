@@ -123,13 +123,13 @@ function BrandFilter() {
         style={{ gap: '5px' }}
       />
       <div className='mt-6 flex items-center gap-2'>
-        <Btn className='bg-green-medium px-6 py-[5px] text-base font-normal text-white'>
-          <span>Apply</span>
+        <Btn className='bg-green-600 px-6 py-[5px] text-base font-normal text-white'>
           <FaCheck />
+          <span>Apply</span>
         </Btn>
         <Btn className='bg-red-shade-300 px-5 py-[5px] text-base font-normal text-white'>
-          <span>Reset</span>
           <GrPowerReset />
+          <span>Reset</span>
         </Btn>
       </div>
     </div>

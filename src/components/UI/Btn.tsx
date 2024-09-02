@@ -9,12 +9,12 @@ function Btn({
 }: {
   children: React.ReactNode;
   href?: string | null;
-  onClick?: () => void;
+  onClick?: (e: React.SyntheticEvent) => void;
   className?: string;
   outlined?: boolean;
 }): JSX.Element {
   const btnStyles =
-    'focus:outline-none active:outline-none transition-colors duration-300 py-4 px-6 flex justify-center items-center gap-2 rounded shadow-sm';
+    'focus:outline-none active:outline-none transition-colors duration-300 py-[.55rem] px-[1rem] flex justify-center items-center gap-2 rounded shadow-sm';
 
   if (href) {
     return (

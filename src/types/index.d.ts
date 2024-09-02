@@ -1,10 +1,10 @@
 export type NavItemKeyType = {
-  key: string;
+  id: string;
   categoryName: string;
   page: string;
   children: {
     subCategoryName: string;
-    key: string;
+    id: string;
     imgSrc: string;
     page: string;
   }[];
@@ -20,6 +20,7 @@ export interface NavItemType {
 
 export interface productType {
   id: string;
+  brand: string;
   productName: string;
   totalNumberOfRates: number;
   averageRate: number;
@@ -33,5 +34,12 @@ export interface productType {
 export type productsType = {
   subCategoryName: string;
   imgSrc: string;
+  id: string;
   children: productType[];
 }[];
+
+export type productsObjectType = {
+  subCategoryName: string;
+  imgSrc: string;
+  children: productType[];
+};

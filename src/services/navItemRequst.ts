@@ -5,7 +5,8 @@ export const fetchNavItems = async () => {
     const response = await fetch(
       `${process.env.NEXT_PUBLIC_BASE_URL}/api/navItems`,
       {
-        cache: 'no-cache'
+        // cache: 'no-cache'
+        next: { revalidate: 300 }
       }
     );
 
@@ -24,12 +25,14 @@ export const fetchNavItems = async () => {
     };
   }
 };
+
 export const serverfetchNavItems = async () => {
   try {
     const response = await fetch(
       `${process.env.BASE_URL}/api/navItems`,
       {
-        cache: 'no-cache'
+        // cache: 'no-cache'
+        next: { revalidate: 300 }
       }
     );
 

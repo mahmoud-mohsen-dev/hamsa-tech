@@ -1,6 +1,7 @@
 'use client';
 
 import { Form, Select } from 'antd';
+import { IoIosArrowDown } from 'react-icons/io';
 
 function Sorter() {
   return (
@@ -19,6 +20,7 @@ function Sorter() {
             { value: 20, label: <span>Show: 20</span> },
             { value: 10, label: <span>Show: 10</span> }
           ]}
+          suffixIcon={<IoIosArrowDown size={14} />}
         />
       </Form.Item>
 
@@ -56,6 +58,7 @@ function Sorter() {
               label: <span>Rating: High to Low</span>
             }
           ]}
+          suffixIcon={<IoIosArrowDown size={14} />}
         />
       </Form.Item>
     </Form>

@@ -1,29 +1,9 @@
-import { HomeOutlined, ProductOutlined } from '@ant-design/icons';
 import { Breadcrumb } from 'antd';
 
-const CustomBreadcrumb: React.FC = () => (
-  <Breadcrumb
-    style={{ marginLeft: '24px' }}
-    items={[
-      {
-        href: '/',
-        title: <HomeOutlined />
-      },
-      {
-        href: '/products',
-        title: (
-          <>
-            <ProductOutlined />
-            <span>All Products</span>
-          </>
-        )
-      }
-      // {
-      //   href: '/products/security-cameras',
-      //   title: 'Security Cameras'
-      // }
-    ]}
-  />
-);
+const CustomBreadcrumb = ({
+  items
+}: {
+  items: { href: string; title: React.ReactNode }[];
+}) => <Breadcrumb style={{ marginLeft: '24px' }} items={items} />;
 
 export default CustomBreadcrumb;

@@ -1,89 +1,68 @@
-'use client';
-import ProductCard from '@/components/products/ProductCard';
-import Sorter from '@/components/products/Sorter';
-import { getProducts } from '@/services/products';
-import { productsType } from '@/types';
-import { v4 } from 'uuid';
-import { useStoreContext } from '../context/store';
-import { useEffect, useState } from 'react';
-import { clear } from 'console';
+import CustomBreadcrumb from '@/components/products/CustomBreadcrumb';
+import MenuSidebar from '@/components/products/MenuSidebar';
+import ProductsContent from '@/components/UI/products/ProductsContent';
+import BrandFilter from '@/components/UI/products/sidebar/BrandFilter';
+import { serverfetchNavItems } from '@/services/navItemRequst';
+import { getProductsCategory } from '@/services/products';
+import { HomeOutlined, ProductOutlined } from '@ant-design/icons';
 
-function Products() {
-  const [data, setData] = useState<productsType | null>([]);
-  const [error, setError] = useState<string | null>();
-  const { currentActiveSubCategory } = useStoreContext();
-  // console.log(value);
-  console.log(data);
-  // console.log(error);
-  useEffect(() => {
-    const getDataProducts = async () => {
-      const { data: resData, error: resError } = await getProducts();
-      console.log(data);
-      setError(resError);
-      if (!error) {
-        setData(resData);
-      }
-    };
+export async function generateMetadata({
+  searchParams
+}: {
+  searchParams: { category?: string };
+}) {
+  const category = searchParams.category || '';
+  const { data } = await getProductsCategory(category);
+  // console.log(data);
+  return { title: `Products - ${category}` };
+}
 
-    getDataProducts();
-  }, []);
+const Products = async () => {
+  const { data, error } = await serverfetchNavItems();
 
-  const getCurrentIndex = () => {
-    if (
-      data &&
-      currentActiveSubCategory &&
-      typeof currentActiveSubCategory === 'string'
-    ) {
-      return data?.findIndex((subCategory) => {
-        console.log(subCategory);
-        console.log(currentActiveSubCategory);
-        console.log(
-          subCategory.subCategoryName === currentActiveSubCategory
-        );
-        return (
-          subCategory.subCategoryName === currentActiveSubCategory
-        );
-      });
-    }
-    return -1;
-  };
-
-  console.log(getCurrentIndex());
-  console.log(currentActiveSubCategory);
+  if (error) {
+    return <div>Error fetching sidebar items</div>;
+  }
   console.log(data);
 
   return (
-    <section>
-      <div className='flex items-center justify-between'>
-        <h4 className='text-sm font-medium text-black-medium'>
-          24 <span className='text-gray-normal'>Products Found</span>
-        </h4>
-        <Sorter />
+    <section className='content container my-[100px]'>
+      <CustomBreadcrumb
+        items={[
+          {
+            href: '/',
+            title: <HomeOutlined />
+          },
+          {
+            href: '/products?category=Indoor%20HD%20Cameras',
+            title: (
+              <>
+                <ProductOutlined />
+                <span>All Products</span>
+              </>
+            )
+          }
+        ]}
+      />
+      <div className='mt-5 grid grid-cols-[250px_1fr] gap-10'>
+        <aside
+          style={{ borderRight: '1px solid rgba(5, 5, 5, 0.06)' }}
+        >
+          <h3 className='ml-[24px] w-fit text-lg text-black-medium'>
+            Categories
+          </h3>
+          <MenuSidebar data={data} />
+
+          <BrandFilter />
+        </aside>
+        <main>
+          <section>
+            <ProductsContent />
+          </section>
+        </main>
       </div>
-      {error && <div className='mt-5'>No Products Found</div>}
-      {!error && data && data?.length > 0 && (
-        <div className='mt-5 grid grid-cols-3 gap-4'>
-          {data[
-            getCurrentIndex() >= 0 ? getCurrentIndex() : 0
-          ].children.map((product) => (
-            <ProductCard
-              title={product.productName}
-              alt={product.alt}
-              imgSrc={product.imgSrc}
-              avgRate={product.averageRate}
-              category={data[0].subCategoryName}
-              badge={product.badge}
-              priceBeforeDeduction={product.priceBeforeDeduction}
-              currentPrice={product.currentPrice}
-              linkSrc={`/products/${product.id}`}
-              totalRates={product.totalNumberOfRates}
-              key={v4()}
-            />
-          ))}
-        </div>
-      )}
     </section>
   );
-}
+};
 
 export default Products;
