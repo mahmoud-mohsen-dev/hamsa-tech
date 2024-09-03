@@ -1,5 +1,6 @@
 import CustomBreadcrumb from '@/components/products/CustomBreadcrumb';
 import MenuSidebar from '@/components/products/MenuSidebar';
+import ConfigAntThemes from '@/components/Theme/ConfigAntThemes';
 import ProductsContent from '@/components/UI/products/ProductsContent';
 import BrandFilter from '@/components/UI/products/sidebar/BrandFilter';
 import { serverfetchNavItems } from '@/services/navItemRequst';
@@ -26,42 +27,44 @@ const Products = async () => {
   console.log(data);
 
   return (
-    <section className='content container my-[100px]'>
-      <CustomBreadcrumb
-        items={[
-          {
-            href: '/',
-            title: <HomeOutlined />
-          },
-          {
-            href: '/products?category=Indoor%20HD%20Cameras',
-            title: (
-              <>
-                <ProductOutlined />
-                <span>All Products</span>
-              </>
-            )
-          }
-        ]}
-      />
-      <div className='mt-5 grid grid-cols-[250px_1fr] gap-10'>
-        <aside
-          style={{ borderRight: '1px solid rgba(5, 5, 5, 0.06)' }}
-        >
-          <h3 className='ml-[24px] w-fit text-lg text-black-medium'>
-            Categories
-          </h3>
-          <MenuSidebar data={data} />
+    <ConfigAntThemes>
+      <section className='content container my-[100px]'>
+        <CustomBreadcrumb
+          items={[
+            {
+              href: '/',
+              title: <HomeOutlined />
+            },
+            {
+              href: '/products?category=Indoor%20HD%20Cameras',
+              title: (
+                <>
+                  <ProductOutlined />
+                  <span>All Products</span>
+                </>
+              )
+            }
+          ]}
+        />
+        <div className='mt-5 grid grid-cols-[250px_1fr] gap-10'>
+          <aside
+            style={{ borderRight: '1px solid rgba(5, 5, 5, 0.06)' }}
+          >
+            <h3 className='ml-[24px] w-fit text-lg text-black-medium'>
+              Categories
+            </h3>
+            <MenuSidebar data={data} />
 
-          <BrandFilter />
-        </aside>
-        <main>
-          <section>
-            <ProductsContent />
-          </section>
-        </main>
-      </div>
-    </section>
+            <BrandFilter />
+          </aside>
+          <main>
+            <section>
+              <ProductsContent />
+            </section>
+          </main>
+        </div>
+      </section>
+    </ConfigAntThemes>
   );
 };
 

@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { AutoComplete, Input } from 'antd';
 import type { AutoCompleteProps } from 'antd';
+import { v4 } from 'uuid';
 
 const getRandomInt = (max: number, min = 0) =>
   Math.floor(Math.random() * (max - min + 1)) + min;
@@ -20,6 +21,7 @@ const searchResult = (query: string) =>
               display: 'flex',
               justifyContent: 'space-between'
             }}
+            key={v4()}
           >
             <span>
               Found {query} on{' '}

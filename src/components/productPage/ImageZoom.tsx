@@ -4,7 +4,8 @@ import { useState } from 'react';
 
 export default function ImageZoom({ imgSrc }: { imgSrc: string }) {
   const [zoomStyle, setZoomStyle] = useState({
-    '--display': 'none',
+    // '--display': 'none',
+    '--opacity': 0,
     '--zoom-x': '0%',
     '--zoom-y': '0%',
     '--url': `url(${imgSrc})`
@@ -18,19 +19,28 @@ export default function ImageZoom({ imgSrc }: { imgSrc: string }) {
       x: (event.nativeEvent.offsetX * 100) / imageZoom.offsetWidth,
       y: (event.nativeEvent.offsetY * 100) / imageZoom.offsetHeight
     };
+    // '--display': 'block',
     setZoomStyle({
-      '--display': 'block',
+      '--opacity': 1,
       '--zoom-x': `${pointer.x}%`,
       '--zoom-y': `${pointer.y}%`,
       '--url': `url(${imgSrc})`
     });
   };
 
-  const handleMouseOut = () => {
+  const handleMouseOut = (
+    event: React.MouseEvent<HTMLDivElement>
+  ) => {
+    const imageZoom = event.currentTarget;
+    const pointer = {
+      x: (event.nativeEvent.offsetX * 100) / imageZoom.offsetWidth,
+      y: (event.nativeEvent.offsetY * 100) / imageZoom.offsetHeight
+    };
+    // '--display': 'none',
     setZoomStyle({
-      '--display': 'none',
-      '--zoom-x': '0%',
-      '--zoom-y': '0%',
+      '--opacity': 0,
+      '--zoom-x': `${pointer.x}%`,
+      '--zoom-y': `${pointer.y}%`,
       '--url': `url(${imgSrc})`
     });
   };
@@ -54,6 +64,7 @@ export default function ImageZoom({ imgSrc }: { imgSrc: string }) {
           objectPosition: 'center',
           verticalAlign: 'middle'
         }}
+        // className='transition-opacity duration-300 ease-linear'
       />
     </div>
   );

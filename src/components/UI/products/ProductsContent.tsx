@@ -70,21 +70,23 @@ function ProductsContent() {
       : <div className='mt-5 grid grid-cols-3 gap-4'>
           {data?.children &&
             data.children.length > 0 &&
-            data.children.map((product) => (
-              <ProductCard
-                title={product.productName}
-                alt={product.alt}
-                imgSrc={product.imgSrc}
-                avgRate={product.averageRate}
-                category={data.subCategoryName ?? ''}
-                badge={product.badge}
-                priceBeforeDeduction={product.priceBeforeDeduction}
-                currentPrice={product.currentPrice}
-                linkSrc={`/products/${product.id}`}
-                totalRates={product.totalNumberOfRates}
-                key={v4()}
-              />
-            ))}
+            data.children.map((product) => {
+              return (
+                <ProductCard
+                  title={product.productName}
+                  alt={product.alt}
+                  imgSrc={product.imgSrc}
+                  avgRate={product.averageRate}
+                  category={data.subCategoryName ?? ''}
+                  badge={product.badge}
+                  priceBeforeDeduction={product.priceBeforeDeduction}
+                  currentPrice={product.currentPrice}
+                  linkSrc={`/products/${product.id}`}
+                  totalRates={product.totalNumberOfRates}
+                  key={v4()}
+                />
+              );
+            })}
         </div>
       }
     </div>

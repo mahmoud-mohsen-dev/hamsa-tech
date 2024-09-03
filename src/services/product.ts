@@ -1,4 +1,6 @@
-import { productDetailsType } from '@/app/api/products/[product]/route';
+// import { productDetailsType } from '@/app/api/products/[product]/route';
+
+import { productDetailsType } from '@/types';
 
 export const serverGetProduct = async (productId: string) => {
   try {

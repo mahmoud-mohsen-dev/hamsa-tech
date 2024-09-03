@@ -131,7 +131,10 @@ const EmblaCarousel: React.FC<PropType> = ({
       <div className='embla__viewport' ref={emblaRef}>
         <div className='embla__container' ref={container}>
           {slides.map((item, index) => (
-            <div className='embla__slide overflow-hidden' key={index}>
+            <div
+              className='embla__slide overflow-hidden'
+              key={index + v4()}
+            >
               <Link href={href}>
                 <div className='embla__parallax'>
                   <div className='embla__parallax__layer'>
@@ -152,11 +155,11 @@ const EmblaCarousel: React.FC<PropType> = ({
                 </div>
 
                 <div className='service-details absolute bottom-[-195px] right-[60px] max-w-[260px] py-5 text-white transition-all duration-300 ease-in'>
-                  <h3 className='mb-3 text-[18px] font-bold leading-[28px] text-shadow-sm'>
+                  <h3 className='text-shadow-sm mb-3 text-[18px] font-bold leading-[28px]'>
                     {item.title}
                   </h3>
 
-                  <p className='mb-3 break-words text-shadow-sm'>
+                  <p className='text-shadow-sm mb-3 break-words'>
                     {item.details}
                   </p>
 

@@ -1,7 +1,5 @@
 function layout({ children }: React.PropsWithChildren) {
-  return (
-    <section className='container my-[100px]'>{children}</section>
-  );
+  return <div>{children}</div>;
 }
 
 export default layout;

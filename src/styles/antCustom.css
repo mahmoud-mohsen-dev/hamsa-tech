@@ -93,3 +93,15 @@
 .brands-filter .ant-checkbox .ant-checkbox-inner {
   border-radius: 3px;
 }
+
+/* Product page  */
+/* Quantity Input */
+#product-page .ant-input-number .ant-input-number-handler-wrap {
+  width: 30px;
+  opacity: 1;
+}
+
+/* Tabs Section */
+.tabs-section .ant-tabs .ant-tabs-tab + .ant-tabs-tab {
+  margin: 0 0 0 50px;
+}

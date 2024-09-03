@@ -43,3 +43,51 @@ export type productsObjectType = {
   imgSrc: string;
   children: productType[];
 };
+
+export interface ProductBasicInfoType {
+  subCategoryName: string;
+  id: string;
+  brand: string;
+  productName: string;
+  imgSrc: string;
+  totalNumberOfRates: number;
+  alt: string;
+  averageRate: number;
+  priceBeforeDeduction: number;
+  currentPrice: number;
+  badge: '' | 'Hot' | 'Out Of Stock' | 'Limited' | 'Sale' | 'New';
+}
+export interface productDetailsType {
+  product: {
+    basic: ProductBasicInfoType;
+    sliderImgs: {
+      imgSrc: string;
+      alt: string;
+    }[];
+    info: {
+      description: string;
+      sku: string;
+      connectivity: string;
+      modalName: string;
+      waranty: {
+        value: number;
+        duration: 'month' | 'year' | 'months' | 'years';
+      };
+      tags: { label: string; href: string }[];
+    };
+    details: { aboutProduct: string[] };
+    moreDetails: {
+      description: {
+        heading?: string;
+        p?: string;
+        img?: {
+          src: string;
+          alt?: string;
+        };
+        alt?: string;
+        ul?: string[];
+      }[];
+    };
+  };
+  relatedProducts: ProductBasicInfoType[];
+}

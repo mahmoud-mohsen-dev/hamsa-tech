@@ -27,20 +27,20 @@ function ProductCard({
   priceBeforeDeduction: number;
   currentPrice: number;
 }) {
-  const handleClick = (event: React.SyntheticEvent) => {
-    event.stopPropagation();
-    event.preventDefault();
-  };
+  // const handleClick = (event: React.SyntheticEvent) => {
+  //   event.stopPropagation();
+  //   event.preventDefault();
+  // };
 
   return (
-    <div className='relative w-full bg-white p-5 shadow-featured transition-all duration-75 ease-linear hover:shadow-featuredHovered'>
-      <p
-        className='absolute left-6 top-4 z-20 text-sm font-medium uppercase text-red-dark'
-        style={{ fontStyle: 'oblique' }}
-      >
-        {badge}
-      </p>
-      <Link href={linkSrc} className='relative'>
+    <Link href={linkSrc} className='relative'>
+      <div className='relative w-full bg-white p-5 shadow-featured transition-all duration-75 ease-linear hover:shadow-featuredHovered'>
+        <p
+          className='absolute left-6 top-4 z-20 text-sm font-medium uppercase text-red-dark'
+          style={{ fontStyle: 'oblique' }}
+        >
+          {badge}
+        </p>
         <Image
           src={imgSrc}
           alt={alt}
@@ -86,14 +86,14 @@ function ProductCard({
           </div>
           <Btn
             className='flex items-center gap-2 bg-green-600 px-3 py-[5px] font-openSans text-sm font-semibold text-white shadow-none'
-            onClick={handleClick}
+            // onClick={handleClick}
           >
             <FaPlus />
             <span>Add</span>
           </Btn>
         </div>
-      </Link>
-    </div>
+      </div>
+    </Link>
   );
 }
 

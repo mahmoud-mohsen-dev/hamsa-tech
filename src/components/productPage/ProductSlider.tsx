@@ -1,9 +1,10 @@
 'use client';
-import { productDetailsType } from '@/app/api/products/[product]/route';
+
 import Image from 'next/image';
 import { v4 } from 'uuid';
 import ImageZoom from './ImageZoom';
 import { useState } from 'react';
+import { productDetailsType } from '@/types';
 
 function ProductSlider({
   productData
@@ -12,11 +13,11 @@ function ProductSlider({
 }) {
   const [activeImg, setActiveImg] = useState({
     imgSrc: productData.product.sliderImgs[0].imgSrc ?? '',
-    index: -1
+    index: 0
   });
 
   return (
-    <div className='ml-10 flex items-center gap-10'>
+    <div className='sticky top-[64px] ml-10 flex max-h-[450px] items-center gap-10'>
       <div className='flex flex-col items-start justify-center gap-5'>
         {Array.isArray(productData?.product?.sliderImgs) &&
           productData?.product?.sliderImgs.length > 0 &&

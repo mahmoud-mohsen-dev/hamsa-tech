@@ -5,16 +5,18 @@ function Btn({
   href,
   onClick,
   className = 'bg-white text-gray-normal text-lg',
+  defaultPadding = true,
   outlined = false
 }: {
   children: React.ReactNode;
   href?: string | null;
   onClick?: (e: React.SyntheticEvent) => void;
   className?: string;
+  defaultPadding?: boolean;
   outlined?: boolean;
 }): JSX.Element {
   const btnStyles =
-    'focus:outline-none active:outline-none transition-colors duration-300 py-[.55rem] px-[1rem] flex justify-center items-center gap-2 rounded shadow-sm';
+    'focus:outline-none active:outline-none transition-colors duration-300 flex justify-center items-center gap-2 rounded shadow-sm';
 
   if (href) {
     return (
@@ -29,7 +31,7 @@ function Btn({
   }
   return (
     <button
-      className={`${btnStyles} ${outlined ? 'border-2 border-white text-white' : ''} ${className}`}
+      className={`${btnStyles} ${outlined ? 'border-2 border-white text-white' : ''} ${defaultPadding ? 'px-[1rem] py-[.55rem]' : ''} ${className}`}
       onClick={onClick}
       type='button'
     >

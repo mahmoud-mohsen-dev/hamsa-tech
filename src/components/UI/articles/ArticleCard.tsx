@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Btn from '../Btn';
-import { v4 as uuidv4 } from 'uuid';
+import { v4 as uuidv4, v4 } from 'uuid';
 import dayjs from 'dayjs';
 import { FaLongArrowAltRight } from 'react-icons/fa';
 
@@ -16,7 +16,7 @@ function CategoryLink({
   return (
     <Btn
       href={linkUrl}
-      className={`className w-fit break-words bg-transparent font-openSans text-xs font-normal uppercase leading-none text-white hover:text-yellow-medium hover:text-shadow-sm ${className} !px-0 !py-0`}
+      className={`className hover:text-shadow-sm w-fit break-words bg-transparent font-openSans text-xs font-normal uppercase leading-none text-white hover:text-yellow-medium ${className} !px-0 !py-0`}
     >
       {linkText}
     </Btn>
@@ -58,7 +58,7 @@ function ArticleCard({
                   <span>, </span>
                   <CategoryLink
                     className='ml-1'
-                    key={category.linkUrl}
+                    key={v4()}
                     linkUrl={category.linkUrl}
                     linkText={category.linkText}
                   />
