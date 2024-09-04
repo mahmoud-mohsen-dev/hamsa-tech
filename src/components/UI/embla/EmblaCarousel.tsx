@@ -131,10 +131,7 @@ const EmblaCarousel: React.FC<PropType> = ({
       <div className='embla__viewport' ref={emblaRef}>
         <div className='embla__container' ref={container}>
           {slides.map((item, index) => (
-            <div
-              className='embla__slide overflow-hidden'
-              key={index + v4()}
-            >
+            <div className='embla__slide overflow-hidden' key={index}>
               <Link href={href}>
                 <div className='embla__parallax'>
                   <div className='embla__parallax__layer'>
@@ -187,7 +184,7 @@ const EmblaCarousel: React.FC<PropType> = ({
         <div className='embla__dots'>
           {scrollSnaps.map((_, index) => (
             <DotButton
-              key={v4()}
+              key={index}
               onClick={() => onDotButtonClick(index)}
               className={`embla__dot ${index === selectedIndex ? 'embla__dot--selected' : ''}`}
             />

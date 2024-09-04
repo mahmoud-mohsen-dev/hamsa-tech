@@ -216,7 +216,7 @@ export default async function Product({
         </section>
         <section className='tabs-section container bg-white py-[50px]'>
           <div className='px-6'>
-            {/* <TabsSection moreDetails={moreDetails} /> */}
+            <TabsSection moreDetails={moreDetails} />
           </div>
         </section>
         <section className='container bg-white-light pb-[70px] pt-[50px]'>

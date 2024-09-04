@@ -14,7 +14,7 @@ import SubcribeInput from '../UI/embla/SubcribeInput';
 function Footer() {
   return (
     <footer
-      data-aos='fade-up'
+      data-aos='fade-down'
       data-aos-delay='150'
       data-aos-duration='400'
       data-aos-easing='linear'
@@ -152,7 +152,6 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div></div>
     </footer>
   );
 }
