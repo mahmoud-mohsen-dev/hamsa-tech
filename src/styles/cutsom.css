@@ -3,7 +3,7 @@ html:not([data-scroll='0']) .header,
 .header.colored-navbar {
   background-color: white;
   box-shadow: 0 0 0.2em rgba(0, 0, 0, 0.5);
-  transition: 0.3s linear;
+  /* transition: 0.3s linear; */
   color: #333333;
 }
 
@@ -47,20 +47,7 @@ html:not([data-scroll='0']) .header .nav_link,
   color: #d62c26;
 }
 
-html:not([data-scroll='0'])
-  .header
-  .search-input-navbar
-  .ant-input-group
-  > .ant-input:first-child,
-.header.colored-navbar
-  .search-input-navbar
-  .ant-input-group
-  > .ant-input:first-child {
-  color: #333333;
-  border-color: #333333;
-}
-
-html:not([data-scroll='0'])
+/* html:not([data-scroll='0'])
   .header
   .search-input-navbar
   .ant-input-group
@@ -70,9 +57,9 @@ html:not([data-scroll='0'])
   .ant-input-group
   > .ant-input:first-child:focus {
   border-color: blue;
-}
+} */
 
-html:not([data-scroll='0'])
+/* html:not([data-scroll='0'])
   .header
   .search-input-navbar
   .ant-input-group
@@ -83,9 +70,9 @@ html:not([data-scroll='0'])
   > .ant-input:first-child::placeholder {
   color: #333333;
   transition: 0.3s linear;
-}
+} */
 
-html:not([data-scroll='0'])
+/* html:not([data-scroll='0'])
   .header
   .search-input-navbar.ant-input-group-wrapper
   .ant-input-group-addon
@@ -96,17 +83,7 @@ html:not([data-scroll='0'])
   .ant-input-search-button.ant-btn.ant-btn-primary {
   background-color: #333333;
   border-color: #333333;
-}
-
-html:not([data-scroll='0'])
-  .header
-  .ant-select-outlined:not(.ant-select-customize-input)
-  .ant-select-selector,
-.header.colored-navbar
-  .ant-select-outlined:not(.ant-select-customize-input)
-  .ant-select-selector {
-  border-color: #333333;
-}
+} */
 
 html:not([data-scroll='0'])
   .header
@@ -145,18 +122,37 @@ html:not([data-scroll='0']) .header .ant-select .ant-select-arrow svg,
 .header .ant-select .ant-select-arrow {
   transition: none;
 }
+.header .seach-btn {
+  transition: none;
+}
 
-/* Shopping Cart */
-
-html[data-scroll='0'] .header .shopping-cart {
+/* right side navbar icons */
+html[data-scroll='0'] .header .shopping-cart,
+html[data-scroll='0'].header .wishlist,
+html[data-scroll='0'] .header .profile,
+html[data-scroll='0'] .header .seach-btn {
   color: white;
 }
-html:not([data-scroll='0']) .header .shopping-cart {
+html:not([data-scroll='0']) .header .shopping-cart,
+html:not([data-scroll='0']) .header .wishlist,
+html:not([data-scroll='0']) .header .profile,
+html:not([data-scroll='0']) .header .seach-btn {
   color: #333333;
 }
 
-.content .header.colored-navbar .shopping-cart {
+.content .header.colored-navbar .wishlist,
+.content .header.colored-navbar .profile,
+.content .header.colored-navbar .shopping-cart,
+.content .header.colored-navbar .seach-btn {
   color: #333333;
+}
+
+.header
+  .search-input-navbar
+  .ant-input-group
+  > .ant-input:first-child {
+  color: #333333;
+  border-color: #333333;
 }
 
 /* Category Card */

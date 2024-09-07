@@ -37,7 +37,8 @@ function MenuSidebar({ data }: { data: NavItemType | null }) {
   };
   // console.log(items);
   const [currentActiveSubCategory, setCurrentActiveSubCategory] =
-    useState([items[0].key ?? '']);
+    useState([items[0].children[0].key ?? '']);
+  // console.log(currentActiveSubCategory);
 
   const onClick: MenuProps['onClick'] = (e) => {
     const newArr = [...items.map((item) => item?.children)].flat(1);

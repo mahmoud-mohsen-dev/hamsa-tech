@@ -42,6 +42,7 @@ const config: Config = {
         //======= Shades Of Blue ========
         'blue-normal': '#151CB9',
         'blue-accent': '#364d79',
+        'blue-accent-dark': '#dfe2e1',
         'blue-dark': '#17457c',
         'blue-sky-ultralight': '#ECF4FF',
         'blue-sky-light': '#07a0c3',
@@ -65,12 +66,14 @@ const config: Config = {
         'red-accent': '#E20A0A',
         'red-dark': '#DD1C1a',
         //======= Shades Of Yellow ========
+        'yellow-lighter': '#fadb14',
         'yellow-light': '#F0C808',
         'yellow-normal': '#EFB918',
         'yellow-medium': '#fcaf17',
         //======= Shades Of Green ========
         'green-normal': '#96BE24',
         'green-medium': '#65b531',
+        'green-dark': '#16a34a',
         //======= Shades Of White ========
         'white-light': '#f9f9f9',
         //======= Shades Of Black ========
@@ -84,6 +87,7 @@ const config: Config = {
         'gray-light': '#9b9b9b',
         'gray-normal': '#666666',
         'gray-medium': '#6B6A75',
+        // 'gray': '##f0f3f2',
 
         //======= Other Colors ========
         'blue-gray-light': '#575a7b',

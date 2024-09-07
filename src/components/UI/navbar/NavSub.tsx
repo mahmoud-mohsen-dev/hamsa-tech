@@ -33,13 +33,23 @@ function NavSubCategoryItem({
                 // className='text-gray-normal hover:bg-gray-lighter rounded-[50px] bg-transparent py-2 pl-4 pr-3.5 text-sm font-semibold hover:text-black-light'
               >
                 <>
-                  <Image
-                    src={item.imgSrc}
-                    alt={item.subCategoryName}
-                    width={104}
-                    height={104}
-                    quality={100}
-                  />
+                  <div className='relative'>
+                    <Image
+                      src={item.imgSrc}
+                      alt={item.subCategoryName}
+                      // fill
+                      width={110}
+                      height={110}
+                      quality={100}
+                      style={{
+                        objectFit: 'contain',
+                        minHeight: '110px',
+                        maxHeight: '110px',
+                        minWidth: '110px'
+                        // objectPosition: 'center'
+                      }}
+                    />
+                  </div>
                   <p className='mt-5 text-xs text-gray-normal hover:text-blue-dark'>
                     {item.subCategoryName}
                   </p>
@@ -91,7 +101,7 @@ function NavSub({ name, currentHovered, items }: NavSubProps) {
       <div
         className={`nav-sub absolute bottom-0 left-0 z-[110] w-full translate-y-full border-t border-solid border-gray-ultralight bg-white shadow-lg ${stylessOnHover}`}
       >
-        <ul className='flex justify-center gap-5 py-5'>
+        <ul className='flex justify-center gap-2 py-5'>
           {items.map((item) => (
             <li key={v4()}>
               <Link

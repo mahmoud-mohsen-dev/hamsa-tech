@@ -78,10 +78,10 @@ function ProductCard({
         <div className='item mt-1 flex justify-between'>
           <div className='flex items-center gap-2'>
             <p className='text-sm font-normal text-gray-light line-through'>
-              {priceBeforeDeduction}(EGP)
+              EGP {priceBeforeDeduction}
             </p>
             <p className='text-sm font-normal text-black-light'>
-              {currentPrice}(EGP)
+              EGP {currentPrice}
             </p>
           </div>
           <Btn

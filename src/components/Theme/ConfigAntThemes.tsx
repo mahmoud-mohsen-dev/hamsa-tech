@@ -10,7 +10,7 @@ const ConfigAntThemes = ({
     theme={{
       token: {
         colorPrimary: '#D62C26',
-        borderRadius: 16
+        borderRadius: 8
       },
       components: {
         // Button: {

@@ -6,7 +6,8 @@ function Btn({
   onClick,
   className = 'bg-white text-gray-normal text-lg',
   defaultPadding = true,
-  outlined = false
+  outlined = false,
+  type = 'button'
 }: {
   children: React.ReactNode;
   href?: string | null;
@@ -14,6 +15,7 @@ function Btn({
   className?: string;
   defaultPadding?: boolean;
   outlined?: boolean;
+  type?: 'button' | 'submit' | 'reset';
 }): JSX.Element {
   const btnStyles =
     'focus:outline-none active:outline-none transition-colors duration-300 flex justify-center items-center gap-2 rounded shadow-sm';
@@ -33,7 +35,7 @@ function Btn({
     <button
       className={`${btnStyles} ${outlined ? 'border-2 border-white text-white' : ''} ${defaultPadding ? 'px-[1rem] py-[.55rem]' : ''} ${className}`}
       onClick={onClick}
-      type='button'
+      type={type}
     >
       {children}
     </button>

@@ -1,5 +1,6 @@
 import { productDetailsType } from '@/types';
 import { NextRequest, NextResponse } from 'next/server';
+import { totalmem } from 'os';
 
 const productData: productDetailsType = {
   product: {
@@ -14,7 +15,8 @@ const productData: productDetailsType = {
       averageRate: 4.5,
       priceBeforeDeduction: 100.0,
       currentPrice: 85.0,
-      badge: ''
+      badge: '',
+      quantity: 5
     },
     sliderImgs: [
       {
@@ -88,11 +90,74 @@ const productData: productDetailsType = {
             '4 in 1 (4 signals switchable TVI/AHD/CVI/CVBS)'
           ]
         }
-      ]
+      ],
+      specification: [
+        { key: 'Weight', value: '1000 Grams' },
+        { key: 'Brand', value: 'hikvision' },
+        { key: 'Item Package Quantity', value: '1' },
+        { key: 'Net Quantity', value: '340.0 gram' },
+        { key: 'Product Dimensions', value: '9.6 x 7.49 x 18.49 cm' },
+        { key: 'ASIN', value: 'SB0025UJ75W' },
+        { key: 'Manufacturer', value: 'China' }
+      ],
+      reviews: {
+        customerReviews: [
+          {
+            rating: 5,
+            title: 'Need to recheck the weight at delivery point',
+            content: `Product quality is good. But, weight seemed less than
+              1kg. Since it is being sent in open package, there is a
+              possibility of pilferage in between. FreshCart sends the
+              veggies and fruits through sealed plastic covers and
+              Barcode on the weight etc.`,
+            user: {
+              name: 'john doe',
+              avatarURL:
+                'https://freshcart.codescandy.com/assets/images/avatar/avatar-12.jpg',
+              avrtarAlt: 'john avtart picture'
+            },
+            createdAt: '2023-08-25T14:30:00.000Z'
+          },
+          {
+            rating: 2,
+            title: 'Need to recheck the weight at delivery point',
+            content: `Product quality is good. But, weight seemed less than
+              1kg. Since it is being sent in open package, there is a
+              possibility of pilferage in between. FreshCart sends the
+              veggies and fruits through sealed plastic covers and
+              Barcode on the weight etc.`,
+            user: {
+              name: 'john doe',
+              avatarURL:
+                'https://freshcart.codescandy.com/assets/images/avatar/avatar-12.jpg',
+              avrtarAlt: 'john avtart picture'
+            },
+            createdAt: '2023-08-25T14:30:00.000Z'
+          },
+          {
+            rating: 1,
+            title: 'Need to recheck the weight at delivery point',
+            content: `Product quality is good. But, weight seemed less than
+              1kg. Since it is being sent in open package, there is a
+              possibility of pilferage in between. FreshCart sends the
+              veggies and fruits through sealed plastic covers and
+              Barcode on the weight etc.`,
+            user: {
+              name: 'Mo mo',
+              avatarURL:
+                'https://freshcart.codescandy.com/assets/images/avatar/avatar-12.jpg',
+              avrtarAlt: 'john avtart picture'
+            },
+            createdAt: '2023-08-25T14:30:00.000Z'
+          }
+        ]
+      }
     }
   },
+
   relatedProducts: [
     {
+      quantity: 5,
       subCategoryName: 'Indoor HD Cameras',
       id: '01-uuid',
       brand: 'hikvision',
@@ -116,7 +181,8 @@ const productData: productDetailsType = {
       averageRate: 4.5,
       priceBeforeDeduction: 100.0,
       currentPrice: 85.0,
-      badge: ''
+      badge: '',
+      quantity: 0
     },
     {
       subCategoryName: 'Indoor HD Cameras',
@@ -129,7 +195,8 @@ const productData: productDetailsType = {
       averageRate: 4.5,
       priceBeforeDeduction: 100.0,
       currentPrice: 85.0,
-      badge: ''
+      badge: '',
+      quantity: 5
     },
     {
       subCategoryName: 'Indoor HD Cameras',
@@ -142,7 +209,8 @@ const productData: productDetailsType = {
       averageRate: 4.5,
       priceBeforeDeduction: 100.0,
       currentPrice: 85.0,
-      badge: ''
+      badge: '',
+      quantity: 3
     }
   ]
 };

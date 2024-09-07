@@ -15,8 +15,8 @@ function Footer() {
   return (
     <footer
       data-aos='fade-down'
-      data-aos-delay='150'
-      data-aos-duration='400'
+      data-aos-delay='0'
+      data-aos-duration='300'
       data-aos-easing='linear'
       data-aos-once='true'
       className='w-full bg-blue-gray-medium py-16'

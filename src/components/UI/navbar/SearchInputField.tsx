@@ -56,7 +56,8 @@ const SearchInputField: React.FC = () => {
     <AutoComplete
       popupMatchSelectWidth={250}
       style={{
-        width: 180,
+        width: '100%',
+        marginTop: 50,
         height: 36,
         display: 'flex',
         alignItems: 'center',

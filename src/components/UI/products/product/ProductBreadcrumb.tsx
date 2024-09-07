@@ -18,6 +18,7 @@ function ProductBreadcrumb({ productName }: { productName: string }) {
       setProductId(pathname);
     }
   }, [pathname]);
+  console.log(productId);
 
   const items = [
     {
@@ -34,7 +35,7 @@ function ProductBreadcrumb({ productName }: { productName: string }) {
       )
     },
     {
-      href: `/products/${productId ?? 'product'}`,
+      href: `${productId ?? 'product'}`,
       title: (
         <p className='flex items-center gap-2'>
           <PiSecurityCamera className='rotate-90' />

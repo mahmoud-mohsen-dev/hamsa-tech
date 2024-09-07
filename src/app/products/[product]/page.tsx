@@ -65,6 +65,7 @@ export default async function Product({
                     ({basic.averageRate} reviews)
                   </h6>
                 </div>
+
                 <div className='mt-3 flex items-center gap-2'>
                   <span className='text-base font-medium text-black-light'>
                     EGP {basic.currentPrice}
@@ -78,6 +79,17 @@ export default async function Product({
                     </span>
                   : null}
                 </div>
+                <h4 className='mt-3 flex items-center gap-2 text-sm font-normal text-blue-gray-medium'>
+                  {basic.quantity > 0 ?
+                    <>
+                      <span>Availability:</span>
+                      <span className='text-green-medium'>
+                        {basic.quantity}
+                      </span>
+                      <span>items in stock</span>
+                    </>
+                  : 'Out of stock'}
+                </h4>
                 <OrderProduct />
                 <div className='mt-4 text-sm capitalize text-gray-light'>
                   <p>
@@ -125,7 +137,7 @@ export default async function Product({
                       >
                         {tag.label}
                       </Link>
-                      {i < arr.length && (
+                      {i < arr.length - 1 && (
                         <span className='mr-2'>,</span>
                       )}
                     </div>
@@ -173,25 +185,39 @@ export default async function Product({
         <section className='container bg-blue-sky-ultralight py-[50px]'>
           <div className='grid grid-cols-2 gap-5 px-6'>
             {/* Download Center Section */}
-            <div className='self-center'>
-              <h2 className='mx-auto w-fit text-3xl font-bold text-black-light'>
-                Download Center
-              </h2>
-              <div className='mt-10 flex flex-wrap items-center justify-center gap-5'>
-                <Btn
-                  className='gap-4 bg-red-shade-350 px-10 py-3 text-lg font-semibold text-white'
-                  defaultPadding={false}
-                >
-                  <FaBook size={24} />
-                  <span>Data Sheet</span>
-                </Btn>
-                <Btn
-                  className='gap-4 bg-red-shade-350 px-10 py-3 text-lg font-semibold text-white'
-                  defaultPadding={false}
-                >
-                  <FaAddressBook size={24} />
-                  <span>User Manual</span>
-                </Btn>
+            <div className='flex flex-col gap-10'>
+              <div>
+                <h2 className='mx-auto w-fit text-3xl font-bold text-black-light'>
+                  Download Center
+                </h2>
+                <div className='mt-10 flex flex-wrap items-center justify-center gap-5'>
+                  <Btn
+                    className='gap-4 bg-red-shade-350 px-10 py-3 text-lg font-semibold text-white'
+                    defaultPadding={false}
+                  >
+                    <FaBook size={24} />
+                    <span>Data Sheet</span>
+                  </Btn>
+                  <Btn
+                    className='gap-4 bg-red-shade-350 px-10 py-3 text-lg font-semibold text-white'
+                    defaultPadding={false}
+                  >
+                    <FaAddressBook size={24} />
+                    <span>User Manual</span>
+                  </Btn>
+                </div>
+              </div>
+              <div className='flex h-full flex-col items-center justify-center'>
+                <iframe
+                  width='557'
+                  height='314'
+                  src='https://www.youtube.com/embed/AQyIi3UjAdw?si=tN_6bMUSm0QR5lHw'
+                  title='YouTube video player'
+                  frameBorder='0'
+                  allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+                  referrerPolicy='strict-origin-when-cross-origin'
+                  allowFullScreen
+                ></iframe>
               </div>
             </div>
             {/* ============================= */}

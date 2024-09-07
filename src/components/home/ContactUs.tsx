@@ -5,7 +5,7 @@ function ContactUs() {
   return (
     <div
       data-aos='fade-right'
-      data-aos-delay='50'
+      data-aos-delay='150'
       data-aos-duration='300'
       data-aos-easing='linear'
       data-aos-once='true'

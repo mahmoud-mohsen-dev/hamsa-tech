@@ -77,7 +77,6 @@ function ArticleCard({
           })}
         </div>
         <Link href={articleUrl}>
-          {' '}
           <h2 className='my-4 text-lg font-medium text-black-medium'>
             {content.title}
           </h2>

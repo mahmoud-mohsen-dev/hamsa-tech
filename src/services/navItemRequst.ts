@@ -6,7 +6,7 @@ export const fetchNavItems = async () => {
       `${process.env.NEXT_PUBLIC_BASE_URL}/api/navItems`,
       {
         // cache: 'no-cache'
-        next: { revalidate: 300 }
+        next: { revalidate: 0 }
       }
     );
 
@@ -32,7 +32,7 @@ export const serverfetchNavItems = async () => {
       `${process.env.BASE_URL}/api/navItems`,
       {
         // cache: 'no-cache'
-        next: { revalidate: 300 }
+        next: { revalidate: 0 }
       }
     );
 

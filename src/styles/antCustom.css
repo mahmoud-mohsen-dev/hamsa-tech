@@ -1,17 +1,25 @@
+.ant-modal .ant-modal-content {
+  min-height: 400px;
+}
+.ant-modal .ant-modal-content .ant-select-selector {
+  width: 85%;
+}
 /* ======= Search Input In Navbar ========= */
 .search-input-navbar .ant-input-group > .ant-input:first-child {
   background: transparent;
-  border-color: white;
+  width: 100%;
+  border-color: black;
   color: white;
   height: 32px;
   font-size: 0.875rem;
-  border-color: white;
+  /* border-color: white; */
   border-bottom-left-radius: 4px;
   border-top-left-radius: 4px;
   transition: none;
 }
+
 .search-input-navbar .ant-input-group > .ant-input:first-child:focus {
-  border-color: #3642c7;
+  border-color: rgb(189, 46, 46);
   box-shadow: none;
 }
 .header .ant-input-group .ant-input-group-addon {
@@ -27,16 +35,16 @@
   box-shadow: 0 0 0 2px rgba(0, 46, 210, 0.11);
 } */
 .search-input-navbar .ant-input-group > .ant-input::placeholder {
-  color: whitesmoke;
+  color: black;
 }
 
 .search-input-navbar.ant-input-group-wrapper
   .ant-input-group-addon
   .ant-input-search-button.ant-btn.ant-btn-primary {
   transition: none;
-  background-color: transparent;
+  background-color: black;
   height: 32px;
-  border: 1px solid white;
+  border: 1px solid black;
   border-bottom-right-radius: 4px;
   border-top-right-radius: 4px;
 }
@@ -57,7 +65,7 @@
 .header
   .ant-select-outlined:not(.ant-select-customize-input)
   .ant-select-selector {
-  border-color: white;
+  border-color: transparent;
 }
 
 .ant-input-compact-item:not(
@@ -104,4 +112,18 @@
 /* Tabs Section */
 .tabs-section .ant-tabs .ant-tabs-tab + .ant-tabs-tab {
   margin: 0 0 0 50px;
+}
+
+/* Ant reveiw rate */
+.review-tabs .ant-rate .ant-rate-star:not(:last-child) {
+  margin-inline-end: 4px;
+}
+
+.review-tabs
+  .ant-form-vertical
+  .ant-form-item:not(.ant-form-item-horizontal)
+  .ant-form-item-label
+  > label {
+  font-size: 1rem;
+  font-weight: 500;
 }

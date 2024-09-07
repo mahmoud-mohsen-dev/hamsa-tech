@@ -56,6 +56,7 @@ export interface ProductBasicInfoType {
   priceBeforeDeduction: number;
   currentPrice: number;
   badge: '' | 'Hot' | 'Out Of Stock' | 'Limited' | 'Sale' | 'New';
+  quantity: number;
 }
 export interface productDetailsType {
   product: {
@@ -87,6 +88,23 @@ export interface productDetailsType {
         alt?: string;
         ul?: string[];
       }[];
+      specification: {
+        key: string;
+        value: string;
+      }[];
+      reviews: {
+        customerReviews: {
+          rating: number;
+          title: string;
+          content: string;
+          user: {
+            name: string;
+            avatarURL: string;
+            avrtarAlt: string;
+          };
+          createdAt: string;
+        }[];
+      };
     };
   };
   relatedProducts: ProductBasicInfoType[];
