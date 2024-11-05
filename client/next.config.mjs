@@ -5,12 +5,15 @@ const withNextIntl = createNextIntlPlugin();
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
+    deviceSizes: [320, 420, 768, 1024, 1200],
+    loader: 'default',
+    domains: ['res.cloudinary.com'],
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'res.cloudinary.com',
-        port: '', // Leave this empty if you're not using a specific port
-        pathname: '/**' // Match all paths from this domain
+        hostname: '127.0.0.1',
+        port: '1337',
+        pathname: '/uploads/**'
       }
     ]
   }
