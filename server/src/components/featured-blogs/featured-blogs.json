@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_featured_blogs_featured_blogs",
+  "info": {
+    "displayName": "featured-blogs",
+    "icon": "pencil",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "blogs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::blog.blog"
+    },
+    "slug": {
+      "type": "string",
+      "required": true
+    },
+    "heading_in_black": {
+      "type": "string",
+      "required": true
+    },
+    "heading_in_red": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_about_us_section_about_uses",
+  "info": {
+    "displayName": "about_us",
+    "icon": "question",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "button_text": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "section_name": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

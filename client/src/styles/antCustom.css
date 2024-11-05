@@ -1,0 +1,431 @@
+.ant-modal .ant-modal-content {
+  min-height: 400px;
+}
+.ant-modal .ant-modal-content .ant-select-selector {
+  width: 85%;
+}
+/* ======= Search Input In Navbar ========= */
+.search-input-navbar .ant-input-group > .ant-input:first-child {
+  background: transparent;
+  width: 100%;
+  border-color: #00a0e9;
+  color: white;
+  height: 40px;
+  font-size: 0.875rem;
+  /* border-color: white; */
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+  transition: none;
+}
+.is-arabic.search-input-navbar
+  .ant-input-group
+  > .ant-input:first-child {
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+}
+
+.search-input-navbar .ant-input-group > .ant-input:first-child:focus {
+  /* border-color: rgb(189, 46, 46); */
+  border-color: #1773b0;
+  box-shadow: none;
+}
+.header .ant-input-group .ant-input-group-addon {
+  transition: none;
+}
+
+.search-input-navbar .ant-input-group > .ant-input::placeholder {
+  color: #484747;
+}
+
+.search-input-navbar.ant-input-group-wrapper
+  .ant-input-group-addon
+  .ant-input-search-button.ant-btn.ant-btn-primary {
+  transition: none;
+  background-color: #00a0e9;
+  height: 40px;
+  border: 1px solid #00a0e9;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.is-arabic.search-input-navbar.ant-input-group-wrapper
+  .ant-input-group-addon
+  .ant-input-search-button.ant-btn.ant-btn-primary {
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+}
+/* .search-input-navbar
+  .ant-input-group
+  > .ant-input:first-child:focus
+  + .ant-input-group-addon:last-child
+  .ant-input-search-button {
+  border-color: #3642c7;
+  color: #3642c7;
+  box-shadow: 0 0 0 2px rgba(0, 46, 210, 0.11);
+} */
+
+/* Profile menu */
+.profile-menu.ant-dropdown
+  .ant-dropdown-menu
+  .ant-dropdown-menu-title-content
+  > a:hover,
+.profile-menu.ant-dropdown
+  .ant-dropdown-menu
+  .ant-dropdown-menu-title-content
+  > a {
+  color: #2563eb;
+}
+
+.profile-menu.ant-dropdown
+  .ant-dropdown-menu
+  .ant-dropdown-menu-title-content
+  > a.when-logged-in-list-item:hover,
+.profile-menu.ant-dropdown
+  .ant-dropdown-menu
+  .ant-dropdown-menu-title-content
+  > a.when-logged-in-list-item {
+  color: #d7150e;
+}
+
+.ant-dropdown-menu
+  .ant-dropdown-menu-title-content
+  > a.when-logged-out-list-item:hover,
+.profile-menu.ant-dropdown
+  .ant-dropdown-menu
+  .ant-dropdown-menu-title-content
+  > a.when-logged-out-list-item {
+  color: #16a34a;
+}
+
+/* Seach Input In Small Screens */
+.ant-drawer-body .ant-select-single .ant-select-selector {
+  width: 100%;
+}
+
+/* ======= Select Input In Navbar ========= */
+.header
+  .ant-select-outlined:not(.ant-select-customize-input)
+  .ant-select-selector {
+  background-color: transparent;
+  color: white;
+  border-radius: 4px;
+}
+.header
+  .ant-select-single.ant-select-show-arrow
+  .ant-select-selection-item {
+  color: white;
+}
+.header
+  .ant-select-outlined:not(.ant-select-customize-input)
+  .ant-select-selector {
+  border-color: transparent;
+}
+
+.header .language-select.ant-select {
+  display: none;
+}
+
+@media screen and (min-width: 1280px) {
+  .header .language-select.ant-select {
+    display: inline-block;
+  }
+}
+
+.ant-input-compact-item:not(
+    .ant-input-compact-last-item
+  ).ant-input-compact-first-item {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.footer
+  .ant-btn-compact-item:not(
+    .ant-btn-compact-first-item
+  ).ant-btn-compact-last-item {
+  background: rgba(220, 16, 149, 0.903);
+}
+
+/* Products antd sidebar BrandFilter */
+.brands-filter .ant-form {
+  margin-left: 24px;
+  margin-top: 12px;
+}
+.brands-filter .check-all {
+  width: calc(100% - 24px);
+  margin-left: 24px;
+  margin-top: 12px;
+}
+.brands-filter .ant-checkbox-group {
+  flex-direction: column;
+  margin-left: 24px;
+  gap: 5px;
+}
+
+.brands-filter .ant-checkbox .ant-checkbox-inner {
+  border-radius: 3px;
+}
+
+/* ============ Start Of Active ============= */
+/* Header */
+/* Header when Active for middle items*/
+.ant-collapse
+  > .ant-collapse-item.ant-collapse-item-active
+  .ant-collapse-header {
+  border: 1px solid #1773b0;
+  background-color: #ecf4ff;
+  border-radius: 0px;
+}
+
+/* Header when Active for firts item*/
+.ant-collapse
+  > .ant-collapse-item:first-child.ant-collapse-item-active
+  .ant-collapse-header {
+  border-radius: 4px 4px 0px 0px;
+}
+
+/* Header when Active for last item*/
+.ant-collapse
+  > .ant-collapse-item:last-child.ant-collapse-item-active
+  .ant-collapse-header {
+  border-radius: 0px 0px 4px 4px;
+}
+
+/* Body Content */
+/* Body content of all when active*/
+.ant-collapse
+  > .ant-collapse-item.ant-collapse-item-active
+  .ant-collapse-content
+  > .ant-collapse-content-box {
+  border-width: 0px 1px 1px 1px;
+  border-color: #dedede;
+  border-style: solid;
+  background-color: rgba(0, 0, 0, 0.043);
+  padding-top: 16px;
+}
+
+/* ============ End Of Active ============= */
+/* ============ Start Of Not Active ============= */
+/* Header */
+/* Not active for all */
+.ant-collapse
+  > .ant-collapse-item:not(.ant-collapse-item-active)
+  .ant-collapse-header {
+  border: 1px solid #dedede;
+}
+
+/* Not active for first header  */
+.ant-collapse
+  > .ant-collapse-item:first-child:not(.ant-collapse-item-active)
+  .ant-collapse-header {
+  border-radius: 4px 4px 0px 0px;
+  border-width: 1px 1px 1px 1px;
+}
+
+/* Not active for middle headers*/
+.ant-collapse
+  > .ant-collapse-item:not(
+    .ant-collapse-item-active,
+    :first-child,
+    :last-child
+  )
+  .ant-collapse-header {
+  border-radius: 0px;
+  border-width: 0px 1px 1px 1px;
+}
+
+/* Not active for last header */
+.ant-collapse
+  .ant-collapse-item:last-child:not(.ant-collapse-item-active)
+  .ant-collapse-header {
+  border-width: 0px 1px 1px 1px;
+  border-radius: 0px 0px 4px 4px;
+}
+
+/* Body */
+/* ============ End Of Not Active ============= */
+
+/* Product page  */
+/* Quantity Input */
+#product-page .ant-input-number .ant-input-number-handler-wrap {
+  width: 30px;
+  opacity: 1;
+}
+
+/* Tabs Section */
+.tabs-section .ant-tabs.left .ant-tabs-tab {
+  margin-left: 30px;
+}
+.tabs-section .ant-tabs.right .ant-tabs-tab {
+  margin-right: 30px;
+}
+
+/* Ant reveiw rate */
+.review-tabs .ant-rate .ant-rate-star:not(:last-child) {
+  margin-inline-end: 4px;
+}
+
+.review-tabs
+  .ant-form-vertical
+  .ant-form-item:not(.ant-form-item-horizontal)
+  .ant-form-item-label
+  > label {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Nav Drawer Screen Small menu*/
+.ant-drawer .nav-drawer-screen-small .ant-drawer-close {
+  margin-inline-end: 0px;
+}
+.nav-drawer-screen-small
+  .ant-menu-light.ant-menu-root.ant-menu-inline {
+  border-inline-end: 0px solid transparent;
+  margin: 0px !important;
+}
+
+/* Cart drawer */
+.ant-drawer-content.reverse .ant-drawer-header-title {
+  flex-direction: row-reverse;
+}
+
+/* Progress */
+.progress-wrapper .ant-progress .ant-progress-bg {
+  height: 40px !important;
+}
+.progress-wrapper .ant-progress .ant-progress-outer {
+  height: 40px !important;
+}
+.progress-wrapper .ant-progress .ant-progress-inner {
+  border: 1px solid rgb(153, 213, 207) !important;
+  height: 40px !important;
+}
+
+.progress-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 40px;
+}
+
+.progress-label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Collapse */
+/* Navbar Drawer Collaspe */
+
+/* Header when Active */
+.nav-drawer-screen-small
+  .ant-collapse
+  > .ant-collapse-item.ant-collapse-item-active
+  .ant-collapse-header {
+  border-radius: 0px;
+  border-right: 0px;
+  border-left: 0px;
+  padding: 0px;
+}
+
+/* Header when not Active*/
+.nav-drawer-screen-small
+  .ant-collapse
+  > .ant-collapse-item:not(.ant-collapse-item-active)
+  .ant-collapse-header {
+  padding: 0px;
+}
+
+.nav-drawer-screen-small
+  .ant-collapse
+  > .ant-collapse-item:not(.ant-collapse-item-active)
+  .ant-collapse-header {
+  border: 0px;
+  border-top: 1px solid #dedede;
+}
+.nav-drawer-screen-small
+  .ant-collapse
+  > .ant-collapse-item:last-child:not(.ant-collapse-item-active)
+  .ant-collapse-header {
+  border-bottom: 1px solid #dedede;
+}
+
+.nav-drawer-screen-small
+  .ant-collapse
+  > .ant-collapse-item.ant-collapse-item-active
+  .ant-collapse-content
+  > .ant-collapse-content-box {
+  padding: 0px;
+  border-bottom: 0px;
+}
+
+.nav-drawer-screen-small
+  .ant-collapse
+  > .ant-collapse-item:not(.ant-collapse-item-active)
+  .ant-collapse-header {
+  background-color: white;
+}
+
+/* Only on billing address first shild active */
+#billing-address .ant-collapse .same .ant-collapse-content {
+  border-top: 0;
+}
+#billing-address
+  .ant-collapse
+  .same
+  .ant-collapse-content
+  > .ant-collapse-content-box {
+  padding: 0;
+}
+
+/* Postal code Input */
+/* For Chrome, Safari, Edge, and Opera */
+input[type='number']#order-info_shippingDetailsApartment::-webkit-outer-spin-button,
+input[type='number']#order-info_shippingDetailsApartment::-webkit-inner-spin-button,
+input[type='number']#order-info_shippingDetailsPostalCode::-webkit-outer-spin-button,
+input[type='number']#order-info_shippingDetailsPostalCode::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+/* For Firefox */
+input[type='number']#order-info_shippingDetailsPostalCode {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+/* Wishlist table */
+.wishtlist-table .ant-empty-normal {
+  min-height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Product page pagination */
+.pagination-in-arabic .anticon-right svg,
+.pagination-in-arabic .anticon-left svg {
+  transform: scale(-1);
+}
+
+/* aside-filter */
+@media screen and (min-width: 868px) {
+  aside.aside-filter {
+    overflow: unset;
+  }
+}
+
+.row-link {
+  cursor: pointer; /* Change the cursor to a pointer */
+}
+
+/* .row-link:hover {
+  background-color: #f5f5f5; /* Optional: Add a hover effect */
+/* }
+ */

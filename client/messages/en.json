@@ -1,0 +1,457 @@
+{
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, ar {العربية} en {English} other {Unknown}}"
+  },
+  "Error": {
+    "heading": "Internal Server Error.",
+    "subHeading": "We are already working to solve the problem.",
+    "reloadButtonText": "reload the page",
+    "metaData": {
+      "title": "Something went wrong!"
+    }
+  },
+  "NotFoundPage": {
+    "heading": "Page Not Found",
+    "subHeading": "It seems the page you're looking for doesn't exist. You might want to head back to the homepage.",
+    "linkText": "Back to Homepage",
+    "metaData": {
+      "title": "Page not found"
+    }
+  },
+  "HomePage": {
+    "Header": {
+      "logoPart1": "Hamsa",
+      "logoPart2": "Tech",
+      "accountLabel": "Account",
+      "profileLabel": "Profile",
+      "signinLabel": "Sign in",
+      "signoutLabel": "Sign out"
+    },
+    "featured": {
+      "buttonText": "Read More ⟶"
+    },
+    "articles": {
+      "blogCardButtonText": "Read More",
+      "allPostsButton": "Check All Blog Posts"
+    },
+    "footer": {
+      "companyName": "Hamsa Tech",
+      "newsletterTitle": "Newsletter",
+      "quickLinksTitle": "Quick Links",
+      "newsLetterDescription": "Don’t miss to subscribe to our new feeds.",
+      "newsletterInputPlaceholder": "Subscribe Now",
+      "contactTitle": "Contact Us",
+      "contactPhoneTitle": "Phone Us",
+      "contactMailTitle": "Mail Us"
+    },
+    "metaData": {
+      "title": "Hamsa Tech for Technolgy devices Store",
+      "description": "Surveillance cameras · Barcode and cashier devices · Sound systems · Networks · Fingerprint device · Surveillance cameras · Barcode and cashier devices."
+    }
+  },
+  "NavbarDrawer": {
+    "logo_part_1": "Hamsa",
+    "logo_part_2": "Tech",
+    "wishlistLabel": "Wishlist",
+    "profileLabel": "Profile",
+    "signinLabel": "Sign in",
+    "signoutLabel": "Sign out",
+    "searchPlaceholder": "Search for products..."
+  },
+  "ProductsPage": {
+    "breadcrumb": {
+      "all": "All Products"
+    },
+    "filtersSidebar": {
+      "filteringButtonText": "Filtering and sorting",
+      "categoriesTitle": "Categories",
+      "brandTitle": "Brands",
+      "priceRangeTitle": "Price Range",
+      "priceSubTitle": "Price",
+      "rateTitle": "Rate",
+      "checkAll": "Check All",
+      "uncheckAll": "Uncheck All",
+      "resetButton": "Reset",
+      "applyButton": "Apply",
+      "sortBy": [
+        "Sort by: Featured",
+        "Name: A-Z",
+        "Name: Z-A",
+        "Price: Low to High",
+        "Price: High to Low",
+        "Rating: Low to High",
+        "Rating: High to Low"
+      ],
+      "showBy": [
+        "Show: 50",
+        "Show: 40",
+        "Show: 30",
+        "Show: 20",
+        "Show: 10"
+      ],
+      "foundItems": "Products Found:  {count}"
+    },
+    "content": {
+      "productCardReview": "Review",
+      "productCardReviews": "Reviews",
+      "productCardButtonText": "Add To Cart"
+    },
+    "metaData": {
+      "title": "Products page",
+      "description": "Surveillance cameras · Barcode and cashier devices · Sound systems · Networks · Fingerprint device · Surveillance cameras · Barcode and cashier devices."
+    }
+  },
+  "ProductPage": {
+    "breadcrumb": {
+      "all": "All Products"
+    },
+    "reviewsText": "reviews",
+    "offText": "Off",
+    "availabilityText": "Availability",
+    "stockText": "items in stock",
+    "outOfStockText": "Out of stock",
+    "soldOutButtonText": "Sold out",
+    "addToCartButtonText": "Add to Cart",
+    "addedToCartButtonText": "Added to Cart",
+    "AddToWhishListText": "Add to wishlist",
+    "AddedToWhishListText": "Added to wishlist",
+    "deliveryText": "Delivery within 5 days",
+    "returnText": "Free return within 14 days",
+    "brandText": "Brand",
+    "skuText": "SKU",
+    "connectivityText": "Connection Technology",
+    "modalNameText": "Modal Name",
+    "warantyText": "Waranty",
+    "tagsText": "Tags",
+    "shareText": "Share",
+    "aboutThisProductSectionTitle": "About This Product",
+    "aboutTheProductText": "About The Product",
+    "downloadCenterSectionTitle": "Download Center",
+    "dataSheetButtonText": "Data Sheet",
+    "userManualButtonText": "User Manual",
+    "relatedProductsTitleBlackText": "Related",
+    "relatedProductsTitleRedText": "Products",
+    "descriptionSectionTitle": "Description",
+    "specificationSectionTitle": "Specification",
+    "reviewsSectionTitle": "Reviews",
+    "moreDetailsTitle": "More details",
+    "reviewsTabSection": {
+      "customerReviewsTitle": "Customer Reviews",
+      "reviewsText": "reviews",
+      "reviewText": "review",
+      "outOfText": "out of",
+      "reviewThiProductTitle": "Review this product",
+      "shareThoughtTitle": "Share your thoughts with other customers",
+      "writeAReviewText": "Write A Review",
+      "createReviewText": "Create Review",
+      "noReviewsText": "No reviews yet",
+      "overallRatingText": "Overall Rating",
+      "addHeadlineText": "Add a headline",
+      "addHeadlinePlaceholderText": "what's the most important to know?",
+      "addWrittenReviewText": "Add a written review",
+      "addWrittenReviewPlaceholderText": "What did you like or dislike? What did you use this product for?",
+      "submitButtonText": "Submit Review",
+      "overallRatingRequiredMessage": "Overall rating is required",
+      "headlineRequiredMessage": "Headline is required",
+      "commentRequiredMessage": "Comment is required"
+    }
+  },
+  "OffersPage": {
+    "noOffersMessage": "No offers are available",
+    "metaData": {
+      "title": "Hamsa Tech Offers Page",
+      "description": "Offers on Surveillance cameras · Barcode and cashier devices · Sound systems · Networks · Fingerprint device · Surveillance cameras · Barcode and cashier devices."
+    }
+  },
+  "CartDrawer": {
+    "title": "Your cart",
+    "emptyCartMessage": "Your cart is empty",
+    "continueShoppingMessage": "Continue shopping",
+    "haveAnAccountMessage": "Have an account?",
+    "loginMessage": "Log in",
+    "toCheckOutMessage": "to check out faster.",
+    "subTotal": "SubTotal",
+    "taxesMessage": "Taxes and shipping calculated at checkout",
+    "checkoutMessage": "Checkout",
+    "spendMessage": {
+      "start": "Spend ",
+      "end": " to ",
+      "currency": "EGP",
+      "freeShipping": "FREE SHIPPING"
+    }
+  },
+  "CheckoutPage": {
+    "content": {
+      "contactTitle": "Contact Info",
+      "loginTitle": "Log in",
+      "emailOrPhoneTitlePlaceholder": "Email or Phone Number",
+      "phone": "Phone",
+      "confirmToSendNewsletter": "Email me with news and offers",
+      "deliveryTitle": "Delivery",
+      "countryOrRegionTitle": "Country / Region",
+      "countryValueOne": "Egypt",
+      "firstNameTitle": "First Name",
+      "lastNameTitle": "Last Name",
+      "streetTitle": "Street Information",
+      "additionalAddressTitle": "Additional Address Info. (optional)",
+      "buildingTitle": "Building",
+      "floorTitle": "Floor",
+      "apartmentTitle": "Aparment",
+      "cityTitle": "City",
+      "governorateTitle": "Governorate",
+      "postalCode": "postal code (optional)",
+      "ShippingMethodTitle": "Shipping Method",
+      "shippingAmountTitle": "Only {amount} EGP",
+      "paymentMethodTitle": "Payment",
+      "paymentSubtitle": "All transactions are secure and encrypted.",
+      "payWithCreditCardTitle": "Pay by card",
+      "payCithCardSubtitle": "After clicking 'Pay now', you will be redirected to 'Pay by card, wallet, or installments' to complete your purchase securely.",
+      "payOnDeliveryTitle": "Cash on delivery",
+      "payOnDeliverySubtitle": "Pay with cash upon delivery.",
+      "billingAddressTitle": "Billing address",
+      "sameAsDeliveryTitle": "Same as delivery address",
+      "useDifferentBillingAddress": "Use a different billing address",
+      "submitButtonText": "Place order",
+      "continueShoppingButtonText": "Continue shopping",
+      "discountInputPlaceholder": "Discount code",
+      "applyButtonText": "Apply",
+      "subtotalTitle": "Subtotal",
+      "itemTitle": "item",
+      "itemsTitle": "items",
+      "currency": "E£",
+      "shippingTitle": "Shipping Cost",
+      "onlyCost": "Only {shippingCost} EGP",
+      "couponPlaceholder": "Coupon",
+      "discount": "Discount",
+      "totalTitle": "Total",
+      "freeShippingMessage": "Free shipping",
+      "phoneTooltip": "In case we need to contact you about your order",
+      "selectGovernorateForShippingCosts": "Select the governorate to view shipping costs",
+      "selectGovernorateForTotalOrder": "Select the governorate to view the total order",
+      "downloadInvoiceButtonText": "Download Invoice",
+      "formValidationErrorMessages": {
+        "inputEmailOrPhone": "Please input your email or phone number!",
+        "inputDeliveryPhone": "Please provide your contact number for delivery!",
+        "selectCountry": "Please select a country!",
+        "inputFirstName": "Please input your first name!",
+        "inputLastName": "Please input your last name!",
+        "inputAddress": "Please input your address!",
+        "inputCity": "Please input your city!",
+        "inputBuilding": "Please input your building number!",
+        "inputFloor": "Please input your floor number!",
+        "inputApartment": "Please input your apartment number!",
+        "selectGovernorate": "Please select your governorate!",
+        "couponCodeRequired": "Please enter a copoun code!",
+        "apartmentNumberValidation": "Apartment number must be greater than zero",
+        "postalCodeValidation": "Postal code must be a 5-digit number!"
+      },
+      "couponCode": {
+        "couponNotValid": "Coupon not valid!",
+        "subtotalCartCostMustBeGreaterThanCouponValue": "Subtotal cart cost must be greater than coupon value!"
+      },
+      "form": {
+        "loading": "Action in progress..",
+        "formSubmissionError": "Error during form submission",
+        "formSubmissionFailed": "Form submission failed! Please check the form.",
+        "orderError": "Error placing order",
+        "addressCreationError": "Failed to create address",
+        "guestUserError": "Failed to create guest user data",
+        "orderCreationError": "Failed to create a new order",
+        "successMessage": "Loading finished"
+      }
+    },
+    "metaData": {
+      "title": "Hamsa Tech checkout Page",
+      "description": "Securely complete your purchase for surveillance cameras, POS systems, access control, and more at Hamsa Tec. Choose from a variety of payment options, including card, wallet, or installments."
+    }
+  },
+  "CallbackCheckoutPage": {
+    "content": {
+      "orderSuccessTitle": "Order Successful!",
+      "orderSuccessMessage": "Thank you for your purchase! Your order will be processed within 24 hours during working days. We will notify you by email once your order has been shipped.",
+      "orderSummary": "Order Summary",
+      "orderId": "Order ID:",
+      "orderDate": "Date:",
+      "orderTotal": "Total:",
+      "shippingMethod": "Shipping:",
+      "paymentMethod": "Payment Method:",
+      "paymentStatus": "Payment Status:",
+      "estimatedDelivery": "Estimated delivery:",
+      "backToShop": "Back to Shop",
+      "shippingStandard": "Standard Delivery",
+      "paymentCard": "Card",
+      "paymentStatusPaid": "Paid",
+      "currency": "EGP"
+    },
+    "metaData": {
+      "title": "Payment Status & Order Details | Hamsa Tech",
+      "description": "Securely verify your payment status with Hamsa Tech and review complete order details, including confirmation of successful or pending payments."
+    }
+  },
+  "SigninPage": {
+    "content": {
+      "title": "Sign in to your account",
+      "emailPlaceholder": "Email",
+      "passwordPlaceholder": "Password",
+      "forgotPasswordLink": "Forgot Password?",
+      "rememberMeLabel": "Remember me",
+      "loginButton": "Sign in",
+      "signupLabel": "Don't have an account yet?",
+      "registerButton": "Sign Up",
+      "orLabel": "Or",
+      "facebookButton": "Sign in with Facebook",
+      "googleButton": "Sign in with Google",
+      "formValidationErrorMessages": {
+        "emailRequired": "Email is required!",
+        "passwordRequired": "Password is required!",
+        "errorDuringFormSubmission": "Error during form submission",
+        "invalidCredentials": "The provided email or password is incorrect.",
+        "signinSuccessMessage": "Welcome back! You are now logged in.",
+        "emailTakenMessage": "An account with this email is already registered. Please sign in using a different method.",
+        "signinFailedMessage": "Failed to sign in."
+      }
+    },
+    "metaData": {
+      "title": "Hamsa Tech Login Page",
+      "description": "Securely login to your Hamsa Tech account"
+    }
+  },
+  "SignupPage": {
+    "content": {
+      "title": "Create your account",
+      "emailPlaceholder": "Email",
+      "fullNamePlaceholder": "Full Name",
+      "passwordPlaceholder": "Password",
+      "phonePlaceholder": "Phone",
+      "signupButton": "Create an account",
+      "signinLabel": "Already have an account?",
+      "signinLink": "Sign in",
+      "orLabel": "Or",
+      "aggreeToTermsLabel": "Agree to",
+      "termsOfUse": "terms of use",
+      "andLabel": "and",
+      "privacyPolicy": "privacy policy",
+      "newsLetterCheckboxLable": "Get updates and special offers!",
+      "formValidationErrorMessages": {
+        "fullNameRequired": "Full name is required",
+        "emailRequired": "Email is required",
+        "emailInvalid": "Please enter a valid email",
+        "passwordRequired": "Password is required",
+        "phoneRequired": "Phone is required",
+        "termsRequired": "You have to agree to our terms to create a new account",
+        "minValidationPasswordError": "Password must be at least 8 characters long",
+        "maxValidationPasswordError": "Password cannot exceed 20 characters",
+        "phoneTypeError": "Phone must be a number",
+        "phoneLengthError": "Invalid phone number length for selected country code",
+        "fullNameLengthError": "Full name must have between 2 and 4 names",
+        "fullNameCharacterError": "Full name must contain only English or Arabic characters",
+        "passwordLetterError": "Password must contain at least one letter",
+        "passwordNumberError": "Password must contain at least one number",
+        "passwordInvalidCharacters": "Password can only contain English letters, numbers, and special characters",
+        "emailTakenError": "This email is already in use. Try another one."
+      }
+    },
+    "metaData": {
+      "title": "Hamsa Tech Sign up Page",
+      "description": "Securely create your Hamsa Tech account"
+    }
+  },
+  "WishlistPage": {
+    "content": {
+      "title": "My Wishlist",
+      "subTitle": "There are {count} products in this wishlist.",
+      "table": {
+        "header": {
+          "photo": "Photo",
+          "name": "Name",
+          "price": "Price",
+          "status": "Status",
+          "actions": "Actions",
+          "remove": "Remove"
+        },
+        "body": {
+          "inStock": "In Stock",
+          "outOfStock": "Out of Stock",
+          "addToCartButtonText": "Add to Cart",
+          "contactUs": "Contact Us",
+          "currency": "EGP"
+        }
+      }
+    },
+    "metaData": {
+      "title": "Hamsa Tech Wishlist Page",
+      "description": "View and manage your favorite products in one place with the Hamsa Tech Wishlist. Save items for future purchase and easily access them anytime."
+    }
+  },
+  "BlogPage": {
+    "content": {
+      "title": "Our Blog",
+      "subtitle": "Discover latest articles on technology and security systems."
+    },
+    "metaData": {
+      "title": "Hamsa Tech Blog",
+      "description": "Discover the latest news and updates from Hamsa Tech by following our blog. Read articles, share insights, and stay up-to-date with our products and services."
+    }
+  },
+
+  "SupportPage": {
+    "content": {
+      "title": "Support",
+      "subtitle": "We're here to help. Submit your question and our support team will get back to you as soon as possible.",
+      "form": {
+        "fields": {
+          "name": {
+            "label": "Full Name",
+            "placeholder": "Enter your full name",
+            "requiredMessage": "Full Name is required."
+          },
+          "email": {
+            "label": "Email Address",
+            "placeholder": "Enter your email",
+            "requiredMessage": "Email Address is required.",
+            "invalidMessage": "Please enter a valid email address."
+          },
+          "subject": {
+            "label": "Subject",
+            "placeholder": "Enter the subject of your inquiry",
+            "requiredMessage": "Subject is required."
+          },
+          "message": {
+            "label": "Your Question",
+            "placeholder": "Describe your question or issue",
+            "requiredMessage": "Your question is required."
+          }
+        },
+        "submission": {
+          "submitButton": "Submit",
+          "successMessage": "Thank you for reaching out! We'll respond to your inquiry shortly.",
+          "errorMessage": "There was an error submitting your request. Please try again later.",
+          "loading": "Action in progress.."
+        }
+      },
+      "contactInfo": {
+        "title": "Contact Information",
+        "telephone": "Telephone",
+        "whatsapp": "Whatsapp",
+        "email": "Email"
+      }
+    },
+    "metaData": {
+      "title": "Hamsa Tech Support",
+      "description": "Need assistance? Get in touch with Hamsa Tech by submitting your question. Our team is ready to help with any inquiries you may have regarding our products and services."
+    }
+  },
+  "AboutUsPage": {
+    "content": {
+      "miniMapText": "Layers",
+      "viewLargerMapText": "View larger map",
+      "locationText": "Our Location",
+      "callUsText": "Call Us"
+    },
+    "metaData": {
+      "title": "Hamsa Tech About Us Page",
+      "description": "Hamsa tech offers top-quality security systems and surveillance cameras. Contact us at any of our branch locations for expert support and solutions."
+    }
+  }
+}

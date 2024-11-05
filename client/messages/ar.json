@@ -1,0 +1,457 @@
+{
+  "LocaleSwitcher": {
+    "label": "تغيير اللغة",
+    "locale": "{locale, select, ar {العربية} en {English} other {Unknown}}"
+  },
+  "Error": {
+    "heading": "خطأ في الخادم الداخلي.",
+    "subHeading": "نحن نعمل بالفعل على حل المشكلة.",
+    "reloadButtonText": "إعادة تحميل الصفحة",
+    "metaData": {
+      "title": "حدث خطأ ما!"
+    }
+  },
+  "NotFoundPage": {
+    "heading": "الصفحة غير موجودة",
+    "subHeading": "يبدو أن الصفحة التي تبحث عنها غير موجودة. يمكنك العودة إلى الصفحة الرئيسية.",
+    "linkText": "العودة إلى الصفحة الرئيسية",
+    "metaData": {
+      "title": "الصفحة غير موجودة"
+    }
+  },
+  "HomePage": {
+    "Header": {
+      "logoPart1": "همسه",
+      "logoPart2": "تك",
+      "accountLabel": "الحساب",
+      "profileLabel": "الملف الشخصي",
+      "signinLabel": "تسجيل الدخول",
+      "signoutLabel": "تسجيل الخروج"
+    },
+    "featured": {
+      "buttonText": "إقرأ المزيد ⟵"
+    },
+    "articles": {
+      "blogCardButtonText": "إقرأ المزيد",
+      "allPostsButton": "اطلع على جميع مقالات المدونة"
+    },
+    "footer": {
+      "companyName": "همسة تك",
+      "newsletterTitle": "النشرة الإخبارية",
+      "quickLinksTitle": "روابط سريعة",
+      "newsLetterDescription": "‫لا تفوت الاشتراك في أحدث أخبارنا.‬",
+      "newsletterInputPlaceholder": "اشترك الآن",
+      "contactTitle": "تواصل معنا",
+      "contactPhoneTitle": "عبر الهاتف",
+      "contactMailTitle": "راسلنا بالبريد الإلكتروني"
+    },
+    "metaData": {
+      "title": "متجر همسة تك لأجهزة الحماية وكاميرات المراقبة",
+      "description": "كاميرات المراقبة · أجهزة الباركود والكاشير · أنظمة الصوت · الشبكات · جهاز البصمة · كاميرات المراقبة · أجهزة الباركود والكاشير."
+    }
+  },
+  "NavbarDrawer": {
+    "logo_part_1": "همسة",
+    "logo_part_2": "تك",
+    "wishlistLabel": "قائمة الأمنيات",
+    "profileLabel": "الملف الشخصي",
+    "signinLabel": "تسجيل الدخول",
+    "signoutLabel": "تسجيل خروج",
+    "searchPlaceholder": "ابحث عن المنتجات..."
+  },
+  "ProductsPage": {
+    "breadcrumb": {
+      "all": "جميع المنتجات"
+    },
+    "filtersSidebar": {
+      "filteringButtonText": "التصفية والفرز",
+      "categoriesTitle": "الفئات",
+      "brandTitle": "العلامات التجارية",
+      "priceRangeTitle": "نطاق السعر",
+      "priceSubTitle": "السعر",
+      "rateTitle": "التقييم",
+      "checkAll": "تحديد الكل",
+      "uncheckAll": "إلغاء تحديد الكل",
+      "resetButton": "إعادة تعيين",
+      "applyButton": "تطبيق",
+      "sortBy": [
+        "ترتيب حسب: المميز",
+        "الاسم: أ-ي",
+        "الاسم: ي-أ",
+        "السعر: من الأقل إلى الأعلى",
+        "السعر: من الأعلى إلى الأقل",
+        "التقييم: من الأقل إلى الأعلى",
+        "التقييم: من الأعلى إلى الأقل"
+      ],
+      "showBy": [
+        "عرض: 50",
+        "عرض: 40",
+        "عرض: 30",
+        "عرض: 20",
+        "عرض: 10"
+      ],
+      "foundItems": "عدد المنتجات الموجودة:  {count}"
+    },
+    "content": {
+      "productCardReview": "تقييم",
+      "productCardReviews": "تقيمات",
+      "productCardButtonText": "أضف إلى السلة"
+    },
+    "metaData": {
+      "title": "صفحة المنتجات",
+      "description": "كاميرات المراقبة · أجهزة الباركود والصرافة · أنظمة الصوت · الشبكات · جهاز بصمة الأصبع · كاميرات المراقبة · أجهزة الباركود والصرافة."
+    }
+  },
+  "ProductPage": {
+    "breadcrumb": {
+      "all": "جميع المنتجات"
+    },
+    "reviewsText": "المراجعات",
+    "offText": "خصم",
+    "availabilityText": "التوفر",
+    "stockText": "منتجات متوفرة",
+    "outOfStockText": "غير متوفر في المخزون",
+    "soldOutButtonText": "نفذ",
+    "addToCartButtonText": "أضف إلى السلة",
+    "addedToCartButtonText": "أُضيفت للسلة",
+    "AddToWhishListText": "أضف إلى قائمة الرغبات",
+    "AddedToWhishListText": "أُضيفت للرغبات",
+    "deliveryText": "التوصيل خلال 5 أيام",
+    "returnText": "إرجاع مجاني خلال 14 يومًا",
+    "brandText": "العلامة التجارية",
+    "skuText": "رمز المنتج",
+    "connectivityText": "تقنية الربط",
+    "modalNameText": "اسم الطراز",
+    "warantyText": "الضمان",
+    "tagsText": "الوسوم",
+    "shareText": "مشاركة",
+    "aboutThisProductSectionTitle": "حول هذا المنتج",
+    "aboutTheProductText": "حول المنتج",
+    "downloadCenterSectionTitle": "مركز التحميل",
+    "dataSheetButtonText": "نشرة المواصفات",
+    "userManualButtonText": "دليل المستخدم",
+    "relatedProductsTitleBlackText": "المنتجات",
+    "relatedProductsTitleRedText": "ذات الصلة",
+    "descriptionSectionTitle": "الوصف",
+    "specificationSectionTitle": "المواصفات",
+    "reviewsSectionTitle": "المراجعات",
+    "moreDetailsTitle": "مزيد من التفاصيل",
+    "reviewsTabSection": {
+      "customerReviewsTitle": "مراجعات العملاء",
+      "reviewsText": "المراجعات",
+      "reviewText": "مراجعة",
+      "outOfText": "من",
+      "reviewThiProductTitle": "قم بمراجعة هذا المنتج",
+      "shareThoughtTitle": "شارك أفكارك مع العملاء الآخرين",
+      "writeAReviewText": "اكتب مراجعة",
+      "createReviewText": "أنشئ مراجعة",
+      "noReviewsText": "لا توجد مراجعات بعد",
+      "overallRatingText": "التقييم العام",
+      "addHeadlineText": "أضف عنوانًا",
+      "addHeadlinePlaceholderText": "ما هو أهم شيء يجب معرفته؟",
+      "addWrittenReviewText": "أضف مراجعة مكتوبة",
+      "addWrittenReviewPlaceholderText": "ما الذي أعجبك أو لم يعجبك؟ ما هو استخدامك لهذا المنتج؟",
+      "submitButtonText": "إرسال المراجعة",
+      "overallRatingRequiredMessage": "التقييم العام مطلوب",
+      "headlineRequiredMessage": "العنوان مطلوب",
+      "commentRequiredMessage": "التعليق مطلوب"
+    }
+  },
+  "OffersPage": {
+    "noOffersMessage": "لا توجد عروض متاحة",
+    "metaData": {
+      "title": "صفحة عروض همسة تك",
+      "description": "عروض على كاميرات المراقبة · أجهزة الباركود والكاشير · أنظمة الصوت · الشبكات · أجهزة البصمة · كاميرات المراقبة · أجهزة الباركود والكاشير"
+    }
+  },
+  "CartDrawer": {
+    "title": "سلة التسوق الخاصة بك",
+    "emptyCartMessage": "سلة التسوق فارغة",
+    "continueShoppingMessage": "تابع التسوق",
+    "haveAnAccountMessage": "هل لديك حساب؟",
+    "loginMessage": "تسجيل الدخول",
+    "toCheckOutMessage": "لإتمام الشراء بسرعة.",
+    "subTotal": "المجموع الفرعي",
+    "taxesMessage": "سيتم حساب الضرائب والشحن عند إتمام الشراء",
+    "checkoutMessage": "إتمام الشراء",
+    "spendMessage": {
+      "start": "أنفق ",
+      "end": " لتحصل على ",
+      "currency": "جنية مصري",
+      "freeShipping": "شحن مجاني"
+    }
+  },
+  "CheckoutPage": {
+    "content": {
+      "contactTitle": "معلومات الإتصال",
+      "emailAddressTitle": "عنوان البريد الإلكتروني",
+      "loginTitle": "تسجيل الدخول",
+      "emailOrPhoneTitlePlaceholder": "البريد الإلكتروني أو رقم الهاتف",
+      "phone": "رقم الهاتف",
+      "confirmToSendNewsletter": "أرسل لي الأخبار والعروض",
+      "deliveryTitle": "التسليم",
+      "countryOrRegionTitle": "الدولة / المنطقة",
+      "countryValueOne": "مصر",
+      "firstNameTitle": "الاسم الأول",
+      "lastNameTitle": "الاسم الأخير",
+      "streetTitle": "معلومات الشارع",
+      "additionalAddressTitle": "معلومات إضافية عن العنوان (اختياري)",
+      "buildingTitle": "المبنى",
+      "floorTitle": "الطابق",
+      "apartmentTitle": "الشقة",
+      "cityTitle": "المدينة",
+      "governorateTitle": "المحافظة",
+      "postalCode": "الرمز البريدي (اختياري)",
+      "ShippingMethodTitle": "طريقة الشحن",
+      "shippingAmountTitle": "فقط {amount} جنيه",
+      "paymentMethodTitle": "الدفع",
+      "paymentSubtitle": "جميع المعاملات آمنة ومشفرة.",
+      "payWithCreditCardTitle": "ادفع بواسطة الكارت",
+      "payCithCardSubtitle": "بعد النقر على 'ادفع الآن'، سيتم تحويلك إلى 'ادفع بواسطة الكارت أو المحفظة أو التقسيط' لإتمام عملية الشراء بأمان.",
+      "payOnDeliveryTitle": "الدفع عند الاستلام",
+      "payOnDeliverySubtitle": "ادفع نقدًا عند التسليم.",
+      "billingAddressTitle": "عنوان الفاتورة",
+      "sameAsDeliveryTitle": "نفس عنوان التسليم",
+      "useDifferentBillingAddress": "استخدام عنوان فاتورة مختلف",
+      "submitButtonText": "إتمام الطلب",
+      "continueShoppingButtonText": "متابعة التسوق",
+      "discountInputPlaceholder": "رمز الخصم",
+      "applyButtonText": "تطبيق",
+      "subtotalTitle": "المجموع الفرعي",
+      "itemTitle": "عنصر",
+      "itemsTitle": "عناصر",
+      "currency": "ج.م",
+      "shippingTitle": " تكاليف الشحن",
+      "onlyCost": "فقط {shippingCost} جنيه مصري",
+      "couponPlaceholder": "كوبون",
+      "discount": "خصم",
+      "totalTitle": "الإجمالي",
+      "freeShippingMessage": "شحن مجاني",
+      "phoneTooltip": "في حال احتجنا إلى الاتصال بك بشأن طلبك",
+      "selectGovernorateForShippingCosts": "اختر المحافظة لعرض تكلفة الشحن",
+      "selectGovernorateForTotalOrder": "اختر المحافظة لعرض إجمالي الطلب",
+      "downloadInvoiceButtonText": "تحميل الفاتورة",
+      "formValidationErrorMessages": {
+        "inputEmailOrPhone": "يرجى إدخال بريدك الإلكتروني أو رقم هاتفك!",
+        "inputDeliveryPhone": "يرجى تقديم رقم الاتصال الخاص بك للتوصيل!",
+        "selectCountry": "يرجى اختيار الدولة!",
+        "inputFirstName": "يرجى إدخال اسمك الأول!",
+        "inputLastName": "يرجى إدخال اسمك الأخير!",
+        "inputAddress": "يرجى إدخال عنوانك!",
+        "inputBuilding": "يرجى إدخال رقم العمارة!",
+        "inputFloor": "يرجى إدخال رقم الطابق!",
+        "inputApartment": "يرجى إدخال رقم الشقة!",
+        "inputCity": "يرجى إدخال مدينتك!",
+        "selectGovernorate": "يرجى اختيار المحافظة!",
+        "couponCodeRequired": "يرجى إدخال رمز القسيمة!",
+        "apartmentNumberValidation": "يجب أن يكون رقم الشقة أكبر من صفر",
+        "postalCodeValidation": "يجب أن يكون الرمز البريدي مكونًا من 5 أرقام!"
+      },
+      "couponCode": {
+        "couponNotValid": "القسيمة غير صالحة!",
+        "subtotalCartCostMustBeGreaterThanCouponValue": "يجب أن يكون إجمالي تكلفة السلة أكبر من قيمة القسيمة!"
+      },
+      "form": {
+        "loading": "جارٍ تنفيذ الإجراء..",
+        "formSubmissionError": "حدث خطأ أثناء تقديم النموذج",
+        "formSubmissionFailed": "فشل إرسال النموذج! يرجى التحقق من النموذج.",
+        "orderError": "خطأ في تقديم الطلب",
+        "addressCreationError": "فشل في إنشاء العنوان",
+        "guestUserError": "فشل في إنشاء بيانات المستخدم الضيف",
+        "orderCreationError": "فشل في إنشاء طلب جديد",
+        "successMessage": "تم الانتهاء من التحميل"
+      }
+    },
+    "metaData": {
+      "title": "صفحة إتمام الشراء - همسة تك",
+      "description": "أكمل عملية الشراء بأمان لمنتجات أنظمة المراقبة، أجهزة نقاط البيع، التحكم في الوصول، والمزيد في همسة تك. اختر من بين خيارات دفع متعددة بما في ذلك البطاقة، المحفظة أو التقسيط."
+    }
+  },
+  "CallbackCheckoutPage": {
+    "content": {
+      "orderSuccessTitle": "تم الطلب بنجاح!",
+      "orderSuccessMessage": "شكرًا على الشراء! سيتم معالجة طلبك في غضون 24 ساعة خلال أيام العمل. سنقوم بإعلامك عبر البريد الإلكتروني بمجرد شحن طلبك.",
+      "orderSummary": "ملخص الطلب",
+      "orderId": "رقم الطلب:",
+      "orderDate": "التاريخ:",
+      "orderTotal": "الإجمالي:",
+      "shippingMethod": "طريقة الشحن:",
+      "paymentMethod": "طريقة الدفع:",
+      "paymentStatus": "حالة الدفع:",
+      "estimatedDelivery": "التوصيل المتوقع:",
+      "backToShop": "العودة إلى المتجر",
+      "shippingStandard": "توصيل قياسي",
+      "paymentCard": "بطاقة",
+      "paymentStatusPaid": "مدفوع",
+      "currency": "ج.م"
+    },
+    "metaData": {
+      "title": "حالة الدفع وتفاصيل الطلب | همسة تك",
+      "description": "تحقق من حالة الدفع الخاصة بك بأمان عبر همسة تك واطلع على تفاصيل طلبك بالكامل، بما في ذلك تأكيد الدفع الناجح أو المعلق."
+    }
+  },
+  "SigninPage": {
+    "content": {
+      "title": "تسجيل الدخول إلى حسابك",
+      "emailPlaceholder": "البريد الإلكتروني",
+      "passwordPlaceholder": "كلمة المرور",
+      "forgotPasswordLink": "نسيت كلمة المرور؟",
+      "rememberMeLabel": "تذكرني",
+      "loginButton": "تسجيل الدخول",
+      "signupLabel": "ليس لديك حساب بعد؟",
+      "registerButton": "إنشاء حساب",
+      "orLabel": "أو",
+      "facebookButton": "تسجيل الدخول باستخدام فيسبوك",
+      "googleButton": "تسجيل الدخول باستخدام جوجل",
+      "formValidationErrorMessages": {
+        "emailRequired": "البريد الإلكتروني مطلوب!",
+        "passwordRequired": "كلمة المرور مطلوبة!",
+        "errorDuringFormSubmission": "خطأ أثناء تقديم النموذج",
+        "invalidCredentials": "البريد الإلكتروني أو كلمة المرور المدخلة غير صحيحة.",
+        "signinSuccessMessage": "مرحبًا بك من جديد! لقد قمت بتسجيل الدخول الآن.",
+        "emailTakenMessage": "يوجد حساب مسجل بهذا البريد الإلكتروني. يرجى تسجيل الدخول باستخدام طريقة مختلفة.",
+        "signinFailedMessage": "فشل تسجيل الدخول."
+      }
+    },
+    "metaData": {
+      "title": "صفحة تسجيل الدخول إلى همسة تك",
+      "description": "تسجيل الدخول الآمن إلى حساب همسة تك الخاص بك"
+    }
+  },
+  "SignupPage": {
+    "content": {
+      "title": "أنشئ حسابك",
+      "emailPlaceholder": "البريد الإلكتروني",
+      "fullNamePlaceholder": "الاسم الكامل",
+      "passwordPlaceholder": "كلمة المرور",
+      "phonePlaceholder": "الهاتف",
+      "signupButton": "إنشاء حساب",
+      "signinLabel": "هل لديك حساب بالفعل؟",
+      "signinLink": "تسجيل الدخول",
+      "orLabel": "أو",
+      "andLabel": "و",
+      "aggreeToTermsLabel": "الموافقة على",
+      "termsOfUse": "شروط الاستخدام",
+      "privacyPolicy": "سياسة الخصوصية",
+      "newsLetterCheckboxLable": "الحصول على التحديثات والعروض الخاصة!",
+      "formValidationErrorMessages": {
+        "fullNameRequired": "الاسم الكامل مطلوب",
+        "emailRequired": "البريد الإلكتروني مطلوب",
+        "emailInvalid": "يرجى إدخال بريد إلكتروني صالح",
+        "passwordRequired": "كلمة المرور مطلوبة",
+        "phoneRequired": "رقم الهاتف مطلوب",
+        "termsRequired": "يجب الموافقة على الشروط لإنشاء حساب جديد",
+        "minValidationPasswordError": "يجب أن تكون كلمة المرور مكونة من 8 أحرف على الأقل",
+        "maxValidationPasswordError": "يجب ألا تتجاوز كلمة المرور 20 حرفًا",
+        "phoneTypeError": "رقم الهاتف يجب أن يكون رقماً",
+        "phoneLengthError": "طول رقم الهاتف غير صالح للرمز الوطني المحدد",
+        "fullNameLengthError": "يجب أن يتكون الاسم الكامل من 2 إلى 4 أسماء",
+        "fullNameCharacterError": "يجب أن يحتوي الاسم الكامل على أحرف إنجليزية أو عربية فقط",
+        "passwordLetterError": "يجب أن تحتوي كلمة المرور على حرف واحد على الأقل",
+        "passwordNumberError": "يجب أن تحتوي كلمة المرور على رقم واحد على الأقل",
+        "passwordInvalidCharacters": "يمكن أن تحتوي كلمة المرور على أحرف إنجليزية وأرقام ورموز خاصة فقط",
+        "emailTakenError": "البريد الإلكتروني مستخدم بالفعل. برجاء استخدام بريد آخر."
+      }
+    },
+    "metaData": {
+      "title": "صفحة إنشاء حساب همسة تك",
+      "description": "إنشاء حساب همسة تك الخاص بك بأمان"
+    }
+  },
+  "WishlistPage": {
+    "content": {
+      "title": "قائمة الرغبات الخاصة بي",
+      "subTitle": "هناك {count} منتجات في هذه القائمة.",
+      "table": {
+        "header": {
+          "photo": "الصورة",
+          "name": "الاسم",
+          "price": "السعر",
+          "status": "الحالة",
+          "actions": "الإجراءات",
+          "remove": "إزالة"
+        },
+        "body": {
+          "inStock": "متوفر",
+          "outOfStock": "غير متوفر",
+          "addToCartButtonText": "أضف إلى السلة",
+          "contactUs": "اتصل بنا",
+          "currency": "ج.م"
+        }
+      }
+    },
+    "metaData": {
+      "title": "صفحة قائمة الرغبات في همسة تك",
+      "description": "عرض وإدارة المنتجات المفضلة لديك في مكان واحد باستخدام قائمة الرغبات من همسة تك. احفظ العناصر للشراء في المستقبل ويمكنك الوصول إليها بسهولة في أي وقت."
+    }
+  },
+  "BlogPage": {
+    "content": {
+      "title": "مدونتنا",
+      "subtitle": "اكتشف أحدث المقالات حول التكنولوجيا وأنظمة الأمان."
+    },
+    "metaData": {
+      "title": "مدونة همسة تك",
+      "description": "اكتشف أحدث الأخبار والتحديثات من همسة تك بمتابعة مدونتنا. اقرأ المقالات، شارك الأفكار، وابقَ على اطلاع بمنتجاتنا وخدماتنا."
+    }
+  },
+  "SupportPage": {
+    "content": {
+      "title": "الدعم",
+      "subtitle": "هل لديك سؤال أو استفسار؟ املأ النموذج أدناه وسنرد عليك في أسرع وقت.",
+      "form": {
+        "fields": {
+          "name": {
+            "label": "الاسم الكامل",
+            "placeholder": "أدخل اسمك الكامل",
+            "requiredMessage": "يرجى إدخال اسمك الكامل."
+          },
+          "email": {
+            "label": "البريد الإلكتروني",
+            "placeholder": "أدخل بريدك الإلكتروني",
+            "requiredMessage": "يرجى إدخال بريدك الإلكتروني.",
+            "invalidMessage": "يرجى إدخال بريد إلكتروني صحيح."
+          },
+          "subject": {
+            "label": "الموضوع",
+            "placeholder": "أدخل موضوع استفسارك",
+            "requiredMessage": "يرجى إدخال الموضوع."
+          },
+          "message": {
+            "label": "الرسالة",
+            "placeholder": "اكتب رسالتك هنا",
+            "requiredMessage": "يرجى إدخال رسالتك."
+          }
+        },
+        "submission": {
+          "submitButton": "إرسال",
+          "successMessage": "تم إرسال استفسارك بنجاح!",
+          "errorMessage": "حدث خطأ أثناء إرسال النموذج. يرجى المحاولة مرة أخرى.",
+          "loading": "جارٍ تنفيذ الإجراء.."
+        }
+      },
+      "contactInfo": {
+        "title": "معلومات الاتصال",
+        "telephone": "الهاتف",
+        "whatsapp": "واتساب",
+        "email": "البريد الإلكتروني"
+      }
+    },
+    "metaData": {
+      "title": "الدعم الفني - همسة تك",
+      "description": "هل تحتاج إلى المساعدة أو لديك استفسار؟ تواصل معنا عبر صفحة الدعم واحصل على إجابات لأسئلتك حول منتجاتنا وخدماتنا."
+    }
+  },
+  "AboutUsPage": {
+    "content": {
+      "miniMapText": "الطبقات",
+      "viewLargerMapText": "عرض خريطة أكبر",
+      "locationText": "موقعنا",
+      "callUsText": "اتصل بنا"
+    },
+    "metaData": {
+      "title": "صفحة من نحن - حمسة تك",
+      "description": "تقدم حمسة تك أنظمة أمان عالية الجودة وكاميرات مراقبة. تواصل معنا في أي من فروعنا للحصول على الدعم والخدمات المتخصصة."
+    }
+  }
+}

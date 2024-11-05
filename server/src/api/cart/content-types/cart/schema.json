@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "carts",
+  "info": {
+    "singularName": "cart",
+    "pluralName": "carts",
+    "displayName": "Cart",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "guest_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::guest-user.guest-user",
+      "inversedBy": "cart"
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "cart"
+    },
+    "product_details": {
+      "displayName": "product-quantity",
+      "type": "component",
+      "repeatable": true,
+      "component": "cart.product-quantity",
+      "pluginOptions": {}
+    },
+    "total_cart_cost": {
+      "type": "decimal",
+      "required": true,
+      "min": 0,
+      "pluginOptions": {},
+      "default": 0
+    }
+  }
+}

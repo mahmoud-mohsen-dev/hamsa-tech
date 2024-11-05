@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "guest_users",
+  "info": {
+    "singularName": "guest-user",
+    "pluralName": "guest-users",
+    "displayName": "Guest User",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "email_or_phone": {
+      "type": "string",
+      "required": false
+    },
+    "orders": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::order.order",
+      "mappedBy": "guest_user"
+    },
+    "subscribed_to_news_and_offers": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "wishlist": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::wishlist.wishlist",
+      "mappedBy": "guest_user"
+    },
+    "cart": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::cart.cart",
+      "mappedBy": "guest_user"
+    },
+    "addresses": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::address.address",
+      "mappedBy": "guest_user"
+    }
+  }
+}
